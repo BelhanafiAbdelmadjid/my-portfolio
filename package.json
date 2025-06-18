@@ -15,8 +15,11 @@
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.10",
     "@tailwindcss/vite": "^4.1.10",
+    "@tsparticles/vue3": "^3.0.1",
     "lucide-vue-next": "^0.517.0",
     "pinia": "^3.0.1",
+    "tsparticles": "^3.8.1",
+    "tsparticles-engine": "^2.12.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
