@@ -4,7 +4,9 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header class="bg-primary-900">
+  <header class="">
+    <h1 class="text-3xl font-montserrat  font-bold">Tets</h1>
+    <h1 class="text-3xl font-sans  font-bold">Tets</h1>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
