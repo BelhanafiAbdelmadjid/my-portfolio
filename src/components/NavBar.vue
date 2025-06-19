@@ -5,13 +5,15 @@
             'transition-all duration-300 ease-in-out',
             !inTop ? 'bg-dark-500  shadow-md' : 'bg-transparent',
         ]">
-            <span class="font-bold font-montserrat text-[26px] text-yellow-400 flex-1">AB</span>
+            <p class="font-bold font-montserrat   flex-1  ">
+                <span class="bg-beige-200 text-gray-800 p-2 text-[18px] w-[20px] h-[20px] rounded-full">BA</span>
+            </p>
             <a class="link-custom">{{ $t("navbar.AboutMe") }}</a>
-            <a class="link-custom">Skills</a>
-            <a class="link-custom">Experience</a>
-            <a class="link-custom">Academic</a>
-            <a class="link-custom">Projects</a>
-            <a class="link-custom">CV</a>
+            <a class="link-custom">{{ $t("navbar.Skills") }}</a>
+            <a class="link-custom">{{ $t("navbar.Experience") }}</a>
+            <a class="link-custom">{{ $t("navbar.Academic") }}</a>
+            <a class="link-custom">{{ $t("navbar.Projects") }}</a>
+            <a class="link-custom">{{ $t("navbar.Resume") }}</a>
             <LanguageConfig />
         </nav>
         <nav v-if="isMobile" class="w-screen p-4 box-border flex flex-row items-center justify-start gap-4 ">

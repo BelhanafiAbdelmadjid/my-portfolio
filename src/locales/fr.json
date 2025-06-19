@@ -6,5 +6,15 @@
         "Academic": "Académique",
         "Projects": "Projets",
         "Resume": "CV"
+    },
+    "introduction": "Étudiant, Développeur Full Stack, Passionné de cybersécurité des applications web",
+    "about": {
+        "line1": "Je m'appelle Abdelmadjid, étudiant et développeur full stack passionné par la cybersécurité des applications web.",
+        "line2": "J'adore explorer de nouvelles technologies, programmer et apprendre de nouvelles choses !",
+        "line3": "N'hésitez pas à me contacter sur mes réseaux sociaux ou à découvrir mes projets sur GitHub !"
+    },
+    "contact": {
+        "title": "Contactez-moi",
+        "description": "Prêt à concrétiser vos idées ?"
     }
 }

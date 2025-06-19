@@ -12,18 +12,18 @@
         Belhanafi Abdelmadjid
       </h1>
       <p class="text-[14px] md:text-lg font-semibold font-montserrat text-center">
-        Student, Full Stack Developer, Web App Cybersecurity Enthusiast
+        {{ $t("introduction") }}
       </p>
     </section>
     <section
       class="w-screen flex flex-col items-start justify-center gap-4 px-5 py-10  text-xl md:text-2xl font-montserrat bg-beige-200 text-gray-800">
       <span class=" font-bold">Hey!</span>
       <p class=" leading-[40px]">
-        I'm Abdelmadjid, a student and full stack developer with a passion for web app cybersecurity.
+        {{ $t("about.line1") }}
         <br>
-        I love exploring new technologies, programming and learning new things!
+        {{ $t("about.line2") }}
         <br>
-        Feel free to connect with me on my social media platforms or check out my projects on GitHub!
+        {{ $t("about.line3") }}
       </p>
     </section>
   </main>

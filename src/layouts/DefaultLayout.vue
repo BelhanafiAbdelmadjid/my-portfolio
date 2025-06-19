@@ -5,8 +5,8 @@
         <slot />
         <footer class="magicpattern min-h-[300px]  relative w-screen max-w-screen h-[200px] text-white  text-center">
             <!-- &copy; 2025 My Portfolio -->
-            <h1 class="contact-me font-montserrat font-bold  text-primary-50  ">Contact me</h1>
-            <p class="footer-question font-montserrat  ">Ready to bring your ideas to reality ?</p>
+            <h1 class="contact-me font-montserrat font-bold  text-primary-50  ">{{ $t('contact.title') }}</h1>
+            <p class="footer-question font-montserrat  ">{{ $t('contact.description') }}</p>
             <div id="contact" class="bottom">
                 <a class="text-gray-700" href="mailto:belhanafiabdelmadjid@gmail.com">belhanafiabdelmadjid@gmail.com</a>
                 <div>
@@ -52,7 +52,7 @@
                         </a>
                     </div>
                 </div>
-                <p class="end-line">DEVELOPED BY MYSELF</p>
+                <p class="end-line text-gray-800">DEVELOPED BY MYSELF</p>
             </div>
         </footer>
     </div>

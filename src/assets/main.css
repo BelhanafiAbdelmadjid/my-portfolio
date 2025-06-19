@@ -7,7 +7,7 @@
 
 @layer components {
   .link-custom {
-    @apply font-montserrat font-semibold text-[18px] hover:text-yellow-400 cursor-pointer transition-all duration-150;
+    @apply font-montserrat font-semibold text-[16px] hover:text-yellow-400 cursor-pointer transition-all duration-150;
   }
 }
 

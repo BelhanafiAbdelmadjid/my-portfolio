@@ -1,9 +1,11 @@
 <template>
     <div>
-        <Button size="sm" variant="ghost" aria-label="Toggle Language" @click="toggleLanguage">
+        <button
+            class="flex flex-row items-center justify-center gap-[0px] bg-beige-200 text-dark rounded-md px-2 py-1 hover:bg-beige-300 transition-colors duration-200 ease-in-out"
+            aria-label="Toggle Language" @click="toggleLanguage">
             <Globe class="size-5 mr-2" />
             {{ locale.toUpperCase() }}
-        </Button>
+        </button>
     </div>
 </template>
 
