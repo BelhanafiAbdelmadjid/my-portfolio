@@ -3,7 +3,7 @@
 
 <template>
   <main>
-    <h1>
+    <h1 class="  bg-red-500">
       Hello world!
     </h1>
   </main>
