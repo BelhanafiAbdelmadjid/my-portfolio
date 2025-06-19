@@ -13,7 +13,7 @@ import Experience from '@/components/experience/index.vue';
       <h1 class="text-xl md:text-4xl font-montserrat font-bold text-center">
         Belhanafi Abdelmadjid
       </h1>
-      <p class="text-[12px] md:text-lg font-semibold font-montserrat text-center">
+      <p class="px-[20px] text-[12px] md:text-lg font-semibold font-montserrat text-center ">
         {{ $t("introduction") }}
       </p>
     </section>
