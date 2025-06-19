@@ -2,6 +2,7 @@
     <div class="">
         <nav v-if="!isMobile" :class="[
             'w-screen p-4 box-border flex flex-row items-center justify-start gap-4 ',
+            'fixed top-0 left-0 z-[+999] ',
             'transition-all duration-300 ease-in-out',
             !inTop ? 'bg-dark-500  shadow-md' : 'bg-transparent',
         ]">
@@ -18,7 +19,7 @@
         </nav>
         <nav v-if="isMobile" :class="[
             'w-screen p-4 box-border flex flex-row items-center justify-start gap-4 ',
-            'fixed top-0 left-0 z-5 ',
+            'fixed top-0 left-0 z-99 ',
             'transition-all duration-300 ease-in-out',
             !inTop ? 'bg-dark-500  shadow-md' : 'bg-transparent',
 

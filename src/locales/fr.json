@@ -16,5 +16,45 @@
     "contact": {
         "title": "Contactez-moi",
         "description": "Prêt à concrétiser vos idées ?"
+    },
+    "experience": {
+        "title": "Expérience",
+        "myexperience": {
+            "docflowca": {
+                "titel": "Développeur Full Stack",
+                "place": "Docflow - Télétravail – Montréal, Canada",
+                "date": "Mars 2023 - Présent",
+                "competences": {
+                    "1": "Création et maintenance d'applications web évolutives avec Vue 3 et Firebase (Firestore, Auth, Cloud Functions)",
+                    "2": "Développement de la logique backend et des API avec Firebase Functions et gestion de la synchronisation des données en temps réel avec Firestore",
+                    "3": "Conception d'interfaces utilisateur réactives et d'une architecture basée sur les composants pour une expérience utilisateur fluide",
+                    "4": "Mise en place de pipelines CI/CD avec GitHub Actions et Firebase Hosting pour des déploiements automatisés",
+                    "5": "Collaboration avec des équipes à distance dans un environnement Agile/Scrum pour livrer des mises à jour itératives du produit",
+                    "6": "Garantie de la sécurité, des performances et de la scalabilité de l'application pour accompagner la croissance de l'entreprise"
+                }
+            },
+            "natixisDevOps": {
+                "titel": "Apprenti IT Production, DevOps & Logiciel",
+                "place": "Natixis, Groupe BPCE – Alger, Algérie",
+                "date": "Mars 2023 – Octobre 2025",
+                "competences": {
+                    "1": "A assisté à la maintenance et au déploiement des applications de production dans un environnement basé sur Linux",
+                    "2": "Création de scripts d'automatisation et d'outils internes pour optimiser les tâches informatiques et de support courantes",
+                    "3": "Utilisation de Docker pour la conteneurisation et la gestion des environnements applicatifs",
+                    "4": "Surveillance et support des performances des applications en environnement de production"
+                }
+            },
+            "natixisHelpDesk": {
+                "titel": "Spécialiste Support IT Helpdesk – Apprenti",
+                "place": "Natixis, Groupe BPCE – Alger, Algérie",
+                "date": "Avril 2022 – Mars 2023",
+                "competences": {
+                    "1": "Fourniture du support informatique de premier niveau aux employés internes, résolution des problèmes matériels et logiciels",
+                    "2": "Gestion des demandes de service et des incidents via un système de tickets, en assurant une résolution rapide",
+                    "3": "Collaboration avec les équipes IT seniors pour l’escalade des problèmes techniques complexes",
+                    "4": "Support des environnements Windows avec Active Directory pour la gestion des comptes utilisateurs et SCCM pour le déploiement des logiciels et la maintenance des postes de travail"
+                }
+            }
+        }
     }
 }

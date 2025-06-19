@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Experience from '@/components/experience/index.vue';
+
 </script>
 
 <template>
@@ -25,6 +27,14 @@
         <br>
         {{ $t("about.line3") }}
       </p>
+    </section>
+
+    <p class="w-screen p-[100px]  text-center  font-montserrat font-bold text-xl md:text-3xl ">
+      <span class="font-semibold text-3xl">Portfolio</span>
+    </p>
+
+    <section class="w-screen bg-beige-200 py-[16px] px-[10px] md:p-10">
+      <Experience />
     </section>
   </main>
 </template>
