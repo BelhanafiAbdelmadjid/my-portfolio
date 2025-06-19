@@ -1,10 +1,8 @@
 <template>
-    <div
-        class="w-screen h-screen lg:min-h-[600px] lg:min-w-[600px] box-border flex flex-col items-start justify-start overflow-x-hidden">
+    <div id="layout"
+        class="max-w-screen h-screen relative  lg:min-h-[600px] lg:min-w-[600px] box-border flex flex-col items-start justify-start overflow-x-hidden ">
         <NavigationBar></NavigationBar>
-        <main class="grow max-w-[600px]">
-            <slot />
-        </main>
+        <slot />
         <footer class="magicpattern min-h-[300px]  relative w-screen max-w-screen h-[200px] text-white  text-center">
             <!-- &copy; 2025 My Portfolio -->
             <h1 class="contact-me font-montserrat font-bold  text-primary-50  ">Contact me</h1>
