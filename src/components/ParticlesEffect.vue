@@ -1,5 +1,5 @@
 <template>
-    <vue-particles id="tsparticles" :particlesLoaded="particlesLoaded" :options="particlesOptions" />
+    <vue-particles id="tsparticles" @particlesLoaded="particlesLoaded" :options="particlesOptions" />
 </template>
 
 <script lang="ts">
@@ -54,6 +54,11 @@ export default {
                 }
             }
         };
+    },
+    methods: {
+        particlesLoaded(container: unknown) {
+            console.log("Particles loaded:", container);
+        }
     }
 };
 </script>
