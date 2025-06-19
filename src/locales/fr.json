@@ -1,0 +1,10 @@
+{
+    "navbar": {
+        "AboutMe": "À propos de moi",
+        "Skills": "Compétences",
+        "Experience": "Expérience",
+        "Academic": "Académique",
+        "Projects": "Projets",
+        "Resume": "CV"
+    }
+}

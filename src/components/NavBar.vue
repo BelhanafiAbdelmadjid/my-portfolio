@@ -6,12 +6,13 @@
             !inTop ? 'bg-dark-500  shadow-md' : 'bg-transparent',
         ]">
             <span class="font-bold font-montserrat text-[26px] text-yellow-400 flex-1">AB</span>
-            <a class="link-custom">About me</a>
+            <a class="link-custom">{{ $t("navbar.AboutMe") }}</a>
             <a class="link-custom">Skills</a>
             <a class="link-custom">Experience</a>
             <a class="link-custom">Academic</a>
             <a class="link-custom">Projects</a>
             <a class="link-custom">CV</a>
+            <LanguageConfig />
         </nav>
         <nav v-if="isMobile" class="w-screen p-4 box-border flex flex-row items-center justify-start gap-4 ">
             <span class="font-bold font-montserrat text-[26px] text-yellow-400 flex-1">AB</span>
@@ -23,7 +24,8 @@
 </template>
 
 <script lang="ts" setup>
-// import { Menu } from 'lucide-vue-next';
+// import { Globe } from lucide-vue-next';
+import LanguageConfig from './LanguageConfig.vue'
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const isMobile = ref(window.innerWidth <= 768)
@@ -39,6 +41,7 @@ function handleScroll(e: Event) {
     inTop.value = target ? target.scrollTop === 0 : false;
     console.log('scrolling', inTop.value)
 }
+
 onMounted(() => {
     window.addEventListener('resize', () => {
         handleResize()
