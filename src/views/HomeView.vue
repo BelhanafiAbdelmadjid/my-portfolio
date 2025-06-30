@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Education from '@/components/education/index.vue';
 import Experience from '@/components/experience/index.vue';
+import Skills from '@/components/Skills.vue';
 
 </script>
 
@@ -37,8 +38,12 @@ import Experience from '@/components/experience/index.vue';
     <section class="w-screen bg-beige-200 py-[16px] px-[10px] md:p-10">
       <Experience />
     </section>
+    <section class="w-screen  py-[16px] px-[10px] md:p-10 ">
+      <Skills />
+    </section>
     <section class="w-screen bg-beige-200 py-[16px] px-[10px] md:p-10 ">
       <Education />
     </section>
+
   </main>
 </template>

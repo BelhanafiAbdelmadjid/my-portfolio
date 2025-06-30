@@ -91,6 +91,59 @@
             }
         }
     },
+    "skills": {
+        "title": "Compétences",
+        "myskills": {
+            "react": {
+                "label": "React",
+                "description": "+1 an d'expérience travaillant sur plusieurs applications mobiles"
+            },
+            "nuxtjs": {
+                "label": "Nuxt.js",
+                "description": "+2 ans d'expérience travaillant sur des projets principalement des tableaux de bord"
+            },
+            "tailwindcss": {
+                "label": "Tailwind CSS",
+                "description": "+2 ans d'expérience - un incontournable dans chaque projet"
+            },
+            "python": {
+                "label": "Python",
+                "description": "+4 ans d'expérience - mon premier langage de programmation"
+            },
+            "laravel": {
+                "label": "Laravel",
+                "description": "Réalisé quelques projets personnels simples avec"
+            },
+            "vuejs": {
+                "label": "Vue.js",
+                "description": "+3 ans d'expérience - le framework que je maîtrise le mieux"
+            },
+            "firebase": {
+                "label": "Firebase",
+                "description": "+1 an d'expérience travaillant sur des projets réels"
+            },
+            "docker": {
+                "label": "Docker",
+                "description": "+2 ans d'expérience avec la conteneurisation"
+            },
+            "flask": {
+                "label": "Flask",
+                "description": "+3 ans d'expérience construisant des applications web"
+            },
+            "django": {
+                "label": "Django",
+                "description": "+1 an d'expérience construisant des projets personnels"
+            },
+            "expressjs": {
+                "label": "Express.js",
+                "description": "+1 an d'expérience travaillant sur des projets réels"
+            },
+            "linux": {
+                "label": "Linux",
+                "description": "Familier avec les systèmes Linux et la ligne de commande"
+            }
+        }
+    },
     "base": {
         "year": "Année",
         "month": "Mois",

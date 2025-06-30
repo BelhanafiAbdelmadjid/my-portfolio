@@ -79,6 +79,59 @@
             }
         }
     },
+    "skills": {
+        "title": "Skills",
+        "myskills": {
+            "react": {
+                "label": "React",
+                "description": "+1 years experience working on multiple mobile apps"
+            },
+            "nuxtjs": {
+                "label": "Nuxt.js",
+                "description": "+2 years experience working on projects mainly dashboards"
+            },
+            "tailwindcss": {
+                "label": "Tailwind CSS",
+                "description": "+2 years experience - a must use in every project"
+            },
+            "python": {
+                "label": "Python",
+                "description": "+4 years experience - my first programming language"
+            },
+            "laravel": {
+                "label": "Laravel",
+                "description": "Made some easy personal projects with it"
+            },
+            "vuejs": {
+                "label": "Vue.js",
+                "description": "+3 years experience - the framework I know the best"
+            },
+            "firebase": {
+                "label": "Firebase",
+                "description": "+1 year experience working on real projects"
+            },
+            "docker": {
+                "label": "Docker",
+                "description": "+2 years experience with containerization"
+            },
+            "flask": {
+                "label": "Flask",
+                "description": "+3 years experience building web applications"
+            },
+            "django": {
+                "label": "Django",
+                "description": "+1 year experience building personal projects"
+            },
+            "expressjs": {
+                "label": "Express.js",
+                "description": "+1 year experience working on real projects"
+            },
+            "linux": {
+                "label": "Linux",
+                "description": "Familiar with Linux systems and command line"
+            }
+        }
+    },
     "base": {
         "year": "Year",
         "month": "Month",
