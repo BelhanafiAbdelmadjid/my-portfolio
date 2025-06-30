@@ -56,5 +56,47 @@
                 }
             }
         }
+    },
+    "education": {
+        "titel": "Parcours Académique",
+        "myeducation": {
+            "IRS": {
+                "titel": "Master 1 - Ingénierie des Systèmes en Réseaux, voie initiale - IRS",
+                "year": "Sep 2025 - Présent",
+                "location": "Université Versailles Saint-Quentin-en-Yvelines (UVSQ) - Université Paris Saclay"
+            },
+            "SSI": {
+                "titel": "Master 1 - Sécurité des systèmes informatique - SSI",
+                "year": "Sep 2024 - Juin 2025",
+                "location": "Université des sciences et de la technologie Houari Boumediene (USTHB) - Alger, Algérie"
+            },
+            "ACAD": {
+                "titel": "Licence - Informatique académique - ACAD",
+                "year": "Sep 2024 - Juin 2025",
+                "location": "Université des sciences et de la technologie Houari Boumediene (USTHB) - Alger, Algérie",
+                "rank": "Classement : top 10% de la promotion",
+                "note": "Note : 13.07/20"
+            },
+            "BAC-2": {
+                "titel": "Bacalauréat - Sciences Expérimentales - BAC",
+                "year": "2021",
+                "location": "Alger, Algérie",
+                "note": "Note : 15.83/20"
+            },
+            "BAC-1": {
+                "titel": "Bacalauréat - Sciences Expérimentales - BAC",
+                "year": "2020",
+                "location": "Alger, Algérie",
+                "note": "Note : 14.76/20"
+            }
+        }
+    },
+    "base": {
+        "year": "Année",
+        "month": "Mois",
+        "day": "Jour",
+        "location": "Lieu",
+        "skills": "Compétences",
+        "ranking": "Classement"
     }
 }

@@ -56,5 +56,35 @@
                 }
             }
         }
+    },
+    "education": {
+        "titel": "Education",
+        "myeducation": {
+            "IRS": {
+                "titel": "Master 1 - Network Systems Engineering, Initial Track - IRS",
+                "year": "Sep 2025 - Présent",
+                "location": "Université Versailles Saint-Quentin-en-Yvelines (UVSQ) - Université Paris Saclay"
+            },
+            "SSI": {
+                "titel": "Master 1 - Computer Systems Security - SSI",
+                "year": "Sep 2024 - Jun 2025",
+                "location": "University of Science and Technology Houari Boumediene (USTHB) - Algiers, Algeria"
+            },
+            "ACAD": {
+                "titel": "Bachelor's Degree - Academic Computer Science - ACAD",
+                "year": "Sep 2021 - Jun 2024",
+                "location": "University of Science and Technology Houari Boumediene (USTHB) - Algiers, Algeria",
+                "rank": "Ranking: top 10% of the class",
+                "note": "Grade: 13.07/20"
+            }
+        }
+    },
+    "base": {
+        "year": "Year",
+        "month": "Month",
+        "day": "Day",
+        "location": "Location",
+        "skills": "Skills",
+        "rank": "Ranking"
     }
 }
