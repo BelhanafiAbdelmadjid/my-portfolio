@@ -132,6 +132,9 @@
             }
         }
     },
+    "work": {
+        "title": "My Work"
+    },
     "base": {
         "year": "Year",
         "month": "Month",

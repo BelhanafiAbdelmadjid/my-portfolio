@@ -144,6 +144,9 @@
             }
         }
     },
+    "work": {
+        "title": "Mon Travail"
+    },
     "base": {
         "year": "Année",
         "month": "Mois",
