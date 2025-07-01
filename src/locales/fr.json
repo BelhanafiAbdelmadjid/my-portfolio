@@ -145,7 +145,21 @@
         }
     },
     "work": {
-        "title": "Mon Travail"
+        "title": "Mon Travail",
+        "mywork": {
+            "findEat": {
+                "description": "J’ai développé le dashboard admin de FindEat (Canada) avec Nuxt, permettant aux admins de gérer les clients, les restaurants et leurs certifications."
+            },
+            "mafal": {
+                "description": "J’ai créé la landing page de Mafal Dental avec Nuxt pour une dentiste, afin d’améliorer sa visibilité en ligne."
+            },
+            "uniAssist": {
+                "description": "UniAssist – Plateforme e-learning; j'ai créé UniAssist pour aider les étudiants à réussir leurs études universitaires. Elle propose cours, vidéos, exercices, commentaires et XP. Développée avec Nuxt.js, Django REST et React Native."
+            },
+            "swurvin": {
+                "description": "Swurvin - Création d'une app React Native avec Node.js et PostgreSQL reliant clients et dépanneurs, incluant géolocalisation en direct, alertes d'accidents, paiements Stripe et abonnements chauffeurs."
+            }
+        }
     },
     "base": {
         "year": "Année",

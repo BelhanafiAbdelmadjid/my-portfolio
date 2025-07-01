@@ -2,10 +2,18 @@
     <div ref="showCaseWork"
         class="w-full flex flex-col items-center justify-center gap-4 p-5 bg-[#242424] text-beige-200 font-montserrat">
         <h1 class="self-center md:text-3xl text-xl  font-semibold ">{{ t('work.title') }}</h1>
-        <Carousel ref="carousel" class="w-full min-h-[calc(100vh- 65px)]" v-bind="carouselConfig"
-            @mouseenter="stopAutoScroll" @mouseleave="startAutoScroll">
+        <Carousel ref="carousel" v-bind="carouselConfig" @mouseenter="stopAutoScroll" @mouseleave="startAutoScroll">
             <Slide v-for="img in images" :key="img.id">
-                <img :src="img.url" />
+                <div class="relative">
+                    <div class="absolute bg-gray-900 opacity-25 top-0 left-0 w-full h-full">
+                    </div>
+                    <div
+                        class="absolute  top-0 left-0 w-full h-full flex items-center justify-center p-10 font-montserrat font-semibold ">
+                        <h1 class="text-white text-shadow-lg text-center md:text-[16px] text-[12px]">{{
+                            t(`${img.lanKey}.description`) }}</h1>
+                    </div>
+                    <img :src="img.url" />
+                </div>
             </Slide>
 
             <template #addons>
@@ -23,21 +31,30 @@ import { useI18n } from 'vue-i18n'
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const { t } = useI18n()
+const windowWidth = ref(window.innerWidth)
 
 const carouselConfig = {
     wrapAround: true,
-    itemsToShow: 1,
+    itemsToShow: windowWidth.value < 768 ? 1 : 2,
     snapAlign: 'center',
-    height: 'calc(90vh - 65px)',
+    height: windowWidth.value < 768 ? '50vh' : '75vh',
     mouseWheel: false,
     gap: 5,
 }
 
 
-const images = Array.from({ length: 10 }, (_, index) => ({
-    id: index + 1,
-    url: `https://picsum.photos/seed/${Math.random()}/800/600`,
-}))
+import FindEatImg from '@/assets/images/work/FindEat.png'
+import Mafal from '@/assets/images/work/Mafal.png'
+import UniAssist from '@/assets/images/work/UniAssist.png'
+import Swurvin from '@/assets/images/work/swurvin.png'
+
+
+const images = [
+    { id: 1, url: FindEatImg, lanKey: 'work.mywork.findEat' },
+    { id: 2, url: Mafal, lanKey: 'work.mywork.mafal' },
+    { id: 3, url: UniAssist, lanKey: 'work.mywork.uniAssist' },
+    { id: 4, url: Swurvin, lanKey: 'work.mywork.swurvin' }
+]
 defineOptions({
     name: 'WorkSection'
 });
@@ -62,7 +79,13 @@ const stopAutoScroll = () => {
         autoScrollInterval = null
     }
 }
+const handleResize = () => {
+    windowWidth.value = window.innerWidth
+}
+
 onMounted(() => {
+    window.addEventListener('resize', handleResize)
+
     if (showCaseWork.value) {
         observer = new IntersectionObserver(
             (entries) => {
@@ -84,6 +107,8 @@ onMounted(() => {
 })
 
 onUnmounted(() => {
+    window.removeEventListener('resize', handleResize)
+
     if (observer) {
         observer.disconnect()
     }

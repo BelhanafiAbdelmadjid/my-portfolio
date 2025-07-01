@@ -3,7 +3,7 @@
         class="max-w-screen h-screen relative  lg:min-h-[600px] lg:min-w-[600px] box-border flex flex-col items-start justify-start overflow-x-hidden ">
         <NavigationBar></NavigationBar>
         <slot />
-        <footer class="magicpattern min-h-[300px]  relative w-screen max-w-screen h-[200px] text-white  text-center">
+        <footer class="magicpattern min-h-[300px]  relative w-screen max-w-screen h-[200px] text-white  text-center ">
             <!-- &copy; 2025 My Portfolio -->
             <h1 class="contact-me font-montserrat font-bold  text-primary-50  ">{{ $t('contact.title') }}</h1>
             <p class="footer-question font-montserrat  ">{{ $t('contact.description') }}</p>
@@ -77,7 +77,7 @@ export default {
 
 footer {
     position: relative;
-    margin-top: 10vh;
+    margin-top: 20vh;
 
     min-height: 500px;
 

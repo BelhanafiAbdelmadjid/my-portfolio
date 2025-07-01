@@ -58,7 +58,7 @@
         }
     },
     "education": {
-        "titel": "Education",
+        "titel": "Academic Background",
         "myeducation": {
             "IRS": {
                 "titel": "Master 1 - Network Systems Engineering, Initial Track - IRS",
@@ -133,7 +133,21 @@
         }
     },
     "work": {
-        "title": "My Work"
+        "title": "My Work",
+        "mywork": {
+            "findEat": {
+                "description": "I developed the FindEat (Canada) admin dashboard with Nuxt, enabling admins to manage clients, restaurants, and their certifications."
+            },
+            "mafal": {
+                "description": "I built the Mafal Dental landing page with Nuxt for a dentist to increase her online visibility."
+            },
+            "uniAssist": {
+                "description": "UniAssist – E-learning Platform; I built UniAssist to help Algerian students succeed in their  university studies. It offers courses, videos, exercises, comments, and XP rewards. Built with Nuxt.js, Django REST, and React Native."
+            },
+            "swurvin": {
+                "description": "Swurvin - Built a React Native app with Node.js and PostgreSQL to connect clients with tow truck drivers, featuring live tracking, accident alerts, Stripe payments, and driver subscriptions."
+            }
+        }
     },
     "base": {
         "year": "Year",

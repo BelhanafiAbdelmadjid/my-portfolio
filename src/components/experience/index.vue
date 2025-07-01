@@ -1,5 +1,5 @@
 <template>
-    <div class="text-gray-800 flex flex-col items-start justify-start gap-4">
+    <div class="text-gray-800 flex flex-col items-start justify-start gap-4 ">
         <h1 class="md:text-3xl text-xl font-semibold">{{ $t('experience.title') }}</h1>
         <div
             class=" w-full z-[10]  grid  grid-cols-[30px,1fr] md:grid-cols-[44px,1fr] grid-rows-[50px,1fr,50px]  min-h-[200px] md:min-h-[300px] relative">
