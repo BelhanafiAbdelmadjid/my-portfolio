@@ -60,11 +60,6 @@
     "education": {
         "titel": "Academic Background",
         "myeducation": {
-            "IRS": {
-                "titel": "Master 1 - Network Systems Engineering, Initial Track - IRS",
-                "year": "Sep 2025 - Présent",
-                "location": "Université Versailles Saint-Quentin-en-Yvelines (UVSQ) - Université Paris Saclay"
-            },
             "SSI": {
                 "titel": "Master 1 - Computer Systems Security - SSI",
                 "year": "Sep 2024 - Jun 2025",
