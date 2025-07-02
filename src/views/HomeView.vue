@@ -20,7 +20,7 @@ import Work from '@/components/Work.vue';
         {{ $t("introduction") }}
       </p>
     </section>
-    <section
+    <section id="about"
       class="w-screen text-[16px] md:text-xl flex flex-col items-start justify-center gap-4 px-5 py-10  text-xl  font-montserrat bg-beige-200 text-gray-800">
       <span class=" font-bold">Hey!</span>
       <p class=" leading-[40px]">
@@ -36,16 +36,16 @@ import Work from '@/components/Work.vue';
       <span class="font-semibold text-3xl">Portfolio</span>
     </p>
 
-    <section class="w-screen bg-beige-200 py-[16px] px-[10px] md:p-10">
+    <section id="experience" class="w-screen bg-beige-200 py-[16px] px-[10px] md:p-10">
       <Experience />
     </section>
-    <section class="w-screen  py-[16px] px-[10px] md:p-10 ">
+    <section id="skills" class="w-screen  py-[16px] px-[10px] md:p-10 ">
       <Skills />
     </section>
-    <section class="w-screen  ">
+    <section id="work" class="w-screen  ">
       <Work />
     </section>
-    <section class="w-screen bg-beige-200 py-[16px] px-[10px] md:p-10 ">
+    <section id="education" class="w-screen bg-beige-200 py-[16px] px-[10px] md:p-10 ">
       <Education />
     </section>
 

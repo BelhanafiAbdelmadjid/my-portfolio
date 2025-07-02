@@ -9,11 +9,11 @@
             <div class=" flex-1 ">
                 <MyInitial />
             </div>
-            <a class="link-custom">{{ $t("navbar.AboutMe") }}</a>
-            <a class="link-custom">{{ $t("navbar.Skills") }}</a>
-            <a class="link-custom">{{ $t("navbar.Experience") }}</a>
-            <a class="link-custom">{{ $t("navbar.Academic") }}</a>
-            <a class="link-custom">{{ $t("navbar.Projects") }}</a>
+            <a class="link-custom" @click="scrollToSection('about', $event)">{{ $t("navbar.AboutMe") }}</a>
+            <a class="link-custom" @click="scrollToSection('skills', $event)">{{ $t("navbar.Skills") }}</a>
+            <a class="link-custom" @click="scrollToSection('experience', $event)">{{ $t("navbar.Experience") }}</a>
+            <a class="link-custom" @click="scrollToSection('education', $event)">{{ $t("navbar.Academic") }}</a>
+            <a class="link-custom" @click="scrollToSection('work', $event)">{{ $t("navbar.Projects") }}</a>
             <a class="link-custom">{{ $t("navbar.Resume") }}</a>
             <LanguageConfig />
         </nav>
@@ -65,6 +65,22 @@ onUnmounted(() => {
     window.removeEventListener('resize', handleResize)
     window.document.getElementById('layout')?.removeEventListener('scroll', handleResize)
 })
+function scrollToSection(sectionId: string, event: Event) {
+    event.preventDefault()
+
+    const targetElement = document.getElementById(sectionId)
+    const layoutElement = document.getElementById('layout')
+
+    if (targetElement && layoutElement) {
+        const elementPosition = targetElement.offsetTop
+        const offsetPosition = elementPosition - 50 // 50px offset from top
+
+        layoutElement.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        })
+    }
+}
 </script>
 
 <style></style>
