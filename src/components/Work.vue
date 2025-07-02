@@ -1,6 +1,6 @@
 <template>
     <div ref="showCaseWork"
-        class="w-full flex flex-col items-center justify-center gap-4 p-5 bg-[#242424] text-beige-200 font-montserrat">
+        class="w-full flex flex-col items-center justify-center md:gap-4 p-5 bg-[#242424] text-beige-200 font-montserrat">
         <h1 class="self-center md:text-3xl text-xl  font-semibold ">{{ t('work.title') }}</h1>
         <Carousel ref="carousel" v-bind="carouselConfig" @mouseenter="stopAutoScroll" @mouseleave="startAutoScroll">
             <Slide v-for="img in images" :key="img.id">
@@ -8,11 +8,18 @@
                     <div class="absolute bg-gray-900 opacity-25 top-0 left-0 w-full h-full">
                     </div>
                     <div
-                        class="absolute  top-0 left-0 w-full h-full flex items-center justify-center p-10 font-montserrat font-semibold ">
-                        <h1 class="text-white text-shadow-lg text-center md:text-[16px] text-[12px]">{{
-                            t(`${img.lanKey}.description`) }}</h1>
+                        class="absolute  top-0 left-0 w-full h-full gap-[10px] flex flex-col items-center justify-center p-10 font-montserrat font-semibold ">
+                        <span :class="[
+                            'px-[12px] py-[5px] md:text-[24px] text-[14px]  text-shadow-lg text-white',
+                            img.label.style,
+                        ]">{{
+                            img.label.value
+                        }}</span>
+                        <h1 class="text-white text-shadow-lg text-center md:text-[16px] text-[12px]">
+                            {{ t(`${img.lanKey}.description`) }}
+                        </h1>
                     </div>
-                    <img :src="img.url" />
+                    <img class=" rounded-lg" :src="img.url" />
                 </div>
             </Slide>
 
@@ -39,7 +46,7 @@ const carouselConfig = {
     snapAlign: 'center',
     height: windowWidth.value < 768 ? '50vh' : '75vh',
     mouseWheel: false,
-    gap: 5,
+    gap: 50,
 }
 
 
@@ -50,10 +57,10 @@ import Swurvin from '@/assets/images/work/swurvin.png'
 
 
 const images = [
-    { id: 1, url: FindEatImg, lanKey: 'work.mywork.findEat' },
-    { id: 2, url: Mafal, lanKey: 'work.mywork.mafal' },
-    { id: 3, url: UniAssist, lanKey: 'work.mywork.uniAssist' },
-    { id: 4, url: Swurvin, lanKey: 'work.mywork.swurvin' }
+    { id: 1, url: FindEatImg, lanKey: 'work.mywork.findEat', label: { style: 'bg-[#089999]', value: 'FindEat' } },
+    { id: 2, url: Mafal, lanKey: 'work.mywork.mafal', label: { style: 'bg-[#4B5288]', value: 'Mafal Dental' } },
+    { id: 3, url: UniAssist, lanKey: 'work.mywork.uniAssist', label: { style: 'bg-[#9E51FB]', value: 'UniAssist' } },
+    { id: 4, url: Swurvin, lanKey: 'work.mywork.swurvin', label: { style: 'bg-[#4B5288]', value: 'Swurvin' } }
 ]
 defineOptions({
     name: 'WorkSection'
