@@ -58,8 +58,6 @@ const experiences = ref([
             'experience.myexperience.natixisDevOps.competences.2',
             'experience.myexperience.natixisDevOps.competences.3',
             'experience.myexperience.natixisDevOps.competences.4',
-            'experience.myexperience.natixisDevOps.competences.5',
-            'experience.myexperience.natixisDevOps.competences.6',
         ],
         current: false
     },
