@@ -21,9 +21,9 @@
         "title": "Expérience",
         "myexperience": {
             "docflowca": {
-                "titel": "Développeur Full Stack",
+                "titel": "DevSecOps",
                 "place": "Docflow - Télétravail – Montréal, Canada",
-                "date": "Mars 2023 - Présent",
+                "date": "Mars 2025 - Présent",
                 "competences": {
                     "1": "Création et maintenance d'applications web évolutives avec Vue 3 et Firebase (Firestore, Auth, Cloud Functions)",
                     "2": "Développement de la logique backend et des API avec Firebase Functions et gestion de la synchronisation des données en temps réel avec Firestore",
