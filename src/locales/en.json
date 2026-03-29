@@ -7,9 +7,9 @@
         "Projects": "Work",
         "Resume": "Resume"
     },
-    "introduction": "Student, Full Stack Developer, Web App Cybersecurity Enthusiast",
+    "introduction": "Full Stack Developer, Web App Cybersecurity Enthusiast",
     "about": {
-        "line1": "I'm Abdelmadjid, a student and full stack developer with a passion for web app cybersecurity.",
+        "line1": "I'm Abdelmadjid, a full stack developer with a passion for web app cybersecurity.",
         "line2": "I love exploring new technologies, programming and learning new things!",
         "line3": "Feel free to connect with me on my social media platforms or check out my projects on GitHub!"
     },
@@ -60,6 +60,11 @@
     "education": {
         "titel": "Academic Background",
         "myeducation": {
+            "IRS": {
+                "titel": "Master - Networks and systems - IRS",
+                "year": "Sep 2025 - Jun 2026",
+                "location": "University of Saint Quentin en Yvelines (UVSQ) - Versailles, France"
+            },
             "SSI": {
                 "titel": "Master 1 - Computer Systems Security - SSI",
                 "year": "Sep 2024 - Jun 2025",

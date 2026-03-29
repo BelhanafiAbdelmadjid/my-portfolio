@@ -14,7 +14,7 @@
             <a class="link-custom" @click="scrollToSection('experience', $event)">{{ $t("navbar.Experience") }}</a>
             <a class="link-custom" @click="scrollToSection('education', $event)">{{ $t("navbar.Academic") }}</a>
             <a class="link-custom" @click="scrollToSection('work', $event)">{{ $t("navbar.Projects") }}</a>
-            <a class="link-custom">{{ $t("navbar.Resume") }}</a>
+            <!-- <a class="link-custom">{{ $t("navbar.Resume") }}</a> -->
             <LanguageConfig />
         </nav>
         <nav v-if="isMobile" :class="[
@@ -28,7 +28,7 @@
                 <MyInitial />
             </div>
 
-            <a class="link-custom">{{ $t("navbar.Resume") }}</a>
+            <!-- <a class="link-custom">{{ $t("navbar.Resume") }}</a> -->
             <LanguageConfig />
         </nav>
 

@@ -26,15 +26,15 @@ export interface EducationData {
 }
 
 const educationData = [
-    // {
-    //     key: "IRS",
-    //     current: true,
-    //     grade: false,
-    //     rank: false
-    // },
+    {
+        key: "IRS",
+        current: true,
+        grade: false,
+        rank: false
+    },
     {
         key: "SSI",
-        current: true,
+        current: false,
         grade: false,
         rank: false
     },
