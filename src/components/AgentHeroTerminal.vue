@@ -98,11 +98,11 @@ const agentBootLines: Record<string, BootLine[]> = {
 
 const bootLines = ref<BootLine[]>([])
 const visible = ref<boolean[]>([])
-const timeouts = ref<ReturnType<typeof setTimeout>[]>([])
+let timeouts: ReturnType<typeof setTimeout>[] = []
 
 function clearTimeouts() {
-  timeouts.value.forEach(clearTimeout)
-  timeouts.value = []
+  timeouts.forEach(clearTimeout)
+  timeouts = []
 }
 
 function playBootSequence() {
@@ -119,7 +119,7 @@ function playBootSequence() {
     const id = setTimeout(() => {
       visible.value[i] = true
     }, 400 + i * 320)
-    timeouts.value.push(id)
+    timeouts.push(id)
   })
 }
 

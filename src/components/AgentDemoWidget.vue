@@ -64,11 +64,11 @@ const props = defineProps<{ agent: Agent }>()
 const activeIndex = ref<number | null>(null)
 const activeSteps = ref<AgentSample['steps']>([])
 const visibleCount = ref(0)
-const pendingTimeouts = ref<ReturnType<typeof setTimeout>[]>([])
+let pendingTimeouts: ReturnType<typeof setTimeout>[] = []
 
 function clearPending() {
-  pendingTimeouts.value.forEach(clearTimeout)
-  pendingTimeouts.value = []
+  pendingTimeouts.forEach(clearTimeout)
+  pendingTimeouts = []
 }
 
 function runDemo(index: number) {
@@ -83,7 +83,7 @@ function runDemo(index: number) {
     const id = setTimeout(() => {
       visibleCount.value = i + 1
     }, i * 200)
-    pendingTimeouts.value.push(id)
+    pendingTimeouts.push(id)
   })
 }
 
