@@ -1,42 +1,54 @@
 {
     "navbar": {
-        "AboutMe": "About Me",
+        "AboutMe": "About",
         "Skills": "Skills",
         "Experience": "Experience",
         "Academic": "Education",
         "Projects": "Work",
+        "Agents": "AI Agents",
         "Resume": "Resume"
     },
-    "introduction": "Student, Full Stack Developer, Web App Cybersecurity Enthusiast",
+    "introduction": "DevOps & AI Solution Engineer · Freelancer · Paris, France",
     "about": {
-        "line1": "I'm Abdelmadjid, a student and full stack developer with a passion for web app cybersecurity.",
-        "line2": "I love exploring new technologies, programming and learning new things!",
-        "line3": "Feel free to connect with me on my social media platforms or check out my projects on GitHub!"
+        "line1": "Freelance DevOps & AI Solution Engineer based in Paris, working with startups and teams to build, automate, and scale.",
+        "line2": "Skilled in CI/CD pipelines, Docker, AI integrations, and cloud deployments — currently engineering at Brickcode."
     },
     "contact": {
-        "title": "Contact Me",
-        "description": "Ready to bring your ideas to reality ?"
+        "title": "Let's work together",
+        "description": "Ready to bring your ideas to reality?",
+        "cta": "Say Hello"
     },
     "experience": {
         "title": "Experience",
         "myexperience": {
-            "docflowca": {
-                "titel": "DevSecOps",
-                "place": "Docflow - Remote - Montreal, Canada",
-                "date": "March 2025 - Present",
+            "brickcode": {
+                "titel": "DevOps & AI Solution Engineer",
+                "place": "Brickcode · Paris, France",
+                "date": "December 2025 — Present",
                 "competences": {
-                    "1": "Built and maintained scalable web applications using Vue 3 and Firebase (Firestore, Auth, Cloud Functions)",
+                    "1": "Built and maintained the internal AI library used across the platform",
+                    "2": "Handled deployment workflows and CI/CD pipelines using GitHub Actions",
+                    "3": "Managed Docker Compose configurations for multi-service orchestration",
+                    "4": "Conducted code reviews on the internal AI library to ensure quality and consistency"
+                }
+            },
+            "docflowca": {
+                "titel": "DevOps",
+                "place": "Docflow · Remote · Montreal, Canada",
+                "date": "March 2025 — Present",
+                "competences": {
+                    "1": "Built and maintained scalable web applications using Vue 3 and Firebase (Firestore, Auth, Cloud Functions)",
                     "2": "Developed backend logic and APIs with Firebase Functions and handled real-time data syncing with Firestore",
                     "3": "Designed responsive UIs and component-based architecture for seamless user experience",
-                    "4": "Implemented CI/CD pipelines using GitHub Actions with Firebase Hosting for automated deployments",
-                    "5": "Collaborated with remote teams in an Agile/Scrum environment to deliver iterative product updates",
-                    "6": "Ensured application security, performance, and scalability to support business growth"
+                    "4": "Implemented CI/CD pipelines using GitHub Actions with Firebase Hosting for automated deployments",
+                    "5": "Collaborated with remote teams in an Agile/Scrum environment to deliver iterative product updates",
+                    "6": "Ensured application security, performance, and scalability to support business growth"
                 }
             },
             "natixisDevOps": {
                 "titel": "IT Production, DevOps & Software Apprentice",
-                "place": "Natixis, BPCE Group – Algiers, Algeria",
-                "date": "March 2023 – October 2025",
+                "place": "Natixis, BPCE Group · Algiers, Algeria",
+                "date": "March 2023 — October 2025",
                 "competences": {
                     "1": "Assisted in maintaining and deploying production applications in a Linux-based environment",
                     "2": "Built automation scripts and internal tools to streamline routine IT and support tasks",
@@ -45,9 +57,9 @@
                 }
             },
             "natixisHelpDesk": {
-                "titel": "IT Helpdesk Support Specialist – Apprentice",
-                "place": "Natixis, BPCE Group – Algiers, Algeria",
-                "date": "April 2022 – March 2023",
+                "titel": "IT Helpdesk Support Specialist — Apprentice",
+                "place": "Natixis, BPCE Group · Algiers, Algeria",
+                "date": "April 2022 — March 2023",
                 "competences": {
                     "1": "Provided first-line IT support for internal employees, troubleshooting hardware and software issues",
                     "2": "Managed service requests and incidents via ticketing system, ensuring timely resolution",
@@ -60,17 +72,34 @@
     "education": {
         "titel": "Academic Background",
         "myeducation": {
+            "UVSQ": {
+                "titel": "Master — Ingénierie des Réseaux et Systèmes",
+                "year": "Sep 2025 — Jun 2027",
+                "location": "Paris Saclay UVSQ · Paris, France"
+            },
             "SSI": {
-                "titel": "Master 1 - Computer Systems Security - SSI",
-                "year": "Sep 2024 - Jun 2025",
-                "location": "University of Science and Technology Houari Boumediene (USTHB) - Algiers, Algeria"
+                "titel": "Master 1 — Computer Systems Security (SSI)",
+                "year": "Sep 2024 — Jun 2025",
+                "location": "USTHB — Algiers, Algeria"
             },
             "ACAD": {
-                "titel": "Bachelor's Degree - Academic Computer Science - ACAD",
-                "year": "Sep 2021 - Jun 2024",
-                "location": "University of Science and Technology Houari Boumediene (USTHB) - Algiers, Algeria",
-                "rank": "Ranking: top 10% of the class",
+                "titel": "Bachelor's Degree — Academic Computer Science (ACAD)",
+                "year": "Sep 2021 — Jun 2024",
+                "location": "USTHB — Algiers, Algeria",
+                "rank": "Top 10% of the class",
                 "note": "Grade: 13.07/20"
+            },
+            "BAC-2": {
+                "titel": "Baccalauréat — Experimental Sciences",
+                "year": "2021",
+                "location": "Algiers, Algeria",
+                "note": "Grade: 15.83/20"
+            },
+            "BAC-1": {
+                "titel": "Baccalauréat — Experimental Sciences",
+                "year": "2020",
+                "location": "Algiers, Algeria",
+                "note": "Grade: 14.76/20"
             }
         }
     },
@@ -79,68 +108,264 @@
         "myskills": {
             "react": {
                 "label": "React",
-                "description": "+1 years experience working on multiple mobile apps"
+                "description": "+1 year on multiple mobile apps"
             },
             "nuxtjs": {
                 "label": "Nuxt.js",
-                "description": "+2 years experience working on projects mainly dashboards"
+                "description": "+2 years on dashboards & platforms"
             },
             "tailwindcss": {
                 "label": "Tailwind CSS",
-                "description": "+2 years experience - a must use in every project"
+                "description": "+2 years — a must in every project"
             },
             "python": {
                 "label": "Python",
-                "description": "+4 years experience - my first programming language"
+                "description": "+4 years — my first language"
             },
             "laravel": {
                 "label": "Laravel",
-                "description": "Made some easy personal projects with it"
+                "description": "Personal projects & APIs"
             },
             "vuejs": {
                 "label": "Vue.js",
-                "description": "+3 years experience - the framework I know the best"
+                "description": "+3 years — my strongest framework"
             },
             "firebase": {
                 "label": "Firebase",
-                "description": "+1 year experience working on real projects"
+                "description": "+1 year on real-world projects"
             },
             "docker": {
                 "label": "Docker",
-                "description": "+2 years experience with containerization"
+                "description": "+2 years with containerization"
             },
             "flask": {
                 "label": "Flask",
-                "description": "+3 years experience building web applications"
+                "description": "+3 years building web apps"
             },
             "django": {
                 "label": "Django",
-                "description": "+1 year experience building personal projects"
+                "description": "+1 year on personal projects"
             },
             "expressjs": {
                 "label": "Express.js",
-                "description": "+1 year experience working on real projects"
+                "description": "+1 year on real-world projects"
             },
             "linux": {
                 "label": "Linux",
-                "description": "Familiar with Linux systems and command line"
+                "description": "Systems & command line proficiency"
             }
         }
     },
     "work": {
         "title": "My Work",
+        "subtitle": "A selection of projects I've built",
+        "viewCase": "View Case Study",
+        "backToPortfolio": "Back to Portfolio",
+        "overview": "Overview",
+        "projectDetails": "Project Details",
+        "keyFeatures": "Key Features",
+        "roleLabel": "Role",
+        "yearLabel": "Year",
+        "stackLabel": "Tech Stack",
+        "prevProject": "Previous Project",
+        "nextProject": "Next Project",
         "mywork": {
             "findEat": {
-                "description": "I developed the FindEat (Canada) admin dashboard with Nuxt, enabling admins to manage clients, restaurants, and their certifications."
+                "description": "Admin dashboard for FindEat (Canada) — enabling admins to manage clients, restaurants, and certifications."
             },
             "mafal": {
-                "description": "I built the Mafal Dental landing page with Nuxt for a dentist to increase her online visibility."
+                "description": "Landing page for Mafal Dental clinic — built to increase online visibility and drive patient appointments."
             },
             "uniAssist": {
-                "description": "UniAssist – E-learning Platform; I built UniAssist to help Algerian students succeed in their  university studies. It offers courses, videos, exercises, comments, and XP rewards. Built with Nuxt.js, Django REST, and React Native."
+                "description": "Full-stack e-learning platform helping Algerian students succeed — courses, videos, exercises, and XP rewards."
             },
             "swurvin": {
-                "description": "Swurvin - Built a React Native app with Node.js and PostgreSQL to connect clients with tow truck drivers, featuring live tracking, accident alerts, Stripe payments, and driver subscriptions."
+                "description": "Mobile app connecting clients with tow truck drivers — live tracking, Stripe payments, and driver subscriptions."
+            }
+        }
+    },
+    "projects": {
+        "findeat": {
+            "name": "FindEat",
+            "subtitle": "Admin Dashboard",
+            "category": "Web Application",
+            "role": "Full Stack Developer",
+            "overview": "Developed the comprehensive admin dashboard for FindEat, a Canadian food discovery and certification platform. The dashboard empowers admins to manage the entire platform ecosystem — from client onboarding to restaurant certifications — through an intuitive, real-time interface built with Nuxt.js and Firebase.",
+            "features": {
+                "1": "Client and restaurant management with full CRUD operations",
+                "2": "Certification lifecycle tracking and approval workflows",
+                "3": "Real-time data synchronization via Firebase Firestore",
+                "4": "Role-based access control for admin and sub-admin users",
+                "5": "Responsive design optimized for desktop operations"
+            }
+        },
+        "mafal": {
+            "name": "Mafal Dental",
+            "subtitle": "Clinic Landing Page",
+            "category": "Landing Page",
+            "role": "Frontend Developer",
+            "overview": "Designed and built a modern, conversion-focused landing page for Mafal Dental, a dental clinic looking to establish a strong online presence. The page showcases services, the team, and patient testimonials — optimized for SEO and performance to drive organic traffic and patient bookings.",
+            "features": {
+                "1": "Clean, professional design tailored to the medical industry",
+                "2": "SEO-optimized structure and metadata for organic visibility",
+                "3": "Responsive across all devices from mobile to desktop",
+                "4": "Service showcase with smooth scroll animations",
+                "5": "Contact form and appointment booking section"
+            }
+        },
+        "uniassist": {
+            "name": "UniAssist",
+            "subtitle": "E-Learning Platform",
+            "category": "Full Stack Platform",
+            "role": "Full Stack Developer",
+            "overview": "Built UniAssist from the ground up to help Algerian university students succeed academically. The platform provides structured courses, video lessons, exercises, a comments system, and a gamified XP rewards system to keep students engaged. The backend is a Django REST API, the web app is Nuxt.js, and the mobile app is React Native.",
+            "features": {
+                "1": "Structured course library with video lessons and exercises",
+                "2": "Gamified XP and achievement system to boost engagement",
+                "3": "Comment threads and community discussions per lesson",
+                "4": "Cross-platform: web (Nuxt.js) and mobile (React Native)",
+                "5": "RESTful API built with Django and PostgreSQL"
+            }
+        },
+        "swurvin": {
+            "name": "Swurvin",
+            "subtitle": "Roadside Assistance App",
+            "category": "Mobile Application",
+            "role": "Full Stack Developer",
+            "overview": "Built Swurvin, a React Native mobile application that connects drivers in distress with nearby tow truck operators. The platform features real-time GPS tracking, in-app payments via Stripe, push notifications for accident alerts, and a subscription model for professional drivers.",
+            "features": {
+                "1": "Real-time GPS tracking for both drivers and operators",
+                "2": "In-app Stripe payments with secure transaction handling",
+                "3": "Push notifications for accident and emergency alerts",
+                "4": "Driver subscription tiers with feature gating",
+                "5": "Node.js REST API with PostgreSQL database"
+            }
+        }
+    },
+    "agents": {
+        "title": "AI Agents",
+        "subtitle": "Intelligent automation for the Brickcode platform",
+        "viewDetails": "View Details",
+        "backToPortfolio": "Back to Portfolio",
+        "input": "Input",
+        "output": "Output",
+        "overview": "Overview",
+        "howItWorks": "How It Works",
+        "keyCapabilities": "Key Capabilities",
+        "toolsUsed": "Tools",
+        "projectContext": "Project Context",
+        "prevAgent": "Previous Agent",
+        "nextAgent": "Next Agent",
+        "items": {
+            "usage-agent": {
+                "name": "Usage Agent",
+                "subtitle": "RAG Help Assistant",
+                "category": "Conversational AI",
+                "overview": "A RAG-powered conversational agent that helps end-users navigate Brickcode — a modular multi-tenant SaaS platform. The agent answers product questions, guides users to the right screens and menus, and explains features without technical jargon. Built to reduce support burden by grounding every answer in the actual knowledge base: specs, UI flows, domain documentation.",
+                "steps": {
+                    "1": "Receives a user question in natural language (French-first)",
+                    "2": "Searches knowledge base with multi-step RAG (specs, domain, backend, frontend collections)",
+                    "3": "Constructs a contextual, jargon-free answer with source grounding",
+                    "4": "Returns a guided response pointing to the right screen or procedure"
+                },
+                "capabilities": {
+                    "1": "Multi-collection RAG search across specs, domain, backend and frontend documents",
+                    "2": "French-first responses with clear, non-technical language",
+                    "3": "Guided navigation answers pointing to exact UI locations",
+                    "4": "Context-aware follow-ups using LangChain agent memory",
+                    "5": "Pluggable knowledge base via Chroma DB vector embeddings"
+                },
+                "tools": "search_knowledge · search_specs · search_domain · search_backend · search_frontend"
+            },
+            "spec-agent": {
+                "name": "Spec Agent",
+                "subtitle": "Auto Spec Generator",
+                "category": "Code Generation",
+                "overview": "An agentic system that transforms a raw business need into two structured markdown specification files: a Domain model (entities, relationships, reused concepts) and a UserStories document (workflows, user scenarios). The agent searches the existing Brickcode knowledge base to reuse consistent terminology and patterns — eliminating manual spec writing and ensuring every new feature aligns with the established architecture.",
+                "steps": {
+                    "1": "Takes a business need description as free-form text input",
+                    "2": "Searches existing specs for similar feature structures",
+                    "3": "Searches domain models for reusable entities and relationships",
+                    "4": "Searches backend and frontend patterns for architectural conventions",
+                    "5": "Generates Domain.md with entity definitions and UserStories.md with workflows",
+                    "6": "Writes both markdown files to the target directory"
+                },
+                "capabilities": {
+                    "1": "Generates Domain.md with entities, attributes and relationships",
+                    "2": "Generates UserStories.md with structured scenarios and workflows",
+                    "3": "Reuses existing terminology from the knowledge base for consistency",
+                    "4": "Multi-step RAG retrieval across four document collections",
+                    "5": "Write-to-disk capability via markdown file tool"
+                },
+                "tools": "search_specs · search_domain · search_backend · search_frontend · write_markdown_files"
+            },
+            "sql-agent": {
+                "name": "SQL Agent",
+                "subtitle": "Natural Language Data Queries",
+                "category": "Data Intelligence",
+                "overview": "A safety-first agent that allows non-technical team members to query live business data using plain English or French. The agent inspects the database schema before every query, writes read-only SQL, executes it, and returns the results as a clear natural language answer. Strict guardrails enforce that only SELECT and WITH statements are executed — no mutations ever reach the database.",
+                "steps": {
+                    "1": "Receives a natural language question about business data",
+                    "2": "Inspects the full database schema to understand available tables and columns",
+                    "3": "Writes a targeted read-only SQL query (SELECT or WITH only)",
+                    "4": "Executes the query against the database (SQLite or MariaDB)",
+                    "5": "Translates the result rows into a clear natural language answer"
+                },
+                "capabilities": {
+                    "1": "Schema-first workflow: always inspects structure before writing SQL",
+                    "2": "Read-only enforcement: INSERT, UPDATE, DELETE, DROP are blocked at system prompt level",
+                    "3": "Supports both SQLite and MariaDB backends via SqlBackend interface",
+                    "4": "Returns structured results with row count and column context",
+                    "5": "Handles multi-table questions with JOIN and aggregation"
+                },
+                "tools": "get_database_schema · execute_read_only_sql"
+            },
+            "orchestrator-agent": {
+                "name": "Orchestrator Agent",
+                "subtitle": "Intelligent Query Router",
+                "category": "Multi-Agent System",
+                "overview": "A high-level routing agent that serves as a single entry point for all platform questions. It classifies the incoming question and delegates to the appropriate specialist: the SQL Agent for data and statistics queries, and the Usage Agent for product navigation and procedural help. Users never need to know which agent to call — the Orchestrator decides and returns a unified answer in French.",
+                "steps": {
+                    "1": "Receives any user question as input",
+                    "2": "Classifies the question: data/statistics vs. product navigation/procedure",
+                    "3": "Delegates to SQL Agent for counts, reports, or database content questions",
+                    "4": "Delegates to Usage Agent for how-to, navigation, and feature questions",
+                    "5": "Returns a unified, contextual answer in French"
+                },
+                "capabilities": {
+                    "1": "Single entry point for both data and product questions",
+                    "2": "Intelligent routing based on question semantics",
+                    "3": "Wraps specialist agents as callable tools",
+                    "4": "French-first unified response format",
+                    "5": "Extensible: new agents can be added as additional tools"
+                },
+                "tools": "sql_agent · usage_agent"
+            },
+            "brick-generator": {
+                "name": "Brick Generator",
+                "subtitle": "Full-Stack Code Generation Agent",
+                "category": "Code Generation",
+                "overview": "The most complex agent in the suite. Given a Domain spec and UserStories file, it autonomously generates a complete production-ready Brickcode brick — a full-stack module consisting of NestJS backend files and Nuxt/Vue frontend files — following the destination brain's exact architectural conventions. Sub-agents handle backend and frontend generation separately, then all files are written, integrated into the monorepo, and validated automatically.",
+                "steps": {
+                    "1": "Reads the Domain.md and UserStories.md spec files",
+                    "2": "Reads the destination brain's structure and architectural conventions",
+                    "3": "Searches inspiration brains for backend patterns (NestJS modules, DTOs, services)",
+                    "4": "Sub-agent generates all backend files following found patterns",
+                    "5": "Searches inspiration brains for frontend patterns (Nuxt pages, components, composables)",
+                    "6": "Sub-agent generates all frontend files following found patterns",
+                    "7": "Merges backend + frontend files and writes them to the destination brain",
+                    "8": "Runs integration to register the new brick in parent configs",
+                    "9": "Validates all required files exist and fixes any missing ones"
+                },
+                "capabilities": {
+                    "1": "Generates complete NestJS modules: controllers, services, DTOs, entities, guards",
+                    "2": "Generates complete Nuxt apps: pages, components, composables, stores, i18n",
+                    "3": "Pattern-aware generation via RAG search on inspiration brains",
+                    "4": "Automatic monorepo integration (registers brick in all parent configs)",
+                    "5": "Self-validating: detects and fixes missing files after generation",
+                    "6": "Sub-agent architecture separates concerns (backend vs. frontend generation)"
+                },
+                "tools": "read_file · read_brain_context · search_brain_* · generate_backend_files · generate_frontend_files · write_files · integrate_brick · validate_integration"
             }
         }
     },
