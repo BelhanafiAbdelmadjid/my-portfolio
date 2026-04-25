@@ -57,7 +57,7 @@
             </div>
 
             <!-- Right: animated terminal -->
-            <AgentHeroTerminal :agent="agent" />
+            <AgentHeroTerminal :agent="agent!" />
           </div>
         </div>
       </div>
@@ -113,7 +113,7 @@
           <!-- Sidebar -->
           <div class="space-y-5 md:sticky md:top-24 md:self-start">
             <!-- Demo widget -->
-            <AgentDemoWidget :agent="agent" />
+            <AgentDemoWidget :agent="agent!" />
 
             <!-- Meta -->
             <div class="card-base rounded-xl p-6 space-y-4">
@@ -182,7 +182,7 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, onBeforeUnmount } from 'vue'
+import { computed } from 'vue'
 import { useRoute, RouterLink } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { getAgentById, getAdjacentAgents } from '@/data/agents'
@@ -212,8 +212,6 @@ const capCount = computed(() => {
 })
 
 // v-reveal: scroll-triggered entrance animation
-const observers: IntersectionObserver[] = []
-
 const vReveal = {
   mounted(el: HTMLElement) {
     el.style.opacity = '0'
@@ -230,9 +228,10 @@ const vReveal = {
       { threshold: 0.1 }
     )
     observer.observe(el)
-    observers.push(observer)
+    ;(el as any).__revealObserver = observer
+  },
+  unmounted(el: HTMLElement) {
+    ;(el as any).__revealObserver?.disconnect()
   },
 }
-
-onBeforeUnmount(() => observers.forEach(o => o.disconnect()))
 </script>
