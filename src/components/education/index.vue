@@ -1,63 +1,42 @@
 <template>
-    <div
-        class="w-full grid grid-cols-[0px,1fr,0px] md:grid-cols-[25%,1fr,25%] items-center justify-start gap-[40px] py-[40px]">
-        <h1 class="md:text-3xl text-xl font-semibold text-gray-800 mb-[50px] col-start-2 col-end-3 text-center">
-            {{
-                t('education.titel')
-            }}
-        </h1>
-        <Education class="col-start-2 col-end-3" v-for="education in educationData" :key="education.key"
-            :education-data="education" />
+  <section id="education" class="py-28 px-6 bg-panel">
+    <div class="max-w-3xl mx-auto">
+      <div class="section-divider">
+        <span class="section-eyebrow">05</span>
+        <h2 class="section-heading">{{ t('education.titel') }}</h2>
+      </div>
+
+      <div class="space-y-4">
+        <Education
+          v-for="edu in educationData"
+          :key="edu.key"
+          :education-data="edu"
+        />
+      </div>
     </div>
+  </section>
 </template>
 
 <script lang="ts" setup>
-defineOptions({ name: 'EducationIndex' });
+import { useI18n } from 'vue-i18n'
+import Education from './Education.vue'
 
-import { useI18n } from 'vue-i18n';
-import Education from './Education.vue';
-const { t } = useI18n();
+defineOptions({ name: 'EducationIndex' })
+
+const { t } = useI18n()
 
 export interface EducationData {
-    key: string;
-    current: boolean;
-    grade: boolean;
-    rank: boolean;
+  key: string
+  current: boolean
+  grade: boolean
+  rank: boolean
 }
 
-const educationData = [
-    // {
-    //     key: "IRS",
-    //     current: true,
-    //     grade: false,
-    //     rank: false
-    // },
-    {
-        key: "SSI",
-        current: true,
-        grade: false,
-        rank: false
-    },
-    {
-        key: "ACAD",
-        current: false,
-        grade: true,
-        rank: true
-    },
-    {
-        key: "BAC-2",
-        current: false,
-        grade: true,
-        rank: false
-    },
-    {
-        key: "BAC-1",
-        current: false,
-        grade: true,
-        rank: false
-    },
-] as EducationData[];
-
+const educationData: EducationData[] = [
+  { key: 'UVSQ', current: true, grade: false, rank: false },
+  { key: 'SSI', current: false, grade: false, rank: false },
+  { key: 'ACAD', current: false, grade: true, rank: true },
+  { key: 'BAC-2', current: false, grade: true, rank: false },
+  { key: 'BAC-1', current: false, grade: true, rank: false },
+]
 </script>
-
-<style></style>
