@@ -1,58 +1,70 @@
 {
     "navbar": {
-        "AboutMe": "À propos de moi",
+        "AboutMe": "À propos",
         "Skills": "Compétences",
         "Experience": "Expérience",
-        "Academic": "Académique",
+        "Academic": "Formation",
         "Projects": "Projets",
+        "Agents": "Agents IA",
         "Resume": "CV"
     },
-    "introduction": "Étudiant, Développeur Full Stack, Passionné de cybersécurité des applications web",
+    "introduction": "Ingénieur DevOps & Solutions IA · Freelance · Paris, France",
     "about": {
-        "line1": "Je m'appelle Abdelmadjid, étudiant et développeur full stack passionné par la cybersécurité des applications web.",
-        "line2": "J'adore explorer de nouvelles technologies, programmer et apprendre de nouvelles choses !",
-        "line3": "N'hésitez pas à me contacter sur mes réseaux sociaux ou à découvrir mes projets sur GitHub !"
+        "line1": "Ingénieur DevOps & Solutions IA freelance basé à Paris, accompagnant startups et équipes pour construire, automatiser et scaler.",
+        "line2": "Expert en pipelines CI/CD, Docker, intégrations IA et déploiements cloud — actuellement ingénieur chez Brickcode."
     },
     "contact": {
-        "title": "Contactez-moi",
-        "description": "Prêt à concrétiser vos idées ?"
+        "title": "Travaillons ensemble",
+        "description": "Prêt à concrétiser vos idées ?",
+        "cta": "Me contacter"
     },
     "experience": {
         "title": "Expérience",
         "myexperience": {
-            "docflowca": {
-                "titel": "DevSecOps",
-                "place": "Docflow - Télétravail – Montréal, Canada",
-                "date": "Mars 2025 - Présent",
+            "brickcode": {
+                "titel": "Ingénieur DevOps & Solutions IA",
+                "place": "Brickcode · Paris, France",
+                "date": "Décembre 2025 — Présent",
                 "competences": {
-                    "1": "Création et maintenance d'applications web évolutives avec Vue 3 et Firebase (Firestore, Auth, Cloud Functions)",
-                    "2": "Développement de la logique backend et des API avec Firebase Functions et gestion de la synchronisation des données en temps réel avec Firestore",
-                    "3": "Conception d'interfaces utilisateur réactives et d'une architecture basée sur les composants pour une expérience utilisateur fluide",
-                    "4": "Mise en place de pipelines CI/CD avec GitHub Actions et Firebase Hosting pour des déploiements automatisés",
-                    "5": "Collaboration avec des équipes à distance dans un environnement Agile/Scrum pour livrer des mises à jour itératives du produit",
-                    "6": "Garantie de la sécurité, des performances et de la scalabilité de l'application pour accompagner la croissance de l'entreprise"
+                    "1": "Développement et maintenance de la bibliothèque IA interne utilisée sur toute la plateforme",
+                    "2": "Gestion des workflows de déploiement et pipelines CI/CD avec GitHub Actions",
+                    "3": "Configuration Docker Compose pour l'orchestration multi-services",
+                    "4": "Revue de code sur la bibliothèque IA interne pour garantir qualité et cohérence"
+                }
+            },
+            "docflowca": {
+                "titel": "DevOps",
+                "place": "Docflow · Télétravail · Montréal, Canada",
+                "date": "Mars 2025 — Présent",
+                "competences": {
+                    "1": "Création et maintenance d'applications web évolutives avec Vue 3 et Firebase (Firestore, Auth, Cloud Functions)",
+                    "2": "Développement de la logique backend et des API avec Firebase Functions et gestion des données en temps réel avec Firestore",
+                    "3": "Conception d'interfaces utilisateur réactives et d'une architecture basée sur les composants",
+                    "4": "Mise en place de pipelines CI/CD avec GitHub Actions et Firebase Hosting pour des déploiements automatisés",
+                    "5": "Collaboration avec des équipes à distance dans un environnement Agile/Scrum",
+                    "6": "Garantie de la sécurité, des performances et de la scalabilité de l'application"
                 }
             },
             "natixisDevOps": {
                 "titel": "Apprenti IT Production, DevOps & Logiciel",
-                "place": "Natixis, Groupe BPCE – Alger, Algérie",
-                "date": "Mars 2023 – Octobre 2025",
+                "place": "Natixis, Groupe BPCE · Alger, Algérie",
+                "date": "Mars 2023 — Octobre 2025",
                 "competences": {
-                    "1": "A assisté à la maintenance et au déploiement des applications de production dans un environnement basé sur Linux",
-                    "2": "Création de scripts d'automatisation et d'outils internes pour optimiser les tâches informatiques et de support courantes",
+                    "1": "Maintenance et déploiement d'applications de production dans un environnement Linux",
+                    "2": "Création de scripts d'automatisation et d'outils internes pour optimiser les tâches IT",
                     "3": "Utilisation de Docker pour la conteneurisation et la gestion des environnements applicatifs",
-                    "4": "Surveillance et support des performances des applications en environnement de production"
+                    "4": "Surveillance et support des performances des applications en production"
                 }
             },
             "natixisHelpDesk": {
-                "titel": "Spécialiste Support IT Helpdesk – Apprenti",
-                "place": "Natixis, Groupe BPCE – Alger, Algérie",
-                "date": "Avril 2022 – Mars 2023",
+                "titel": "Spécialiste Support IT Helpdesk — Apprenti",
+                "place": "Natixis, Groupe BPCE · Alger, Algérie",
+                "date": "Avril 2022 — Mars 2023",
                 "competences": {
-                    "1": "Fourniture du support informatique de premier niveau aux employés internes, résolution des problèmes matériels et logiciels",
-                    "2": "Gestion des demandes de service et des incidents via un système de tickets, en assurant une résolution rapide",
-                    "3": "Collaboration avec les équipes IT seniors pour l’escalade des problèmes techniques complexes",
-                    "4": "Support des environnements Windows avec Active Directory pour la gestion des comptes utilisateurs et SCCM pour le déploiement des logiciels et la maintenance des postes de travail"
+                    "1": "Support informatique de premier niveau, résolution des problèmes matériels et logiciels",
+                    "2": "Gestion des demandes via un système de tickets pour une résolution rapide",
+                    "3": "Collaboration avec les équipes IT seniors pour l'escalade des problèmes complexes",
+                    "4": "Support des environnements Windows avec Active Directory et SCCM"
                 }
             }
         }
@@ -60,26 +72,31 @@
     "education": {
         "titel": "Parcours Académique",
         "myeducation": {
+            "UVSQ": {
+                "titel": "Master — Ingénierie des Réseaux et Systèmes",
+                "year": "Sep 2025 — Juin 2027",
+                "location": "Paris Saclay UVSQ · Paris, France"
+            },
             "SSI": {
-                "titel": "Master 1 - Sécurité des systèmes informatique - SSI",
-                "year": "Sep 2024 - Juin 2025",
-                "location": "Université des sciences et de la technologie Houari Boumediene (USTHB) - Alger, Algérie"
+                "titel": "Master 1 — Sécurité des Systèmes Informatiques (SSI)",
+                "year": "Sep 2024 — Juin 2025",
+                "location": "USTHB — Alger, Algérie"
             },
             "ACAD": {
-                "titel": "Licence - Informatique académique - ACAD",
-                "year": "Sep 2024 - Juin 2025",
-                "location": "Université des sciences et de la technologie Houari Boumediene (USTHB) - Alger, Algérie",
-                "rank": "Classement : top 10% de la promotion",
+                "titel": "Licence — Informatique Académique (ACAD)",
+                "year": "Sep 2021 — Juin 2024",
+                "location": "USTHB — Alger, Algérie",
+                "rank": "Top 10% de la promotion",
                 "note": "Note : 13.07/20"
             },
             "BAC-2": {
-                "titel": "Bacalauréat - Sciences Expérimentales - BAC",
+                "titel": "Baccalauréat — Sciences Expérimentales",
                 "year": "2021",
                 "location": "Alger, Algérie",
                 "note": "Note : 15.83/20"
             },
             "BAC-1": {
-                "titel": "Bacalauréat - Sciences Expérimentales - BAC",
+                "titel": "Baccalauréat — Sciences Expérimentales",
                 "year": "2020",
                 "location": "Alger, Algérie",
                 "note": "Note : 14.76/20"
@@ -91,68 +108,199 @@
         "myskills": {
             "react": {
                 "label": "React",
-                "description": "+1 an d'expérience travaillant sur plusieurs applications mobiles"
+                "description": "+1 an sur applications mobiles"
             },
             "nuxtjs": {
                 "label": "Nuxt.js",
-                "description": "+2 ans d'expérience travaillant sur des projets principalement des tableaux de bord"
+                "description": "+2 ans sur dashboards & plateformes"
             },
             "tailwindcss": {
                 "label": "Tailwind CSS",
-                "description": "+2 ans d'expérience - un incontournable dans chaque projet"
+                "description": "+2 ans — incontournable dans chaque projet"
             },
             "python": {
                 "label": "Python",
-                "description": "+4 ans d'expérience - mon premier langage de programmation"
+                "description": "+4 ans — mon premier langage"
             },
             "laravel": {
                 "label": "Laravel",
-                "description": "Réalisé quelques projets personnels simples avec"
+                "description": "Projets personnels & APIs"
             },
             "vuejs": {
                 "label": "Vue.js",
-                "description": "+3 ans d'expérience - le framework que je maîtrise le mieux"
+                "description": "+3 ans — mon framework principal"
             },
             "firebase": {
                 "label": "Firebase",
-                "description": "+1 an d'expérience travaillant sur des projets réels"
+                "description": "+1 an sur projets réels"
             },
             "docker": {
                 "label": "Docker",
-                "description": "+2 ans d'expérience avec la conteneurisation"
+                "description": "+2 ans avec la conteneurisation"
             },
             "flask": {
                 "label": "Flask",
-                "description": "+3 ans d'expérience construisant des applications web"
+                "description": "+3 ans en développement web"
             },
             "django": {
                 "label": "Django",
-                "description": "+1 an d'expérience construisant des projets personnels"
+                "description": "+1 an sur projets personnels"
             },
             "expressjs": {
                 "label": "Express.js",
-                "description": "+1 an d'expérience travaillant sur des projets réels"
+                "description": "+1 an sur projets réels"
             },
             "linux": {
                 "label": "Linux",
-                "description": "Familier avec les systèmes Linux et la ligne de commande"
+                "description": "Systèmes & ligne de commande"
             }
         }
     },
     "work": {
         "title": "Mon Travail",
+        "subtitle": "Une sélection de projets que j'ai construits",
+        "viewCase": "Voir l'étude de cas",
+        "backToPortfolio": "Retour au Portfolio",
+        "overview": "Aperçu",
+        "projectDetails": "Détails du projet",
+        "keyFeatures": "Fonctionnalités clés",
+        "roleLabel": "Rôle",
+        "yearLabel": "Année",
+        "stackLabel": "Stack Technique",
+        "prevProject": "Projet Précédent",
+        "nextProject": "Projet Suivant",
         "mywork": {
             "findEat": {
-                "description": "J’ai développé le dashboard admin de FindEat (Canada) avec Nuxt, permettant aux admins de gérer les clients, les restaurants et leurs certifications."
+                "description": "Dashboard admin pour FindEat (Canada) — gestion des clients, restaurants et certifications."
             },
             "mafal": {
-                "description": "J’ai créé la landing page de Mafal Dental avec Nuxt pour une dentiste, afin d’améliorer sa visibilité en ligne."
+                "description": "Landing page pour la clinique Mafal Dental — pour accroître la visibilité en ligne et attirer des patients."
             },
             "uniAssist": {
-                "description": "UniAssist – Plateforme e-learning; j'ai créé UniAssist pour aider les étudiants à réussir leurs études universitaires. Elle propose cours, vidéos, exercices, commentaires et XP. Développée avec Nuxt.js, Django REST et React Native."
+                "description": "Plateforme e-learning complète pour les étudiants algériens — cours, vidéos, exercices et récompenses XP."
             },
             "swurvin": {
-                "description": "Swurvin - Création d'une app React Native avec Node.js et PostgreSQL reliant clients et dépanneurs, incluant géolocalisation en direct, alertes d'accidents, paiements Stripe et abonnements chauffeurs."
+                "description": "Application mobile reliant clients et dépanneurs — géolocalisation en direct, paiements Stripe et abonnements."
+            }
+        }
+    },
+    "projects": {
+        "findeat": {
+            "name": "FindEat",
+            "subtitle": "Tableau de bord Admin",
+            "category": "Application Web",
+            "role": "Développeur Full Stack",
+            "overview": "Développement du tableau de bord admin complet pour FindEat, une plateforme canadienne de découverte et certification des restaurants. Le dashboard permet aux administrateurs de gérer l'écosystème entier de la plateforme — de l'intégration des clients aux certifications des restaurants — via une interface intuitive et en temps réel construite avec Nuxt.js et Firebase.",
+            "features": {
+                "1": "Gestion des clients et restaurants avec opérations CRUD complètes",
+                "2": "Suivi du cycle de vie des certifications et workflows d'approbation",
+                "3": "Synchronisation des données en temps réel via Firebase Firestore",
+                "4": "Contrôle d'accès basé sur les rôles pour admins et sous-admins",
+                "5": "Design responsive optimisé pour les opérations desktop"
+            }
+        },
+        "mafal": {
+            "name": "Mafal Dental",
+            "subtitle": "Page d'Accueil Clinique",
+            "category": "Landing Page",
+            "role": "Développeur Frontend",
+            "overview": "Conception et développement d'une landing page moderne et axée conversion pour Mafal Dental, une clinique dentaire souhaitant établir une forte présence en ligne. La page met en avant les services, l'équipe et les témoignages patients — optimisée pour le SEO et les performances.",
+            "features": {
+                "1": "Design professionnel et épuré adapté au secteur médical",
+                "2": "Structure et métadonnées optimisées pour le SEO",
+                "3": "Responsive sur tous les appareils du mobile au desktop",
+                "4": "Présentation des services avec animations de défilement fluides",
+                "5": "Formulaire de contact et section de prise de rendez-vous"
+            }
+        },
+        "uniassist": {
+            "name": "UniAssist",
+            "subtitle": "Plateforme E-Learning",
+            "category": "Plateforme Full Stack",
+            "role": "Développeur Full Stack",
+            "overview": "Construction d'UniAssist de zéro pour aider les étudiants universitaires algériens à réussir. La plateforme propose des cours structurés, des leçons vidéo, des exercices, un système de commentaires et un système de récompenses XP gamifié. Le backend est une API Django REST, l'application web est Nuxt.js, et l'application mobile est React Native.",
+            "features": {
+                "1": "Bibliothèque de cours avec leçons vidéo et exercices",
+                "2": "Système XP et récompenses gamifié pour l'engagement",
+                "3": "Fils de commentaires et discussions communautaires par leçon",
+                "4": "Multiplateforme : web (Nuxt.js) et mobile (React Native)",
+                "5": "API RESTful construite avec Django et PostgreSQL"
+            }
+        },
+        "swurvin": {
+            "name": "Swurvin",
+            "subtitle": "Application d'Assistance Routière",
+            "category": "Application Mobile",
+            "role": "Développeur Full Stack",
+            "overview": "Construction de Swurvin, une application mobile React Native qui connecte les conducteurs en difficulté avec les dépanneurs proches. La plateforme propose un suivi GPS en temps réel, des paiements via Stripe, des notifications push pour les alertes d'accidents et un modèle d'abonnement pour les conducteurs professionnels.",
+            "features": {
+                "1": "Suivi GPS en temps réel pour conducteurs et dépanneurs",
+                "2": "Paiements Stripe intégrés avec gestion sécurisée des transactions",
+                "3": "Notifications push pour alertes d'accidents et urgences",
+                "4": "Abonnements chauffeurs avec différents niveaux de fonctionnalités",
+                "5": "API REST Node.js avec base de données PostgreSQL"
+            }
+        }
+    },
+    "agents": {
+        "title": "Agents IA",
+        "subtitle": "Automatisation intelligente pour la plateforme Brickcode",
+        "viewDetails": "Voir les détails",
+        "backToPortfolio": "Retour au Portfolio",
+        "input": "Entrée",
+        "output": "Sortie",
+        "overview": "Aperçu",
+        "howItWorks": "Fonctionnement",
+        "keyCapabilities": "Capacités clés",
+        "toolsUsed": "Outils",
+        "projectContext": "Contexte du projet",
+        "prevAgent": "Agent précédent",
+        "nextAgent": "Agent suivant",
+        "items": {
+            "usage-agent": {
+                "name": "Usage Agent",
+                "subtitle": "Assistant RAG",
+                "category": "IA Conversationnelle",
+                "overview": "Agent conversationnel RAG qui aide les utilisateurs à naviguer sur Brickcode. Il répond aux questions produit, guide vers les bons écrans et explique les fonctionnalités sans jargon technique, en s'appuyant sur la base de connaissances réelle.",
+                "steps": { "1": "Reçoit une question en langage naturel", "2": "Recherche multi-collections RAG (specs, domaine, backend, frontend)", "3": "Construit une réponse contextuelle sans jargon", "4": "Retourne une réponse guidée vers l'écran ou la procédure appropriée" },
+                "capabilities": { "1": "Recherche RAG multi-collection", "2": "Réponses en français, langage non technique", "3": "Navigation guidée vers les emplacements UI exacts", "4": "Suivi contextuel via la mémoire LangChain", "5": "Base de connaissances pluggable via Chroma DB" },
+                "tools": "search_knowledge · search_specs · search_domain · search_backend · search_frontend"
+            },
+            "spec-agent": {
+                "name": "Spec Agent",
+                "subtitle": "Générateur de Spécifications",
+                "category": "Génération de Code",
+                "overview": "Transforme un besoin métier brut en deux fichiers markdown structurés : un modèle de domaine (entités, relations) et un document UserStories (workflows, scénarios). Recherche la base de connaissances pour réutiliser une terminologie cohérente.",
+                "steps": { "1": "Prend un besoin métier en texte libre", "2": "Recherche les specs similaires existantes", "3": "Recherche les entités de domaine réutilisables", "4": "Recherche les conventions architecturales", "5": "Génère Domain.md et UserStories.md", "6": "Écrit les fichiers markdown dans le répertoire cible" },
+                "capabilities": { "1": "Génère Domain.md avec entités et relations", "2": "Génère UserStories.md avec scénarios structurés", "3": "Réutilise la terminologie existante pour la cohérence", "4": "Récupération RAG multi-étapes", "5": "Écriture sur disque via l'outil markdown" },
+                "tools": "search_specs · search_domain · search_backend · search_frontend · write_markdown_files"
+            },
+            "sql-agent": {
+                "name": "SQL Agent",
+                "subtitle": "Requêtes en Langage Naturel",
+                "category": "Intelligence des Données",
+                "overview": "Permet aux équipes non techniques d'interroger les données métier en français ou anglais. Inspecte le schéma avant chaque requête, écrit du SQL lecture seule, l'exécute et retourne les résultats en langage naturel. Sécurité stricte : seuls SELECT et WITH sont autorisés.",
+                "steps": { "1": "Reçoit une question en langage naturel", "2": "Inspecte le schéma de base de données", "3": "Écrit une requête SQL lecture seule", "4": "Exécute la requête (SQLite ou MariaDB)", "5": "Traduit les résultats en réponse claire" },
+                "capabilities": { "1": "Workflow schema-first", "2": "Lecture seule : INSERT/UPDATE/DELETE bloqués", "3": "Supports SQLite et MariaDB", "4": "Résultats structurés avec contexte des colonnes", "5": "Gestion des requêtes multi-tables avec JOIN" },
+                "tools": "get_database_schema · execute_read_only_sql"
+            },
+            "orchestrator-agent": {
+                "name": "Orchestrator Agent",
+                "subtitle": "Routeur Intelligent",
+                "category": "Système Multi-Agent",
+                "overview": "Point d'entrée unique pour toutes les questions. Classifie la question et délègue au bon spécialiste : SQL Agent pour les données et statistiques, Usage Agent pour la navigation produit. Les utilisateurs n'ont jamais besoin de savoir quel agent appeler.",
+                "steps": { "1": "Reçoit n'importe quelle question", "2": "Classifie : données/statistiques vs navigation/procédure", "3": "Délègue au SQL Agent pour les questions de données", "4": "Délègue au Usage Agent pour les questions produit", "5": "Retourne une réponse unifiée en français" },
+                "capabilities": { "1": "Point d'entrée unique pour tous types de questions", "2": "Routage intelligent par sémantique de la question", "3": "Agents spécialistes encapsulés comme outils", "4": "Réponse unifiée en français", "5": "Extensible : nouveaux agents ajoutables comme outils" },
+                "tools": "sql_agent · usage_agent"
+            },
+            "brick-generator": {
+                "name": "Brick Generator",
+                "subtitle": "Agent de Génération Full-Stack",
+                "category": "Génération de Code",
+                "overview": "L'agent le plus complexe. À partir des specs Domain et UserStories, génère automatiquement un brick Brickcode complet — NestJS backend + Nuxt frontend — en suivant les conventions exactes du brain cible. Des sous-agents gèrent backend et frontend séparément, puis les fichiers sont écrits, intégrés et validés.",
+                "steps": { "1": "Lit Domain.md et UserStories.md", "2": "Lit la structure et les conventions du brain cible", "3": "Recherche les patterns backend dans les brains d'inspiration", "4": "Sous-agent génère tous les fichiers backend NestJS", "5": "Recherche les patterns frontend dans les brains d'inspiration", "6": "Sous-agent génère tous les fichiers frontend Nuxt", "7": "Écrit les fichiers dans le brain cible", "8": "Intègre le brick dans les configs du monorepo", "9": "Valide et corrige les fichiers manquants" },
+                "capabilities": { "1": "Génère des modules NestJS complets : contrôleurs, services, DTOs", "2": "Génère des apps Nuxt complètes : pages, composants, composables", "3": "Génération consciente des patterns via RAG", "4": "Intégration automatique dans le monorepo", "5": "Auto-validation avec correction des fichiers manquants", "6": "Architecture sous-agents séparant backend et frontend" },
+                "tools": "read_file · read_brain_context · search_brain_* · generate_backend_files · generate_frontend_files · write_files · integrate_brick · validate_integration"
             }
         }
     },
@@ -162,6 +310,6 @@
         "day": "Jour",
         "location": "Lieu",
         "skills": "Compétences",
-        "ranking": "Classement"
+        "rank": "Classement"
     }
 }
