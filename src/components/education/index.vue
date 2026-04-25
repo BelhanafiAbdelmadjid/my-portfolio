@@ -2,7 +2,7 @@
   <section id="education" class="py-28 px-6 bg-panel">
     <div class="max-w-3xl mx-auto">
       <div class="section-divider">
-        <span class="section-eyebrow">05</span>
+        <span class="section-eyebrow">01</span>
         <h2 class="section-heading">{{ t('education.titel') }}</h2>
       </div>
 
