@@ -107,11 +107,15 @@ function clearTimeouts() {
 
 function playBootSequence() {
   clearTimeouts()
-  const lines = agentBootLines[props.agent.id] ?? agentBootLines['usage-agent']
-  bootLines.value = lines
-  visible.value = lines.map(() => false)
+  const lines = agentBootLines[props.agent.id]
+  if (!lines && import.meta.env.DEV) {
+    console.warn(`[AgentHeroTerminal] No boot lines for agent id: "${props.agent.id}"`)
+  }
+  const resolved = lines ?? agentBootLines['usage-agent']
+  bootLines.value = resolved
+  visible.value = resolved.map(() => false)
 
-  lines.forEach((_, i) => {
+  resolved.forEach((_, i) => {
     const id = setTimeout(() => {
       visible.value[i] = true
     }, 400 + i * 320)
@@ -122,8 +126,5 @@ function playBootSequence() {
 onMounted(playBootSequence)
 onBeforeUnmount(clearTimeouts)
 
-watch(() => props.agent.id, () => {
-  visible.value = bootLines.value.map(() => false)
-  playBootSequence()
-})
+watch(() => props.agent.id, playBootSequence)
 </script>
