@@ -1,45 +1,85 @@
 <template>
-    <div :class="[
-        'flex flex-col items-start justify-start bg-[#232323] p-5 rounded-[20px] shadow-lg gap-[20px]',
-        educationData.current ? 'border-[3px] border-yellow-300' : ''
-    ]">
-        <h2
-            class="self-start text-[16px] md:text-[26px] font-bold underline flex flex-row items-start justify-start gap-[10px] text-white">
-            <GraduationCap class="md:size-8 min-w-[26px] size-10" />
-            {{ t(`${baseLang}${props.educationData.key}.titel`) }}
-        </h2>
+  <div
+    :class="[
+      'card-base rounded-xl p-6 transition-all duration-300',
+      educationData.current
+        ? 'border-accent/30 bg-accent/5 hover:border-accent/50'
+        : 'card-hover',
+    ]"
+  >
+    <div class="flex items-start justify-between gap-4 mb-3">
+      <div class="flex items-start gap-3">
         <div
-            class="self-center flex flex-col gap-[7px] items-start justify-start w-full text-gray-200 md:text-[18px] text-[14px]">
-            <div class="flex flex-row items-center justify-start gap-[5px] ">
-                <p>{{ t('base.year') }} :</p>
-                <p>{{ t(`${baseLang}${props.educationData.key}.year`) }}</p>
-            </div>
-            <div v-if="props.educationData.rank" class="flex flex-row items-center justify-start gap-[5px]">
-                <p>{{ t(`${baseLang}${props.educationData.key}.rank`) }}</p>
-                <Medal class="md:size-5 size-4 text-yellow-300" />
-            </div>
-            <div class="flex flex-row items-center justify-start gap-[5px]">
-                <p>{{ `${t('base.location')} : ${t(`${baseLang}${props.educationData.key}.location`)}` }}</p>
-            </div>
-            <div v-if="props.educationData.grade" class="flex flex-row items-center justify-start gap-[5px]">
-                <p>{{ t(`${baseLang}${props.educationData.key}.note`) }}</p>
-            </div>
+          :class="[
+            'mt-0.5 p-1.5 rounded-lg',
+            educationData.current ? 'bg-accent/15 text-accent' : 'bg-layer text-t2',
+          ]"
+        >
+          <GraduationCap :size="16" />
         </div>
+        <div>
+          <h3
+            :class="[
+              'font-syne font-bold text-base leading-snug',
+              educationData.current ? 'text-t1' : 'text-t1',
+            ]"
+          >
+            {{ t(`${baseLang}${educationData.key}.titel`) }}
+          </h3>
+          <p class="text-t3 text-xs mt-1 font-mono">
+            {{ t(`${baseLang}${educationData.key}.location`) }}
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-end gap-1 flex-shrink-0">
+        <span
+          :class="[
+            'font-mono text-xs px-2 py-0.5 rounded border',
+            educationData.current
+              ? 'border-accent/40 text-accent bg-accent/10'
+              : 'border-edge text-t3',
+          ]"
+        >
+          {{ t(`${baseLang}${educationData.key}.year`) }}
+        </span>
+        <span
+          v-if="educationData.current"
+          class="font-mono text-[10px] text-accent flex items-center gap-1"
+        >
+          <span class="inline-block w-1.5 h-1.5 rounded-full bg-accent animate-pulse"></span>
+          Current
+        </span>
+      </div>
     </div>
+
+    <!-- Rank & grade pills -->
+    <div class="flex flex-wrap gap-2 mt-3 ml-9">
+      <span
+        v-if="educationData.rank"
+        class="flex items-center gap-1 tech-tag text-warm border-warm/30"
+      >
+        <Medal :size="10" />
+        {{ t(`${baseLang}${educationData.key}.rank`) }}
+      </span>
+      <span v-if="educationData.grade" class="tech-tag">
+        {{ t(`${baseLang}${educationData.key}.note`) }}
+      </span>
+    </div>
+  </div>
 </template>
 
 <script lang="ts" setup>
-defineOptions({ name: 'EducationCard' });
+import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { GraduationCap, Medal } from 'lucide-vue-next'
+import type { EducationData } from './index.vue'
 
-import { ref } from 'vue';
-import { useI18n } from 'vue-i18n';
-import { GraduationCap, Medal } from 'lucide-vue-next';
-import type { EducationData } from './index.vue';
-const { t } = useI18n();
-const baseLang = ref("education.myeducation.")
-const props = defineProps<{
-    educationData: EducationData;
-}>();
+defineOptions({ name: 'EducationCard' })
+
+const { t } = useI18n()
+const baseLang = ref('education.myeducation.')
+
+const props = defineProps<{ educationData: EducationData }>()
+void props
 </script>
-
-<style></style>

@@ -1,21 +1,21 @@
 <template>
-    <div>
-        <button
-            class="flex flex-row items-center justify-center gap-[0px] bg-beige-200 text-dark rounded-md px-2 py-1 hover:bg-beige-300 transition-colors duration-200 ease-in-out"
-            aria-label="Toggle Language" @click="toggleLanguage">
-            <Globe class="size-5 mr-2" />
-            {{ locale.toUpperCase() }}
-        </button>
-    </div>
+  <button
+    class="flex items-center gap-1.5 font-mono text-xs text-t2 border border-edge rounded-md px-2.5 py-1.5
+           hover:border-accent hover:text-accent transition-all duration-200"
+    aria-label="Toggle Language"
+    @click="toggleLanguage"
+  >
+    <Globe :size="12" />
+    {{ locale.toUpperCase() }}
+  </button>
 </template>
 
 <script lang="ts" setup>
-import { Globe } from 'lucide-vue-next';
+import { Globe } from 'lucide-vue-next'
 import { useI18n } from 'vue-i18n'
+
 const { locale } = useI18n()
 const toggleLanguage = () => {
-    locale.value = locale.value === 'en' ? 'fr' : 'en'
+  locale.value = locale.value === 'en' ? 'fr' : 'en'
 }
 </script>
-
-<style></style>

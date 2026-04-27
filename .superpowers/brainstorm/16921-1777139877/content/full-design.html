@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agent Page — Full Design Preview</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Syne:wght@700;800&family=Outfit:wght@400;500;600&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0a0f1a; color: #e8f0fe; font-family: 'Outfit', sans-serif; }
+
+  /* ===== STICKY NAV ===== */
+  .nav { position: sticky; top: 0; background: rgba(8,12,20,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid #1e2d47; padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; z-index: 50; }
+  .nav-back { display: flex; align-items: center; gap: 6px; color: #8b9dc3; font-size: 12px; font-family: 'Outfit', sans-serif; }
+  .nav-back svg { width: 14px; height: 14px; }
+  .nav-tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; padding: 3px 8px; border: 1px solid #1e2d47; border-radius: 4px; color: #4a5c7e; }
+  .nav-year { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #22d3ee; }
+
+  /* ===== HERO ===== */
+  .hero { background: linear-gradient(135deg, #0e3a4a 0%, #080c14 60%); padding: 64px 24px 56px; }
+  .hero-inner { max-width: 900px; margin: 0 auto; display: flex; gap: 40px; align-items: flex-start; }
+  .hero-left { flex: 1; }
+  .hero-badge { display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 10px; padding: 4px 10px; border-radius: 999px; border: 1px solid #22d3ee44; background: #22d3ee15; color: #22d3ee; margin-bottom: 16px; }
+  .hero-title-row { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+  .hero-icon { font-size: 36px; }
+  .hero-title { font-family: 'Syne', sans-serif; font-size: 40px; font-weight: 800; color: white; line-height: 1.1; }
+  .hero-sub { color: rgba(255,255,255,0.55); font-size: 16px; margin-bottom: 20px; }
+  .io-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .io-box { background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 8px 14px; }
+  .io-label { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: rgba(255,255,255,0.3); text-transform: uppercase; margin-bottom: 2px; }
+  .io-value { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: rgba(255,255,255,0.75); }
+  .io-arrow { color: #22d3ee; font-size: 16px; }
+  .io-box.out { border-color: #22d3ee44; }
+  .io-box.out .io-value { color: #22d3ee; }
+
+  /* ===== HERO TERMINAL — ANIMATED ===== */
+  .hero-terminal { width: 300px; flex-shrink: 0; border: 1px solid #22d3ee33; border-radius: 12px; overflow: hidden; background: rgba(0,0,0,0.45); }
+  .term-bar { background: rgba(0,0,0,0.3); padding: 10px 14px; border-bottom: 1px solid #22d3ee22; display: flex; align-items: center; gap: 5px; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; }
+  .term-label { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: rgba(255,255,255,0.25); margin-left: 8px; }
+  .term-body { padding: 14px; font-family: 'JetBrains Mono', monospace; font-size: 11px; line-height: 2; min-height: 120px; }
+  .term-line { display: flex; align-items: center; gap: 8px; opacity: 0; transition: opacity 0.3s; }
+  .term-line.visible { opacity: 1; }
+  .term-cmd { color: rgba(255,255,255,0.25); }
+  .term-ok { color: #22d3ee; }
+  .term-text { color: rgba(255,255,255,0.55); }
+  .term-ready { color: rgba(255,255,255,0.35); }
+  .cursor { color: #22d3ee; animation: blink 0.9s step-end infinite; }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+  /* ===== CONTENT ===== */
+  .content { max-width: 900px; margin: 0 auto; padding: 56px 24px; display: grid; grid-template-columns: 1fr 280px; gap: 48px; align-items: start; }
+
+  .main { display: flex; flex-direction: column; gap: 48px; }
+  .eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: #4a5c7e; margin-bottom: 14px; }
+  .section-title { font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 700; color: #e8f0fe; margin-bottom: 12px; }
+  .body-text { color: #8b9dc3; font-size: 14px; line-height: 1.8; }
+  .step { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 12px; }
+  .step-num { width: 22px; height: 22px; border-radius: 5px; border: 1px solid #22d3ee44; color: #22d3ee; font-family: 'JetBrains Mono', monospace; font-size: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+  .step-text { color: #8b9dc3; font-size: 13px; line-height: 1.7; }
+
+  /* scroll-in animation */
+  .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* ===== SIDEBAR ===== */
+  .sidebar { display: flex; flex-direction: column; gap: 14px; position: sticky; top: 70px; }
+
+  /* ===== DEMO WIDGET ===== */
+  .demo-widget { background: #0e1520; border: 1px solid #22d3ee33; border-radius: 14px; overflow: hidden; }
+  .demo-header { padding: 12px 14px; border-bottom: 1px solid #1e2d47; display: flex; align-items: center; gap: 8px; }
+  .demo-dot { width: 6px; height: 6px; border-radius: 50%; background: #22d3ee; animation: pulse-dot 2s ease-in-out infinite; }
+  @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(0.8)} }
+  .demo-title { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #22d3ee; }
+  .demo-sub { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #4a5c7e; margin-left: auto; }
+
+  .demo-queries { padding: 12px; display: flex; flex-direction: column; gap: 6px; border-bottom: 1px solid #1e2d47; }
+  .query-chip { border: 1px solid #1e2d47; border-radius: 7px; padding: 7px 10px; font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #8b9dc3; cursor: pointer; transition: border-color .15s, color .15s, background .15s; display: flex; align-items: center; gap: 6px; }
+  .query-chip:hover { border-color: #22d3ee44; color: #e8f0fe; background: #22d3ee08; }
+  .query-chip.active { border-color: #22d3ee66; color: #22d3ee; background: #22d3ee12; }
+  .query-arrow { font-size: 8px; opacity: .5; }
+  .query-chip.active .query-arrow { opacity: 1; }
+
+  .demo-response { padding: 12px; min-height: 80px; font-family: 'JetBrains Mono', monospace; font-size: 10px; line-height: 1.9; }
+  .resp-line { display: flex; align-items: flex-start; gap: 6px; opacity: 0; transform: translateY(4px); transition: opacity .25s ease, transform .25s ease; }
+  .resp-line.in { opacity: 1; transform: none; }
+  .resp-accent { color: #22d3ee; flex-shrink: 0; margin-top: 1px; }
+  .resp-dim { color: #4a5c7e; }
+  .resp-text { color: rgba(255,255,255,0.7); }
+  .resp-placeholder { color: #1e2d47; font-style: italic; }
+
+  /* ===== META CARD ===== */
+  .meta-card { background: #0e1520; border: 1px solid #1e2d47; border-radius: 14px; padding: 18px; }
+  .meta-label { font-family: 'JetBrains Mono', monospace; font-size: 9px; text-transform: uppercase; letter-spacing: .1em; color: #4a5c7e; margin-bottom: 5px; }
+  .meta-value { color: #e8f0fe; font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 500; }
+  .meta-divider { height: 1px; background: #1e2d47; margin: 12px 0; }
+  .tag { display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 9px; padding: 3px 7px; border: 1px solid #1e2d47; border-radius: 4px; color: #8b9dc3; margin: 2px; }
+
+  /* ===== WATERMARK ===== */
+  .design-note { text-align: center; padding: 32px; font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #1e2d47; border-top: 1px solid #1e2d47; margin-top: 40px; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="nav-back">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+    Back to Portfolio
+  </div>
+  <div style="display:flex;align-items:center;gap:10px">
+    <span class="nav-tag">@brickcode/lib-ai</span>
+    <span class="nav-year">2025</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <span class="hero-badge">RAG · Knowledge Agent</span>
+      <div class="hero-title-row">
+        <span class="hero-icon">💬</span>
+        <h1 class="hero-title">Usage Agent</h1>
+      </div>
+      <p class="hero-sub">Answers "how to" questions using a RAG pipeline over application specs.</p>
+      <div class="io-row">
+        <div class="io-box">
+          <div class="io-label">Input</div>
+          <div class="io-value">Natural language question</div>
+        </div>
+        <span class="io-arrow">→</span>
+        <div class="io-box out">
+          <div class="io-label" style="color:#22d3ee99">Output</div>
+          <div class="io-value">Guided contextual answer</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ANIMATED TERMINAL (new behavior) -->
+    <div class="hero-terminal" id="heroTerm">
+      <div class="term-bar">
+        <span class="dot" style="background:#ef444499"></span>
+        <span class="dot" style="background:#facc1599"></span>
+        <span class="dot" style="background:#4ade8099"></span>
+        <span class="term-label">run-usage-agent.ts</span>
+      </div>
+      <div class="term-body" id="termLines">
+        <div class="term-line" id="l1"><span class="term-cmd">$</span><span class="term-text">npx ts-node run-usage-agent.ts</span></div>
+        <div class="term-line" id="l2"><span class="term-ok">▶</span><span class="term-text">Initializing Usage Agent...</span></div>
+        <div class="term-line" id="l3"><span class="term-ok">✓</span><span class="term-text">Model loaded (GPT-4.1)</span></div>
+        <div class="term-line" id="l4"><span class="term-ok">✓</span><span class="term-text">Chroma DB connected</span></div>
+        <div class="term-line" id="l5"><span class="term-ok">✓</span><span class="term-text">5 tools registered</span></div>
+        <div class="term-line" id="l6"><span class="term-ready">›</span><span class="term-ready">Agent ready</span><span class="cursor"> _</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+  <div class="main">
+    <div class="reveal" id="s1">
+      <div class="eyebrow">01 · Overview</div>
+      <p class="body-text">The Usage Agent answers end-user questions about application navigation and features using a RAG pipeline over ingested specification documents. It routes each query through the most relevant knowledge source before synthesising a plain-language response.</p>
+    </div>
+
+    <div class="reveal" id="s2">
+      <div class="eyebrow">02 · How it works</div>
+      <div class="step"><div class="step-num">1</div><p class="step-text">User submits a natural language question ("How do I invite a user?")</p></div>
+      <div class="step"><div class="step-num">2</div><p class="step-text">Agent selects the best search tool: specs, domain, frontend, backend, or knowledge</p></div>
+      <div class="step"><div class="step-num">3</div><p class="step-text">Chroma DB returns the top-k embedded document chunks</p></div>
+      <div class="step"><div class="step-num">4</div><p class="step-text">GPT-4.1 synthesises a concise, step-by-step answer from the retrieved context</p></div>
+    </div>
+
+    <div class="reveal" id="s3">
+      <div class="eyebrow">03 · Key capabilities</div>
+      <p class="body-text" style="margin-bottom:8px">▸ &nbsp;Five search tools (specs, domain, backend, frontend, knowledge)</p>
+      <p class="body-text" style="margin-bottom:8px">▸ &nbsp;Responds strictly from retrieved context, never hallucinating</p>
+      <p class="body-text" style="margin-bottom:8px">▸ &nbsp;Step-by-step navigation instructions for end users</p>
+      <p class="body-text" style="margin-bottom:8px">▸ &nbsp;Gracefully admits when context is missing</p>
+      <p class="body-text">▸ &nbsp;Integrates as a Nuxt runtime plugin via @brickcode/lib-ai</p>
+    </div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <!-- DEMO WIDGET -->
+    <div class="demo-widget">
+      <div class="demo-header">
+        <div class="demo-dot"></div>
+        <span class="demo-title">Try it</span>
+        <span class="demo-sub">sample queries</span>
+      </div>
+      <div class="demo-queries">
+        <div class="query-chip active" onclick="runDemo(0,this)"><span class="query-arrow">▸</span>"How do I add a user?"</div>
+        <div class="query-chip" onclick="runDemo(1,this)"><span class="query-arrow">▸</span>"Where is the settings page?"</div>
+        <div class="query-chip" onclick="runDemo(2,this)"><span class="query-arrow">▸</span>"What does a brick do?"</div>
+      </div>
+      <div class="demo-response" id="demoResponse">
+        <div class="resp-line in" style="transition-delay:0s"><span class="resp-accent">→</span><span class="resp-dim">Searching specs...</span></div>
+        <div class="resp-line in" style="transition-delay:.15s"><span class="resp-accent">✓</span><span class="resp-dim">Found 2 relevant docs</span></div>
+        <div class="resp-line in" style="transition-delay:.3s"><span class="resp-accent">↳</span><span class="resp-text">Go to Admin → Users, click "Invite", fill in the email and assign a role.</span></div>
+      </div>
+    </div>
+
+    <!-- META CARD -->
+    <div class="meta-card">
+      <div class="meta-label">Project</div>
+      <div class="meta-value">@brickcode/lib-ai</div>
+      <div class="meta-divider"></div>
+      <div class="meta-label">Tools used</div>
+      <div class="meta-value" style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#8b9dc3;line-height:1.8;margin-top:4px">search_specs · search_domain<br>search_frontend · search_backend<br>search_knowledge</div>
+      <div class="meta-divider"></div>
+      <div class="meta-label" style="margin-bottom:8px">Stack</div>
+      <div>
+        <span class="tag">LangChain</span><span class="tag">OpenAI</span><span class="tag">Chroma DB</span><span class="tag">TypeScript</span><span class="tag">RAG</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="design-note">Design mockup · @brickcode/lib-ai agent showcase · portfolio.abdelmadjid.dev</div>
+
+<script>
+// Hero terminal boot sequence
+const lines = ['l1','l2','l3','l4','l5','l6'];
+lines.forEach((id, i) => {
+  setTimeout(() => {
+    const el = document.getElementById(id);
+    if (el) el.classList.add('visible');
+  }, 400 + i * 320);
+});
+
+// Scroll-reveal for content sections
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); } });
+}, { threshold: 0.15 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Demo widget — staggered response animation
+const demos = [
+  [
+    { accent: '→', dim: 'Searching specs...' },
+    { accent: '✓', dim: 'Found 2 relevant docs' },
+    { accent: '↳', text: 'Go to Admin → Users, click "Invite", fill in the email and assign a role.' }
+  ],
+  [
+    { accent: '→', dim: 'Searching specs...' },
+    { accent: '✓', dim: 'Found 1 relevant doc' },
+    { accent: '↳', text: 'The Settings page is accessible from the top-right user menu → Settings.' }
+  ],
+  [
+    { accent: '→', dim: 'Searching knowledge base...' },
+    { accent: '✓', dim: 'Found 3 relevant docs' },
+    { accent: '↳', text: 'A brick is a reusable NestJS + Nuxt module generated from your domain specs.' }
+  ]
+];
+
+function runDemo(index, chip) {
+  document.querySelectorAll('.query-chip').forEach(c => c.classList.remove('active'));
+  chip.classList.add('active');
+  const box = document.getElementById('demoResponse');
+  box.innerHTML = '';
+  const steps = demos[index];
+  steps.forEach((step, i) => {
+    const line = document.createElement('div');
+    line.className = 'resp-line';
+    line.style.transitionDelay = (i * 180) + 'ms';
+    const accent = `<span class="resp-accent">${step.accent}</span>`;
+    const body = step.dim
+      ? `<span class="resp-dim">${step.dim}</span>`
+      : `<span class="resp-text">${step.text}</span>`;
+    line.innerHTML = accent + body;
+    box.appendChild(line);
+    requestAnimationFrame(() => requestAnimationFrame(() => line.classList.add('in')));
+  });
+}
+</script>
+</body>
+</html>

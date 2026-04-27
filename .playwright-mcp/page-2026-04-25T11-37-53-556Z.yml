@@ -1,0 +1,585 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - navigation [ref=e5]:
+        - button "AB" [ref=e6] [cursor=pointer]:
+          - generic [ref=e7]: AB
+        - generic [ref=e8]:
+          - generic [ref=e9] [cursor=pointer]: About
+          - generic [ref=e10] [cursor=pointer]: Experience
+          - generic [ref=e11] [cursor=pointer]: Skills
+          - generic [ref=e12] [cursor=pointer]: Work
+          - generic [ref=e13] [cursor=pointer]: Education
+          - generic [ref=e14] [cursor=pointer]: AI Agents
+        - generic [ref=e15]:
+          - button "Toggle Language" [ref=e16] [cursor=pointer]:
+            - img [ref=e17]
+            - text: EN
+          - link "Resume" [ref=e20] [cursor=pointer]:
+            - /url: https://drive.google.com/file/d/1jA9Hcp7KNWiT5ZjVGEbgxQJcHFN9V4yR/view
+            - text: Resume
+            - img [ref=e21]
+    - main [ref=e26]:
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - img "Belhanafi Abdelmadjid" [ref=e30]
+          - generic [ref=e31]:
+            - heading "BELHANAFI" [level=1] [ref=e32]
+            - heading "ABDELMADJID" [level=1] [ref=e33]
+          - generic [ref=e34]:
+            - generic [ref=e35]: ›
+            - generic [ref=e36]: _
+          - paragraph [ref=e37]: Student · Full Stack Developer · DevSecOps Enthusiast
+          - generic [ref=e38]:
+            - button "View My Work" [ref=e39] [cursor=pointer]:
+              - text: View My Work
+              - img [ref=e40]
+            - button "Say Hello" [ref=e43] [cursor=pointer]
+        - generic [ref=e45]: Scroll
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - generic [ref=e50]: "01"
+          - heading "About Me" [level=2] [ref=e51]
+        - generic [ref=e52]:
+          - paragraph [ref=e53]: Hey! Master's student in Cybersecurity (UVSQ), focused on Networks, Systems and DevSecOps.
+          - paragraph [ref=e54]: Skilled in network, system, API security and secure CI/CD pipelines.
+          - paragraph [ref=e55]: Seeking an apprenticeship from September 2026 as a Network/Security Administrator or DevOps/DevSecOps.
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - generic [ref=e58]: Sep 2026
+            - generic [ref=e59]: Available From
+          - generic [ref=e60]:
+            - generic [ref=e61]: Full Stack
+            - generic [ref=e62]: + DevSecOps
+          - generic [ref=e63]:
+            - generic [ref=e64]: Algeria
+            - generic [ref=e65]: Open to Remote
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - generic [ref=e69]: "02"
+          - heading "Experience" [level=2] [ref=e70]
+        - generic [ref=e73]:
+          - generic [ref=e76]:
+            - generic [ref=e77]:
+              - generic [ref=e78]:
+                - heading "DevSecOps" [level=3] [ref=e79]
+                - paragraph [ref=e80]: Docflow · Remote · Montreal, Canada
+              - generic [ref=e81]:
+                - generic [ref=e82]: March 2025 — Present
+                - generic [ref=e83]: Current
+            - list [ref=e85]:
+              - listitem [ref=e86]:
+                - generic [ref=e87]: ▸
+                - text: Built and maintained scalable web applications using Vue 3 and Firebase (Firestore, Auth, Cloud Functions)
+              - listitem [ref=e88]:
+                - generic [ref=e89]: ▸
+                - text: Developed backend logic and APIs with Firebase Functions and handled real-time data syncing with Firestore
+              - listitem [ref=e90]:
+                - generic [ref=e91]: ▸
+                - text: Designed responsive UIs and component-based architecture for seamless user experience
+              - listitem [ref=e92]:
+                - generic [ref=e93]: ▸
+                - text: Implemented CI/CD pipelines using GitHub Actions with Firebase Hosting for automated deployments
+              - listitem [ref=e94]:
+                - generic [ref=e95]: ▸
+                - text: Collaborated with remote teams in an Agile/Scrum environment to deliver iterative product updates
+              - listitem [ref=e96]:
+                - generic [ref=e97]: ▸
+                - text: Ensured application security, performance, and scalability to support business growth
+          - generic [ref=e100]:
+            - generic [ref=e101]:
+              - generic [ref=e102]:
+                - heading "IT Production, DevOps & Software Apprentice" [level=3] [ref=e103]
+                - paragraph [ref=e104]: Natixis, BPCE Group · Algiers, Algeria
+              - generic [ref=e106]: March 2023 — October 2025
+            - list [ref=e107]:
+              - listitem [ref=e108]:
+                - generic [ref=e109]: ▸
+                - text: Assisted in maintaining and deploying production applications in a Linux-based environment
+              - listitem [ref=e110]:
+                - generic [ref=e111]: ▸
+                - text: Built automation scripts and internal tools to streamline routine IT and support tasks
+              - listitem [ref=e112]:
+                - generic [ref=e113]: ▸
+                - text: Worked with Docker to containerize and manage application environments
+              - listitem [ref=e114]:
+                - generic [ref=e115]: ▸
+                - text: Monitored and supported application performance in production environments
+          - generic [ref=e118]:
+            - generic [ref=e119]:
+              - generic [ref=e120]:
+                - heading "IT Helpdesk Support Specialist — Apprentice" [level=3] [ref=e121]
+                - paragraph [ref=e122]: Natixis, BPCE Group · Algiers, Algeria
+              - generic [ref=e124]: April 2022 — March 2023
+            - list [ref=e125]:
+              - listitem [ref=e126]:
+                - generic [ref=e127]: ▸
+                - text: Provided first-line IT support for internal employees, troubleshooting hardware and software issues
+              - listitem [ref=e128]:
+                - generic [ref=e129]: ▸
+                - text: Managed service requests and incidents via ticketing system, ensuring timely resolution
+              - listitem [ref=e130]:
+                - generic [ref=e131]: ▸
+                - text: Collaborated with senior IT staff to escalate complex technical problems
+              - listitem [ref=e132]:
+                - generic [ref=e133]: ▸
+                - text: Supported Windows environments using Active Directory for user account management and SCCM for software deployment and workstation maintenance
+      - generic [ref=e135]:
+        - generic [ref=e136]:
+          - generic [ref=e137]: "03"
+          - heading "Skills" [level=2] [ref=e138]
+        - generic [ref=e139]:
+          - generic [ref=e141]:
+            - generic [ref=e142]:
+              - generic [ref=e143]: 
+              - generic [ref=e144]:
+                - heading "Vue.js" [level=3] [ref=e145]
+                - paragraph [ref=e146]: +3 years — my strongest framework
+            - generic [ref=e147]:
+              - generic [ref=e148]: 
+              - generic [ref=e149]:
+                - heading "Nuxt.js" [level=3] [ref=e150]
+                - paragraph [ref=e151]: +2 years on dashboards & platforms
+            - generic [ref=e152]:
+              - generic [ref=e153]: 
+              - generic [ref=e154]:
+                - heading "React" [level=3] [ref=e155]
+                - paragraph [ref=e156]: +1 year on multiple mobile apps
+            - generic [ref=e157]:
+              - generic [ref=e158]: 
+              - generic [ref=e159]:
+                - heading "Tailwind CSS" [level=3] [ref=e160]
+                - paragraph [ref=e161]: +2 years — a must in every project
+            - generic [ref=e162]:
+              - generic [ref=e163]: 
+              - generic [ref=e164]:
+                - heading "Python" [level=3] [ref=e165]
+                - paragraph [ref=e166]: +4 years — my first language
+            - generic [ref=e167]:
+              - generic [ref=e168]: 
+              - generic [ref=e169]:
+                - heading "Django" [level=3] [ref=e170]
+                - paragraph [ref=e171]: +1 year on personal projects
+            - generic [ref=e172]:
+              - generic [ref=e173]: 
+              - generic [ref=e174]:
+                - heading "Flask" [level=3] [ref=e175]
+                - paragraph [ref=e176]: +3 years building web apps
+            - generic [ref=e177]:
+              - generic [ref=e178]: 
+              - generic [ref=e179]:
+                - heading "Express.js" [level=3] [ref=e180]
+                - paragraph [ref=e181]: +1 year on real-world projects
+            - generic [ref=e182]:
+              - generic [ref=e183]: 
+              - generic [ref=e184]:
+                - heading "Firebase" [level=3] [ref=e185]
+                - paragraph [ref=e186]: +1 year on real-world projects
+            - generic [ref=e187]:
+              - generic [ref=e188]: 
+              - generic [ref=e189]:
+                - heading "Docker" [level=3] [ref=e190]
+                - paragraph [ref=e191]: +2 years with containerization
+            - generic [ref=e192]:
+              - generic [ref=e193]: 
+              - generic [ref=e194]:
+                - heading "Linux" [level=3] [ref=e195]
+                - paragraph [ref=e196]: Systems & command line proficiency
+            - generic [ref=e197]:
+              - generic [ref=e198]: 
+              - generic [ref=e199]:
+                - heading "Laravel" [level=3] [ref=e200]
+                - paragraph [ref=e201]: Personal projects & APIs
+          - generic [ref=e202]:
+            - generic [ref=e203]:
+              - generic [ref=e204]: 
+              - generic [ref=e205]:
+                - heading [level=3] [ref=e206]: Vue.js
+                - paragraph [ref=e207]: +3 years — my strongest framework
+            - generic [ref=e208]:
+              - generic [ref=e209]: 
+              - generic [ref=e210]:
+                - heading [level=3] [ref=e211]: Nuxt.js
+                - paragraph [ref=e212]: +2 years on dashboards & platforms
+            - generic [ref=e213]:
+              - generic [ref=e214]: 
+              - generic [ref=e215]:
+                - heading [level=3] [ref=e216]: React
+                - paragraph [ref=e217]: +1 year on multiple mobile apps
+            - generic [ref=e218]:
+              - generic [ref=e219]: 
+              - generic [ref=e220]:
+                - heading [level=3] [ref=e221]: Tailwind CSS
+                - paragraph [ref=e222]: +2 years — a must in every project
+            - generic [ref=e223]:
+              - generic [ref=e224]: 
+              - generic [ref=e225]:
+                - heading [level=3] [ref=e226]: Python
+                - paragraph [ref=e227]: +4 years — my first language
+            - generic [ref=e228]:
+              - generic [ref=e229]: 
+              - generic [ref=e230]:
+                - heading [level=3] [ref=e231]: Django
+                - paragraph [ref=e232]: +1 year on personal projects
+            - generic [ref=e233]:
+              - generic [ref=e234]: 
+              - generic [ref=e235]:
+                - heading [level=3] [ref=e236]: Flask
+                - paragraph [ref=e237]: +3 years building web apps
+            - generic [ref=e238]:
+              - generic [ref=e239]: 
+              - generic [ref=e240]:
+                - heading [level=3] [ref=e241]: Express.js
+                - paragraph [ref=e242]: +1 year on real-world projects
+            - generic [ref=e243]:
+              - generic [ref=e244]: 
+              - generic [ref=e245]:
+                - heading [level=3] [ref=e246]: Firebase
+                - paragraph [ref=e247]: +1 year on real-world projects
+            - generic [ref=e248]:
+              - generic [ref=e249]: 
+              - generic [ref=e250]:
+                - heading [level=3] [ref=e251]: Docker
+                - paragraph [ref=e252]: +2 years with containerization
+            - generic [ref=e253]:
+              - generic [ref=e254]: 
+              - generic [ref=e255]:
+                - heading [level=3] [ref=e256]: Linux
+                - paragraph [ref=e257]: Systems & command line proficiency
+            - generic [ref=e258]:
+              - generic [ref=e259]: 
+              - generic [ref=e260]:
+                - heading [level=3] [ref=e261]: Laravel
+                - paragraph [ref=e262]: Personal projects & APIs
+      - generic [ref=e264]:
+        - generic [ref=e265]:
+          - generic [ref=e266]: "04"
+          - heading "My Work" [level=2] [ref=e267]
+        - paragraph [ref=e268]: A selection of projects I've built
+        - generic [ref=e269]:
+          - link "FindEat View Case Study Web Application FindEat Admin Dashboard 2024 Admin dashboard for FindEat (Canada) — enabling admins to manage clients, restaurants, and certifications. Nuxt.js Vue 3 Tailwind CSS Firebase View Case Study" [ref=e270] [cursor=pointer]:
+            - /url: /work/findeat
+            - generic [ref=e271]:
+              - img "FindEat" [ref=e272]
+              - generic [ref=e274]:
+                - text: View Case Study
+                - img [ref=e275]
+              - generic [ref=e278]: Web Application
+            - generic [ref=e279]:
+              - generic [ref=e280]:
+                - generic [ref=e281]:
+                  - heading "FindEat" [level=3] [ref=e282]
+                  - paragraph [ref=e283]: Admin Dashboard
+                - generic [ref=e284]: "2024"
+              - paragraph [ref=e285]: Admin dashboard for FindEat (Canada) — enabling admins to manage clients, restaurants, and certifications.
+              - generic [ref=e286]:
+                - generic [ref=e287]: Nuxt.js
+                - generic [ref=e288]: Vue 3
+                - generic [ref=e289]: Tailwind CSS
+                - generic [ref=e290]: Firebase
+              - generic [ref=e291]:
+                - text: View Case Study
+                - img [ref=e292]
+          - link "Mafal Dental View Case Study Landing Page Mafal Dental Clinic Landing Page 2024 Landing page for Mafal Dental clinic — built to increase online visibility and drive patient appointments. Nuxt.js Vue 3 Tailwind CSS SEO View Case Study" [ref=e294] [cursor=pointer]:
+            - /url: /work/mafal
+            - generic [ref=e295]:
+              - img "Mafal Dental" [ref=e296]
+              - generic [ref=e298]:
+                - text: View Case Study
+                - img [ref=e299]
+              - generic [ref=e302]: Landing Page
+            - generic [ref=e303]:
+              - generic [ref=e304]:
+                - generic [ref=e305]:
+                  - heading "Mafal Dental" [level=3] [ref=e306]
+                  - paragraph [ref=e307]: Clinic Landing Page
+                - generic [ref=e308]: "2024"
+              - paragraph [ref=e309]: Landing page for Mafal Dental clinic — built to increase online visibility and drive patient appointments.
+              - generic [ref=e310]:
+                - generic [ref=e311]: Nuxt.js
+                - generic [ref=e312]: Vue 3
+                - generic [ref=e313]: Tailwind CSS
+                - generic [ref=e314]: SEO
+              - generic [ref=e315]:
+                - text: View Case Study
+                - img [ref=e316]
+          - link "UniAssist View Case Study Full Stack Platform UniAssist E-Learning Platform 2023 – 2024 Full-stack e-learning platform helping Algerian students succeed — courses, videos, exercises, and XP rewards. Nuxt.js Django REST React Native PostgreSQL View Case Study" [ref=e318] [cursor=pointer]:
+            - /url: /work/uniassist
+            - generic [ref=e319]:
+              - img "UniAssist" [ref=e320]
+              - generic [ref=e322]:
+                - text: View Case Study
+                - img [ref=e323]
+              - generic [ref=e326]: Full Stack Platform
+            - generic [ref=e327]:
+              - generic [ref=e328]:
+                - generic [ref=e329]:
+                  - heading "UniAssist" [level=3] [ref=e330]
+                  - paragraph [ref=e331]: E-Learning Platform
+                - generic [ref=e332]: 2023 – 2024
+              - paragraph [ref=e333]: Full-stack e-learning platform helping Algerian students succeed — courses, videos, exercises, and XP rewards.
+              - generic [ref=e334]:
+                - generic [ref=e335]: Nuxt.js
+                - generic [ref=e336]: Django REST
+                - generic [ref=e337]: React Native
+                - generic [ref=e338]: PostgreSQL
+              - generic [ref=e339]:
+                - text: View Case Study
+                - img [ref=e340]
+          - link "Swurvin View Case Study Mobile Application Swurvin Roadside Assistance App 2024 Mobile app connecting clients with tow truck drivers — live tracking, Stripe payments, and driver subscriptions. React Native Node.js PostgreSQL Stripe View Case Study" [ref=e342] [cursor=pointer]:
+            - /url: /work/swurvin
+            - generic [ref=e343]:
+              - img "Swurvin" [ref=e344]
+              - generic [ref=e346]:
+                - text: View Case Study
+                - img [ref=e347]
+              - generic [ref=e350]: Mobile Application
+            - generic [ref=e351]:
+              - generic [ref=e352]:
+                - generic [ref=e353]:
+                  - heading "Swurvin" [level=3] [ref=e354]
+                  - paragraph [ref=e355]: Roadside Assistance App
+                - generic [ref=e356]: "2024"
+              - paragraph [ref=e357]: Mobile app connecting clients with tow truck drivers — live tracking, Stripe payments, and driver subscriptions.
+              - generic [ref=e358]:
+                - generic [ref=e359]: React Native
+                - generic [ref=e360]: Node.js
+                - generic [ref=e361]: PostgreSQL
+                - generic [ref=e362]: Stripe
+              - generic [ref=e363]:
+                - text: View Case Study
+                - img [ref=e364]
+      - generic [ref=e367]:
+        - generic [ref=e368]:
+          - generic [ref=e369]: "05"
+          - heading "Academic Background" [level=2] [ref=e370]
+        - generic [ref=e371]:
+          - generic [ref=e373]:
+            - generic [ref=e374]:
+              - img [ref=e376]
+              - generic [ref=e379]:
+                - heading "Master 1 — Computer Systems Security (SSI)" [level=3] [ref=e380]
+                - paragraph [ref=e381]: USTHB — Algiers, Algeria
+            - generic [ref=e382]:
+              - generic [ref=e383]: Sep 2024 — Jun 2025
+              - generic [ref=e384]: Current
+          - generic [ref=e386]:
+            - generic [ref=e387]:
+              - generic [ref=e388]:
+                - img [ref=e390]
+                - generic [ref=e393]:
+                  - heading "Bachelor's Degree — Academic Computer Science (ACAD)" [level=3] [ref=e394]
+                  - paragraph [ref=e395]: USTHB — Algiers, Algeria
+              - generic [ref=e397]: Sep 2021 — Jun 2024
+            - generic [ref=e398]:
+              - generic [ref=e399]:
+                - img [ref=e400]
+                - text: Top 10% of the class
+              - generic [ref=e406]: "Grade: 13.07/20"
+          - generic [ref=e407]:
+            - generic [ref=e408]:
+              - generic [ref=e409]:
+                - img [ref=e411]
+                - generic [ref=e414]:
+                  - heading "Baccalauréat — Experimental Sciences" [level=3] [ref=e415]
+                  - paragraph [ref=e416]: Algiers, Algeria
+              - generic [ref=e418]: "2021"
+            - generic [ref=e420]: "Grade: 15.83/20"
+          - generic [ref=e421]:
+            - generic [ref=e422]:
+              - generic [ref=e423]:
+                - img [ref=e425]
+                - generic [ref=e428]:
+                  - heading "Baccalauréat — Experimental Sciences" [level=3] [ref=e429]
+                  - paragraph [ref=e430]: Algiers, Algeria
+              - generic [ref=e432]: "2020"
+            - generic [ref=e434]: "Grade: 14.76/20"
+      - generic [ref=e436]:
+        - generic [ref=e437]:
+          - generic [ref=e438]: "06"
+          - heading "AI Agents" [level=2] [ref=e439]
+        - paragraph [ref=e440]: Intelligent automation for the Brickcode platform
+        - generic [ref=e441]:
+          - generic [ref=e443]: 🧱
+          - generic [ref=e444]:
+            - paragraph [ref=e445]: "@brickcode/lib-ai"
+            - paragraph [ref=e446]: Internal TypeScript/LangChain library · OpenAI GPT-4.1 · Chroma DB · NestJS · Nuxt
+        - generic [ref=e447]:
+          - 'link "agent-1.ts const agent = createUsageAgent( model, tools, config ) await agent.invoke({''{''} input: \"agents.items.usage-agent.input\" {''}''} 💬 Usage Agent Conversational AI 2025 RAG Help Assistant Natural language question → Guided contextual answer LangChain OpenAI Chroma DB View Details" [ref=e448] [cursor=pointer]':
+            - /url: /agent/usage-agent
+            - generic [ref=e449]:
+              - generic [ref=e454]: agent-1.ts
+              - generic [ref=e455]:
+                - generic [ref=e456]: const agent = createUsageAgent(
+                - generic [ref=e457]: model, tools, config
+                - generic [ref=e458]: )
+                - generic [ref=e459]: "await agent.invoke({'{'}"
+                - generic [ref=e460]: "input: \"agents.items.usage-agent.input\""
+                - generic [ref=e461]: "{'}'}"
+              - generic [ref=e462]: 💬
+            - generic [ref=e463]:
+              - generic [ref=e464]:
+                - generic [ref=e465]:
+                  - heading "Usage Agent" [level=3] [ref=e466]
+                  - paragraph [ref=e467]: Conversational AI
+                - generic [ref=e468]: "2025"
+              - paragraph [ref=e469]: RAG Help Assistant
+              - generic [ref=e470]:
+                - generic [ref=e471]: Natural language question
+                - generic [ref=e472]: →
+                - generic [ref=e473]: Guided contextual answer
+              - generic [ref=e474]:
+                - generic [ref=e475]: LangChain
+                - generic [ref=e476]: OpenAI
+                - generic [ref=e477]: Chroma DB
+              - generic [ref=e478]:
+                - text: View Details
+                - img [ref=e479]
+          - 'link "agent-2.ts const agent = createSpecAgent( model, tools, config ) await agent.invoke({''{''} input: \"agents.items.spec-agent.input\" {''}''} 📄 Spec Agent Code Generation 2025 Auto Spec Generator Business need description → Domain.md + UserStories.md LangChain OpenAI Chroma DB View Details" [ref=e481] [cursor=pointer]':
+            - /url: /agent/spec-agent
+            - generic [ref=e482]:
+              - generic [ref=e487]: agent-2.ts
+              - generic [ref=e488]:
+                - generic [ref=e489]: const agent = createSpecAgent(
+                - generic [ref=e490]: model, tools, config
+                - generic [ref=e491]: )
+                - generic [ref=e492]: "await agent.invoke({'{'}"
+                - generic [ref=e493]: "input: \"agents.items.spec-agent.input\""
+                - generic [ref=e494]: "{'}'}"
+              - generic [ref=e495]: 📄
+            - generic [ref=e496]:
+              - generic [ref=e497]:
+                - generic [ref=e498]:
+                  - heading "Spec Agent" [level=3] [ref=e499]
+                  - paragraph [ref=e500]: Code Generation
+                - generic [ref=e501]: "2025"
+              - paragraph [ref=e502]: Auto Spec Generator
+              - generic [ref=e503]:
+                - generic [ref=e504]: Business need description
+                - generic [ref=e505]: →
+                - generic [ref=e506]: Domain.md + UserStories.md
+              - generic [ref=e507]:
+                - generic [ref=e508]: LangChain
+                - generic [ref=e509]: OpenAI
+                - generic [ref=e510]: Chroma DB
+              - generic [ref=e511]:
+                - text: View Details
+                - img [ref=e512]
+          - 'link "agent-3.ts const agent = createSqlAgent( model, tools, config ) await agent.invoke({''{''} input: \"agents.items.sql-agent.input\" {''}''} 🗄️ SQL Agent Data Intelligence 2025 Natural Language Data Queries Natural language data question → Query results in plain language LangChain OpenAI SQLite View Details" [ref=e514] [cursor=pointer]':
+            - /url: /agent/sql-agent
+            - generic [ref=e515]:
+              - generic [ref=e520]: agent-3.ts
+              - generic [ref=e521]:
+                - generic [ref=e522]: const agent = createSqlAgent(
+                - generic [ref=e523]: model, tools, config
+                - generic [ref=e524]: )
+                - generic [ref=e525]: "await agent.invoke({'{'}"
+                - generic [ref=e526]: "input: \"agents.items.sql-agent.input\""
+                - generic [ref=e527]: "{'}'}"
+              - generic [ref=e528]: 🗄️
+            - generic [ref=e529]:
+              - generic [ref=e530]:
+                - generic [ref=e531]:
+                  - heading "SQL Agent" [level=3] [ref=e532]
+                  - paragraph [ref=e533]: Data Intelligence
+                - generic [ref=e534]: "2025"
+              - paragraph [ref=e535]: Natural Language Data Queries
+              - generic [ref=e536]:
+                - generic [ref=e537]: Natural language data question
+                - generic [ref=e538]: →
+                - generic [ref=e539]: Query results in plain language
+              - generic [ref=e540]:
+                - generic [ref=e541]: LangChain
+                - generic [ref=e542]: OpenAI
+                - generic [ref=e543]: SQLite
+              - generic [ref=e544]:
+                - text: View Details
+                - img [ref=e545]
+          - 'link "agent-4.ts const agent = createOrchestratorAgent( model, tools, config ) await agent.invoke({''{''} input: \"agents.items.orchestrator-agent.input\" {''}''} 🔀 Orchestrator Agent Multi-Agent System 2025 Intelligent Query Router Any user question → Routed answer from specialist agent LangChain OpenAI TypeScript View Details" [ref=e547] [cursor=pointer]':
+            - /url: /agent/orchestrator-agent
+            - generic [ref=e548]:
+              - generic [ref=e553]: agent-4.ts
+              - generic [ref=e554]:
+                - generic [ref=e555]: const agent = createOrchestratorAgent(
+                - generic [ref=e556]: model, tools, config
+                - generic [ref=e557]: )
+                - generic [ref=e558]: "await agent.invoke({'{'}"
+                - generic [ref=e559]: "input: \"agents.items.orchestrator-agent.input\""
+                - generic [ref=e560]: "{'}'}"
+              - generic [ref=e561]: 🔀
+            - generic [ref=e562]:
+              - generic [ref=e563]:
+                - generic [ref=e564]:
+                  - heading "Orchestrator Agent" [level=3] [ref=e565]
+                  - paragraph [ref=e566]: Multi-Agent System
+                - generic [ref=e567]: "2025"
+              - paragraph [ref=e568]: Intelligent Query Router
+              - generic [ref=e569]:
+                - generic [ref=e570]: Any user question
+                - generic [ref=e571]: →
+                - generic [ref=e572]: Routed answer from specialist agent
+              - generic [ref=e573]:
+                - generic [ref=e574]: LangChain
+                - generic [ref=e575]: OpenAI
+                - generic [ref=e576]: TypeScript
+              - generic [ref=e577]:
+                - text: View Details
+                - img [ref=e578]
+          - 'link "agent-5.ts const agent = createBrickGenerator( model, tools, config ) await agent.invoke({''{''} input: \"agents.items.brick-generator.input\" {''}''} ⚙️ Brick Generator Code Generation 2025 Full-Stack Code Generation Agent Domain specs + User stories → Complete NestJS + Nuxt codebase LangChain OpenAI NestJS View Details" [ref=e580] [cursor=pointer]':
+            - /url: /agent/brick-generator
+            - generic [ref=e581]:
+              - generic [ref=e586]: agent-5.ts
+              - generic [ref=e587]:
+                - generic [ref=e588]: const agent = createBrickGenerator(
+                - generic [ref=e589]: model, tools, config
+                - generic [ref=e590]: )
+                - generic [ref=e591]: "await agent.invoke({'{'}"
+                - generic [ref=e592]: "input: \"agents.items.brick-generator.input\""
+                - generic [ref=e593]: "{'}'}"
+              - generic [ref=e594]: ⚙️
+            - generic [ref=e595]:
+              - generic [ref=e596]:
+                - generic [ref=e597]:
+                  - heading "Brick Generator" [level=3] [ref=e598]
+                  - paragraph [ref=e599]: Code Generation
+                - generic [ref=e600]: "2025"
+              - paragraph [ref=e601]: Full-Stack Code Generation Agent
+              - generic [ref=e602]:
+                - generic [ref=e603]: Domain specs + User stories
+                - generic [ref=e604]: →
+                - generic [ref=e605]: Complete NestJS + Nuxt codebase
+              - generic [ref=e606]:
+                - generic [ref=e607]: LangChain
+                - generic [ref=e608]: OpenAI
+                - generic [ref=e609]: NestJS
+              - generic [ref=e610]:
+                - text: View Details
+                - img [ref=e611]
+    - contentinfo [ref=e613]:
+      - generic [ref=e614]:
+        - generic [ref=e615]:
+          - generic [ref=e616]: Get in touch
+          - heading "Let's work together" [level=2] [ref=e617]
+          - paragraph [ref=e618]: Ready to bring your ideas to reality?
+        - link "belhanafiabdelmadjid@gmail.com" [ref=e619] [cursor=pointer]:
+          - /url: mailto:belhanafiabdelmadjid@gmail.com
+          - img [ref=e620]
+          - text: belhanafiabdelmadjid@gmail.com
+        - generic [ref=e623]:
+          - link "GitHub" [ref=e624] [cursor=pointer]:
+            - /url: https://github.com/BelhanafiAbdelmadjid
+            - img [ref=e625]
+          - link "LinkedIn" [ref=e627] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/abdelmadjid-belhanafi-429112262/
+            - img [ref=e628]
+          - link "Instagram" [ref=e631] [cursor=pointer]:
+            - /url: https://www.instagram.com/jidsu_dev/
+            - img [ref=e632]
+        - generic [ref=e636]:
+          - generic [ref=e637]: DEVELOPED BY ABDELMADJID BELHANAFI
+          - generic [ref=e638]: "2026"
+  - generic [ref=e641]:
+    - generic "Toggle devtools panel" [ref=e642] [cursor=pointer]:
+      - img [ref=e643]
+    - generic "Toggle Component Inspector" [ref=e648] [cursor=pointer]:
+      - img [ref=e649]

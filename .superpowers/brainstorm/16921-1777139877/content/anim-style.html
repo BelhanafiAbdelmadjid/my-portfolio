@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animation Style</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0a0f1a; color: #e8f0fe; font-family: 'Inter', sans-serif; padding: 32px 24px; }
+  h2 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+  .subtitle { color: #8b9dc3; font-size: 14px; margin-bottom: 32px; }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+  .card {
+    background: #0e1520;
+    border: 1px solid #1e2d47;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color .2s, transform .15s;
+  }
+  .card:hover { border-color: #334d6e; transform: translateY(-2px); }
+  .card.selected { border-color: #22d3ee; box-shadow: 0 0 0 1px #22d3ee40; }
+  .card-preview { padding: 20px; border-bottom: 1px solid #1e2d47; min-height: 180px; }
+  .card-body { padding: 16px; }
+  .card-body h3 { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .card-body p { font-size: 12px; color: #8b9dc3; line-height: 1.6; }
+
+  .terminal { background: #060a12; border: 1px solid #1e2d47; border-radius: 10px; overflow: hidden; font-family: monospace; font-size: 11px; }
+  .term-bar { background: #0c1220; padding: 8px 12px; border-bottom: 1px solid #1e2d47; display: flex; gap: 5px; align-items: center; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; }
+  .term-body { padding: 12px; }
+
+  .chip { display: inline-block; border: 1px solid #22d3ee44; border-radius: 6px; padding: 5px 10px; font-size: 10px; font-family: monospace; color: #22d3ee; background: #22d3ee0a; margin: 0 4px 6px 0; cursor: pointer; }
+
+  /* A: token stream */
+  @keyframes blink { 0%,100%{opacity:1}50%{opacity:0} }
+  .cursor { color: #22d3ee; animation: blink 0.8s infinite; }
+
+  /* B: thinking + reveal */
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .spinner { width: 12px; height: 12px; border: 1.5px solid #22d3ee44; border-top-color: #22d3ee; border-radius: 50%; animation: spin .7s linear infinite; display: inline-block; vertical-align: middle; }
+
+  /* C: fade slide */
+  @keyframes fadeSlide { from { opacity:0; transform: translateY(6px); } to { opacity:1; transform: none; } }
+  .fade-line { opacity: 0; animation: fadeSlide .3s ease forwards; }
+  .fade-line:nth-child(1) { animation-delay: .05s; }
+  .fade-line:nth-child(2) { animation-delay: .2s; }
+  .fade-line:nth-child(3) { animation-delay: .35s; }
+
+  .label { font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: #4a5c7e; margin-bottom: 10px; }
+  .response-box { border: 1px solid #22d3ee22; border-radius: 8px; padding: 10px 12px; margin-top: 10px; font-size: 10px; font-family: monospace; color: #8b9dc3; line-height: 1.7; }
+  .accent { color: #22d3ee; }
+  .selected-badge { float: right; font-size: 10px; color: #22d3ee; display: none; }
+  .card.selected .selected-badge { display: inline; }
+</style>
+</head>
+<body>
+<h2>How should the agent response animate in?</h2>
+<p class="subtitle">After clicking a sample query, pick the response reveal style that feels most alive.</p>
+
+<div class="cards">
+
+  <!-- A: Token streaming -->
+  <div class="card" onclick="this.classList.toggle('selected');recordChoice('token-stream',this)">
+    <div class="card-preview">
+      <div class="label">Option A — Token Stream</div>
+      <div class="chip">▸ "How do I add a user?"</div>
+      <div class="response-box">
+        <span class="accent">→</span> Searching specs...<br>
+        <span class="accent">✓</span> Found relevant doc<br><br>
+        To add a user, navigate to<span class="cursor"> █</span>
+      </div>
+      <div style="margin-top:8px;font-size:10px;font-family:monospace;color:#4a5c7e">Words appear one-by-one like a real LLM response</div>
+    </div>
+    <div class="card-body">
+      <h3>A — Word-by-word typewriter <span class="selected-badge">✓ selected</span></h3>
+      <p>Each word appears sequentially with a blinking cursor, exactly like ChatGPT. Simulates real token streaming. Most realistic feel.</p>
+    </div>
+  </div>
+
+  <!-- B: Thinking spinner then reveal -->
+  <div class="card" onclick="this.classList.toggle('selected');recordChoice('thinking-reveal',this)">
+    <div class="card-preview">
+      <div class="label">Option B — Think then Reveal</div>
+      <div class="chip">▸ "How do I add a user?"</div>
+      <div class="response-box">
+        <span class="accent">→</span> <span class="spinner"></span> <span style="color:#4a5c7e">Agent thinking...</span><br><br>
+        <span style="color:#ffffff80">To add a user, navigate to Admin → Users, then click "Invite". Fill in the email and assign a role.</span>
+      </div>
+      <div style="margin-top:8px;font-size:10px;font-family:monospace;color:#4a5c7e">Spinner for ~1.2s → full text fades in at once</div>
+    </div>
+    <div class="card-body">
+      <h3>B — Thinking spinner → full reveal <span class="selected-badge">✓ selected</span></h3>
+      <p>A spinner shows the agent "thinking", then the full response fades in. Clean and dramatic. Emphasizes the AI reasoning phase.</p>
+    </div>
+  </div>
+
+  <!-- C: Staggered line fade -->
+  <div class="card" onclick="this.classList.toggle('selected');recordChoice('stagger-lines',this)">
+    <div class="card-preview">
+      <div class="label">Option C — Staggered Lines</div>
+      <div class="chip">▸ "How do I add a user?"</div>
+      <div class="response-box" id="stagger-preview" style="cursor:pointer" onclick="replayStagger(event)">
+        <div class="fade-line"><span class="accent">→</span> Searching knowledge base...</div>
+        <div class="fade-line"><span class="accent">✓</span> Found 2 relevant documents</div>
+        <div class="fade-line" style="margin-top:6px;color:#ffffff80">To add a user, navigate to Admin → Users, then click "Invite".</div>
+      </div>
+      <div style="margin-top:8px;font-size:10px;font-family:monospace;color:#4a5c7e">Click preview above to replay animation</div>
+    </div>
+    <div class="card-body">
+      <h3>C — Step-by-step staggered lines <span class="selected-badge">✓ selected</span></h3>
+      <p>Each line slides and fades in sequentially — tool call, result, then answer. Matches the terminal aesthetic. Shows the agent's reasoning steps visually.</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function recordChoice(choice, el) {
+  // post to companion
+  try {
+    fetch('/__choice', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({choice, text: el.querySelector('h3').textContent}) });
+  } catch(e) {}
+}
+function replayStagger(e) {
+  e.stopPropagation();
+  const box = document.getElementById('stagger-preview');
+  box.querySelectorAll('.fade-line').forEach(l => { l.style.animation='none'; l.offsetHeight; l.style.animation=''; });
+}
+</script>
+</body>
+</html>

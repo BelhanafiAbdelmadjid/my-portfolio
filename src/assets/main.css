@@ -1,36 +1,85 @@
 @import './base.css';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --canvas: #080c14;
+  --panel: #0f1623;
+  --card: #131d2e;
+  --layer: #1a2540;
+  --edge: #1e2d47;
+  --shine: #2a3f6e;
+  --t1: #e8f0fe;
+  --t2: #8b9dc3;
+  --t3: #4a5c7e;
+  --accent: #38bdf8;
+  --warm: #fbbf24;
+}
+
 @layer components {
-  .link-custom {
-    @apply font-montserrat font-semibold text-[16px] hover:text-yellow-400 cursor-pointer transition-all duration-150;
+  .link-nav {
+    @apply font-outfit font-medium text-sm text-t2 hover:text-accent transition-colors duration-200 cursor-pointer relative;
+  }
+
+  .section-eyebrow {
+    @apply font-mono text-xs text-accent tracking-[0.25em] uppercase;
+  }
+
+  .section-heading {
+    @apply font-syne font-bold text-3xl md:text-4xl text-t1 leading-tight;
+  }
+
+  .card-base {
+    @apply bg-card border border-edge rounded-xl transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply hover:border-shine hover:bg-layer hover:shadow-[0_8px_32px_rgba(56,189,248,0.08)];
+  }
+
+  .tech-tag {
+    @apply font-mono text-xs px-2.5 py-0.5 rounded-full border border-edge text-t3
+           hover:border-accent hover:text-accent transition-colors duration-200;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-canvas font-outfit font-semibold text-sm px-6 py-2.5 rounded-lg
+           hover:brightness-110 transition-all duration-200 inline-flex items-center gap-2;
+  }
+
+  .btn-ghost {
+    @apply border border-edge text-t2 font-outfit font-medium text-sm px-6 py-2.5 rounded-lg
+           hover:border-accent hover:text-accent transition-all duration-200 inline-flex items-center gap-2;
+  }
+
+  .section-divider {
+    @apply flex items-center gap-4 mb-14;
+  }
+
+  .section-divider::after {
+    content: '';
+    @apply flex-1 h-px bg-edge;
   }
 }
 
-/* Global selection color using Tailwind utility */
-::selection {
-  @apply bg-yellow-400 text-black;
-}
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--canvas); }
+::-webkit-scrollbar-thumb { background: var(--edge); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+* { scrollbar-width: thin; scrollbar-color: var(--edge) var(--canvas); }
 
-/* Custom scrollbar styles using Tailwind color values */
-::-webkit-scrollbar {
-  width: 16px;
-  background: transparent; /* dark-800 */
-}
-::-webkit-scrollbar-thumb {
-  background: transparent; /* beige-200 */
-  border-radius: 16px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: transparent; /* beige-100 for hover effect */
-}
+/* Selection */
+::selection { background: rgba(56,189,248,0.25); color: #e8f0fe; }
 
-/* For Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #e8e1d9 transparent; /* beige-200 */
+/* Glow orb backgrounds */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 0;
 }

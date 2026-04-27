@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo Placement</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0a0f1a; color: #e8f0fe; font-family: 'Inter', sans-serif; padding: 32px 24px; }
+  h2 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+  .subtitle { color: #8b9dc3; font-size: 14px; margin-bottom: 32px; }
+
+  .layouts { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+  .layout-card {
+    background: #0e1520;
+    border: 2px solid #1e2d47;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color .2s, transform .15s;
+  }
+  .layout-card:hover { border-color: #334d6e; transform: translateY(-2px); }
+  .layout-card.selected { border-color: #22d3ee; }
+
+  .preview { padding: 16px; border-bottom: 1px solid #1e2d47; background: #060a12; }
+  .info { padding: 16px; }
+  .info h3 { font-size: 13px; font-weight: 600; margin-bottom: 5px; }
+  .info p { font-size: 11px; color: #8b9dc3; line-height: 1.6; }
+
+  /* mini page wireframe blocks */
+  .nav-bar { background: #0e1a2e; border: 1px solid #1e2d47; border-radius: 4px; height: 20px; margin-bottom: 6px; }
+  .hero-block { background: linear-gradient(135deg, #0e3a4a 0%, #080c14 100%); border: 1px solid #22d3ee22; border-radius: 6px; padding: 10px; margin-bottom: 6px; display: flex; gap: 8px; }
+  .hero-left { flex: 1; }
+  .hero-title { background: #ffffff20; border-radius: 3px; height: 10px; width: 70%; margin-bottom: 5px; }
+  .hero-sub { background: #ffffff10; border-radius: 3px; height: 6px; width: 90%; margin-bottom: 3px; }
+  .hero-right { width: 60px; background: #000000cc; border: 1px solid #22d3ee22; border-radius: 6px; }
+
+  .content-grid { display: flex; gap: 6px; }
+  .content-main { flex: 2; }
+  .content-side { width: 60px; }
+
+  .section-block { background: #0e1a2e; border: 1px solid #1e2d47; border-radius: 6px; padding: 8px; margin-bottom: 6px; }
+  .section-line { background: #ffffff15; border-radius: 2px; height: 5px; margin-bottom: 3px; }
+  .section-line.short { width: 60%; }
+
+  .demo-block { background: #0e1a2e; border: 2px solid #22d3ee44; border-radius: 6px; padding: 8px; margin-bottom: 6px; }
+  .demo-chip { background: #22d3ee15; border: 1px solid #22d3ee33; border-radius: 4px; height: 12px; margin-bottom: 4px; }
+  .demo-response { background: #060a12; border: 1px solid #1e2d4780; border-radius: 4px; height: 20px; }
+
+  .side-card { background: #0e1a2e; border: 1px solid #1e2d47; border-radius: 6px; padding: 6px; margin-bottom: 4px; }
+  .side-line { background: #ffffff10; border-radius: 2px; height: 4px; margin-bottom: 2px; }
+
+  .label-tag { display: inline-block; font-size: 10px; font-family: monospace; color: #22d3ee; background: #22d3ee15; border: 1px solid #22d3ee33; border-radius: 4px; padding: 2px 7px; margin-bottom: 6px; }
+  .selected-mark { float: right; font-size: 11px; color: #22d3ee; display: none; }
+  .layout-card.selected .selected-mark { display: inline; }
+</style>
+</head>
+<body>
+
+<h2>Where should the demo panel appear on the agent page?</h2>
+<p class="subtitle">Each option changes how visitors encounter the interactive section while scrolling.</p>
+
+<div class="layouts">
+
+  <!-- A: replaces hero terminal -->
+  <div class="layout-card" onclick="this.classList.toggle('selected');sendChoice('replace-hero',this)">
+    <div class="preview">
+      <div class="label-tag">Option A</div>
+      <div class="nav-bar"></div>
+      <div class="hero-block">
+        <div class="hero-left">
+          <div class="hero-title"></div>
+          <div class="hero-sub"></div>
+          <div class="hero-sub" style="width:50%"></div>
+        </div>
+        <!-- demo replaces the terminal widget on the right -->
+        <div class="hero-right" style="border-color:#22d3ee55;padding:6px;background:#060a12">
+          <div style="background:#22d3ee15;border:1px solid #22d3ee33;border-radius:3px;height:8px;margin-bottom:3px;width:80%"></div>
+          <div style="background:#22d3ee10;border-radius:3px;height:5px;margin-bottom:2px;width:60%"></div>
+          <div style="background:#22d3ee10;border-radius:3px;height:5px;width:90%"></div>
+        </div>
+      </div>
+      <div class="content-grid">
+        <div class="content-main">
+          <div class="section-block"><div class="section-line"></div><div class="section-line short"></div></div>
+          <div class="section-block"><div class="section-line"></div><div class="section-line short"></div></div>
+        </div>
+        <div class="content-side">
+          <div class="side-card"><div class="side-line"></div><div class="side-line"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <h3>A — Demo replaces hero terminal <span class="selected-mark">✓</span></h3>
+      <p>The static terminal code block in the hero becomes the demo. First thing you see. Compact, high-impact.</p>
+    </div>
+  </div>
+
+  <!-- B: full-width section between content and nav -->
+  <div class="layout-card" onclick="this.classList.toggle('selected');sendChoice('mid-section',this)">
+    <div class="preview">
+      <div class="label-tag">Option B</div>
+      <div class="nav-bar"></div>
+      <div class="hero-block" style="margin-bottom:6px">
+        <div class="hero-left"><div class="hero-title"></div><div class="hero-sub"></div></div>
+        <div class="hero-right"></div>
+      </div>
+      <div class="content-grid" style="margin-bottom:6px">
+        <div class="content-main">
+          <div class="section-block"><div class="section-line"></div><div class="section-line short"></div></div>
+        </div>
+        <div class="content-side">
+          <div class="side-card"><div class="side-line"></div></div>
+        </div>
+      </div>
+      <!-- full-width demo section -->
+      <div class="demo-block">
+        <div style="font-size:9px;font-family:monospace;color:#22d3ee;margin-bottom:5px">▸ TRY IT</div>
+        <div style="display:flex;gap:3px;margin-bottom:4px">
+          <div class="demo-chip" style="width:60px"></div>
+          <div class="demo-chip" style="width:80px;opacity:.4"></div>
+          <div class="demo-chip" style="width:50px;opacity:.3"></div>
+        </div>
+        <div class="demo-response"></div>
+      </div>
+      <div style="background:#1e2d4740;border-radius:6px;height:16px;margin-top:6px"></div>
+    </div>
+    <div class="info">
+      <h3>B — Full-width "Try It" section <span class="selected-mark">✓</span></h3>
+      <p>A dedicated section between the content and the agent navigation. Wide, spacious, feels like a proper feature section. Visitor scrolls into it.</p>
+    </div>
+  </div>
+
+  <!-- C: sticky side panel -->
+  <div class="layout-card" onclick="this.classList.toggle('selected');sendChoice('sidebar-demo',this)">
+    <div class="preview">
+      <div class="label-tag">Option C</div>
+      <div class="nav-bar"></div>
+      <div class="hero-block">
+        <div class="hero-left"><div class="hero-title"></div><div class="hero-sub"></div></div>
+        <div class="hero-right"></div>
+      </div>
+      <!-- 3-col: main content | demo | meta sidebar -->
+      <div style="display:flex;gap:5px">
+        <div style="flex:2">
+          <div class="section-block"><div class="section-line"></div><div class="section-line short"></div></div>
+          <div class="section-block"><div class="section-line"></div><div class="section-line short"></div></div>
+        </div>
+        <!-- demo panel as sticky sidebar -->
+        <div style="width:80px">
+          <div class="demo-block" style="position:relative">
+            <div style="font-size:8px;font-family:monospace;color:#22d3ee;margin-bottom:4px">Try it</div>
+            <div class="demo-chip" style="width:100%;height:8px"></div>
+            <div class="demo-chip" style="width:100%;height:8px;opacity:.5"></div>
+            <div class="demo-response" style="height:28px;margin-top:4px"></div>
+          </div>
+          <div class="side-card"><div class="side-line"></div><div class="side-line"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <h3>C — Demo in the sidebar (sticky) <span class="selected-mark">✓</span></h3>
+      <p>The demo replaces or lives alongside the meta card in the right sidebar. Always visible while reading the overview. More compact but persistent.</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function sendChoice(choice, el) {
+  try {
+    fetch('/__choice', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({choice, text: el.querySelector('h3').textContent.trim()}) });
+  } catch(e) {}
+}
+</script>
+</body>
+</html>

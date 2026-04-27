@@ -1,0 +1,113 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - navigation [ref=e5]:
+        - button "AB" [ref=e6] [cursor=pointer]:
+          - generic [ref=e7]: AB
+        - generic [ref=e8]:
+          - generic [ref=e9] [cursor=pointer]: About
+          - generic [ref=e10] [cursor=pointer]: Experience
+          - generic [ref=e11] [cursor=pointer]: Skills
+          - generic [ref=e12] [cursor=pointer]: Work
+          - generic [ref=e13] [cursor=pointer]: Education
+        - generic [ref=e14]:
+          - button "Toggle Language" [ref=e15] [cursor=pointer]:
+            - img [ref=e16]
+            - text: EN
+          - link "Resume" [ref=e19] [cursor=pointer]:
+            - /url: https://drive.google.com/file/d/1jA9Hcp7KNWiT5ZjVGEbgxQJcHFN9V4yR/view
+            - text: Resume
+            - img [ref=e20]
+    - generic [ref=e24]:
+      - generic [ref=e26]:
+        - link "Back to Portfolio" [ref=e27] [cursor=pointer]:
+          - /url: /
+          - img [ref=e28]
+          - text: Back to Portfolio
+        - generic [ref=e30]: "2024"
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - img "FindEat" [ref=e33]
+          - generic [ref=e35]:
+            - generic [ref=e36]: Web Application
+            - heading "FindEat" [level=1] [ref=e37]
+            - paragraph [ref=e38]: Admin Dashboard
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - generic [ref=e41]:
+              - generic [ref=e42]:
+                - heading "Overview" [level=2] [ref=e43]
+                - paragraph [ref=e44]: Developed the comprehensive admin dashboard for FindEat, a Canadian food discovery and certification platform. The dashboard empowers admins to manage the entire platform ecosystem — from client onboarding to restaurant certifications — through an intuitive, real-time interface built with Nuxt.js and Firebase.
+              - generic [ref=e45]:
+                - heading "Key Features" [level=2] [ref=e46]
+                - list [ref=e47]:
+                  - listitem [ref=e48]:
+                    - generic [ref=e49]: "1"
+                    - text: Client and restaurant management with full CRUD operations
+                  - listitem [ref=e50]:
+                    - generic [ref=e51]: "2"
+                    - text: Certification lifecycle tracking and approval workflows
+                  - listitem [ref=e52]:
+                    - generic [ref=e53]: "3"
+                    - text: Real-time data synchronization via Firebase Firestore
+                  - listitem [ref=e54]:
+                    - generic [ref=e55]: "4"
+                    - text: Role-based access control for admin and sub-admin users
+                  - listitem [ref=e56]:
+                    - generic [ref=e57]: "5"
+                    - text: Responsive design optimized for desktop operations
+            - generic [ref=e58]:
+              - generic [ref=e59]:
+                - generic [ref=e60]:
+                  - text: Role
+                  - paragraph [ref=e61]: Full Stack Developer
+                - generic [ref=e63]:
+                  - text: Year
+                  - paragraph [ref=e64]: "2024"
+                - generic [ref=e66]:
+                  - text: Tech Stack
+                  - generic [ref=e67]:
+                    - generic [ref=e68]: Nuxt.js
+                    - generic [ref=e69]: Vue 3
+                    - generic [ref=e70]: Tailwind CSS
+                    - generic [ref=e71]: Firebase
+                    - generic [ref=e72]: REST APIs
+              - generic [ref=e74]:
+                - generic [ref=e75]: 
+                - generic [ref=e76]: 
+                - generic [ref=e77]: 
+                - generic [ref=e78]: 
+          - link "Next Project Mafal Dental" [ref=e80] [cursor=pointer]:
+            - /url: /work/mafal
+            - generic [ref=e81]:
+              - generic [ref=e82]: Next Project
+              - generic [ref=e83]: Mafal Dental
+            - img [ref=e85]
+    - contentinfo [ref=e87]:
+      - generic [ref=e88]:
+        - generic [ref=e89]:
+          - generic [ref=e90]: Get in touch
+          - heading "Let's work together" [level=2] [ref=e91]
+          - paragraph [ref=e92]: Ready to bring your ideas to reality?
+        - link "belhanafiabdelmadjid@gmail.com" [ref=e93] [cursor=pointer]:
+          - /url: mailto:belhanafiabdelmadjid@gmail.com
+          - img [ref=e94]
+          - text: belhanafiabdelmadjid@gmail.com
+        - generic [ref=e97]:
+          - link "GitHub" [ref=e98] [cursor=pointer]:
+            - /url: https://github.com/BelhanafiAbdelmadjid
+            - img [ref=e99]
+          - link "LinkedIn" [ref=e101] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/abdelmadjid-belhanafi-429112262/
+            - img [ref=e102]
+          - link "Instagram" [ref=e105] [cursor=pointer]:
+            - /url: https://www.instagram.com/jidsu_dev/
+            - img [ref=e106]
+        - generic [ref=e110]:
+          - generic [ref=e111]: DEVELOPED BY ABDELMADJID BELHANAFI
+          - generic [ref=e112]: "2026"
+  - generic [ref=e115]:
+    - generic "Toggle devtools panel" [ref=e116] [cursor=pointer]:
+      - img [ref=e117]
+    - generic "Toggle Component Inspector" [ref=e122] [cursor=pointer]:
+      - img [ref=e123]

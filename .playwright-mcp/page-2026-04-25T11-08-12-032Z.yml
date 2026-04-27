@@ -1,0 +1,119 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - navigation [ref=e5]:
+        - button "AB" [ref=e6] [cursor=pointer]:
+          - generic [ref=e7]: AB
+        - generic [ref=e8]:
+          - generic [ref=e9] [cursor=pointer]: About
+          - generic [ref=e10] [cursor=pointer]: Experience
+          - generic [ref=e11] [cursor=pointer]: Skills
+          - generic [ref=e12] [cursor=pointer]: Work
+          - generic [ref=e13] [cursor=pointer]: Education
+        - generic [ref=e14]:
+          - button "Toggle Language" [ref=e15] [cursor=pointer]:
+            - img [ref=e16]
+            - text: EN
+          - link "Resume" [ref=e19] [cursor=pointer]:
+            - /url: https://drive.google.com/file/d/1jA9Hcp7KNWiT5ZjVGEbgxQJcHFN9V4yR/view
+            - text: Resume
+            - img [ref=e20]
+    - generic [ref=e25]:
+      - generic [ref=e27]:
+        - link "Back to Portfolio" [ref=e28] [cursor=pointer]:
+          - /url: /
+          - img [ref=e29]
+          - text: Back to Portfolio
+        - generic [ref=e31]: 2023 – 2024
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - img "UniAssist" [ref=e34]
+          - generic [ref=e36]:
+            - generic [ref=e37]: Full Stack Platform
+            - heading "UniAssist" [level=1] [ref=e38]
+            - paragraph [ref=e39]: E-Learning Platform
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - generic [ref=e42]:
+              - generic [ref=e43]:
+                - heading "Overview" [level=2] [ref=e44]
+                - paragraph [ref=e45]: Built UniAssist from the ground up to help Algerian university students succeed academically. The platform provides structured courses, video lessons, exercises, a comments system, and a gamified XP rewards system to keep students engaged. The backend is a Django REST API, the web app is Nuxt.js, and the mobile app is React Native.
+              - generic [ref=e46]:
+                - heading "Key Features" [level=2] [ref=e47]
+                - list [ref=e48]:
+                  - listitem [ref=e49]:
+                    - generic [ref=e50]: "1"
+                    - text: Structured course library with video lessons and exercises
+                  - listitem [ref=e51]:
+                    - generic [ref=e52]: "2"
+                    - text: Gamified XP and achievement system to boost engagement
+                  - listitem [ref=e53]:
+                    - generic [ref=e54]: "3"
+                    - text: Comment threads and community discussions per lesson
+                  - listitem [ref=e55]:
+                    - generic [ref=e56]: "4"
+                    - text: "Cross-platform: web (Nuxt.js) and mobile (React Native)"
+                  - listitem [ref=e57]:
+                    - generic [ref=e58]: "5"
+                    - text: RESTful API built with Django and PostgreSQL
+            - generic [ref=e59]:
+              - generic [ref=e60]:
+                - generic [ref=e61]:
+                  - text: Role
+                  - paragraph [ref=e62]: Full Stack Developer
+                - generic [ref=e64]:
+                  - text: Year
+                  - paragraph [ref=e65]: 2023 – 2024
+                - generic [ref=e67]:
+                  - text: Tech Stack
+                  - generic [ref=e68]:
+                    - generic [ref=e69]: Nuxt.js
+                    - generic [ref=e70]: Django REST
+                    - generic [ref=e71]: React Native
+                    - generic [ref=e72]: PostgreSQL
+              - generic [ref=e74]:
+                - generic [ref=e75]: 
+                - generic [ref=e76]: 
+                - generic [ref=e77]: 
+                - generic [ref=e78]: 
+          - generic [ref=e79]:
+            - link "Previous Project Mafal Dental" [ref=e80] [cursor=pointer]:
+              - /url: /work/mafal
+              - img [ref=e82]
+              - generic [ref=e84]:
+                - generic [ref=e85]: Previous Project
+                - generic [ref=e86]: Mafal Dental
+            - link "Next Project Swurvin" [ref=e87] [cursor=pointer]:
+              - /url: /work/swurvin
+              - generic [ref=e88]:
+                - generic [ref=e89]: Next Project
+                - generic [ref=e90]: Swurvin
+              - img [ref=e92]
+    - contentinfo [ref=e94]:
+      - generic [ref=e95]:
+        - generic [ref=e96]:
+          - generic [ref=e97]: Get in touch
+          - heading "Let's work together" [level=2] [ref=e98]
+          - paragraph [ref=e99]: Ready to bring your ideas to reality?
+        - link "belhanafiabdelmadjid@gmail.com" [ref=e100] [cursor=pointer]:
+          - /url: mailto:belhanafiabdelmadjid@gmail.com
+          - img [ref=e101]
+          - text: belhanafiabdelmadjid@gmail.com
+        - generic [ref=e104]:
+          - link "GitHub" [ref=e105] [cursor=pointer]:
+            - /url: https://github.com/BelhanafiAbdelmadjid
+            - img [ref=e106]
+          - link "LinkedIn" [ref=e108] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/abdelmadjid-belhanafi-429112262/
+            - img [ref=e109]
+          - link "Instagram" [ref=e112] [cursor=pointer]:
+            - /url: https://www.instagram.com/jidsu_dev/
+            - img [ref=e113]
+        - generic [ref=e117]:
+          - generic [ref=e118]: DEVELOPED BY ABDELMADJID BELHANAFI
+          - generic [ref=e119]: "2026"
+  - generic [ref=e122]:
+    - generic "Toggle devtools panel" [ref=e123] [cursor=pointer]:
+      - img [ref=e124]
+    - generic "Toggle Component Inspector" [ref=e129] [cursor=pointer]:
+      - img [ref=e130]

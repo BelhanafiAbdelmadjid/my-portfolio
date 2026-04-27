@@ -1,0 +1,423 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - navigation [ref=e5]:
+        - button "AB" [ref=e6] [cursor=pointer]:
+          - generic [ref=e7]: AB
+        - generic [ref=e8]:
+          - generic [ref=e9] [cursor=pointer]: About
+          - generic [ref=e10] [cursor=pointer]: Experience
+          - generic [ref=e11] [cursor=pointer]: Skills
+          - generic [ref=e12] [cursor=pointer]: Work
+          - generic [ref=e13] [cursor=pointer]: Education
+        - generic [ref=e14]:
+          - button "Toggle Language" [ref=e15] [cursor=pointer]:
+            - img [ref=e16]
+            - text: EN
+          - link "Resume" [ref=e19] [cursor=pointer]:
+            - /url: https://drive.google.com/file/d/1jA9Hcp7KNWiT5ZjVGEbgxQJcHFN9V4yR/view
+            - text: Resume
+            - img [ref=e20]
+    - main [ref=e24]:
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - img "Belhanafi Abdelmadjid" [ref=e28]
+          - generic [ref=e29]:
+            - heading "BELHANAFI" [level=1] [ref=e30]
+            - heading "ABDELMADJID" [level=1] [ref=e31]
+          - generic [ref=e32]:
+            - generic [ref=e33]: ›
+            - generic [ref=e34]: _
+          - paragraph [ref=e35]: Student · Full Stack Developer · DevSecOps Enthusiast
+          - generic [ref=e36]:
+            - button "View My Work" [ref=e37] [cursor=pointer]:
+              - text: View My Work
+              - img [ref=e38]
+            - button "Say Hello" [ref=e41] [cursor=pointer]
+        - generic [ref=e43]: Scroll
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - generic [ref=e48]: "01"
+          - heading "About Me" [level=2] [ref=e49]
+        - generic [ref=e50]:
+          - paragraph [ref=e51]: Hey! Master's student in Cybersecurity (UVSQ), focused on Networks, Systems and DevSecOps.
+          - paragraph [ref=e52]: Skilled in network, system, API security and secure CI/CD pipelines.
+          - paragraph [ref=e53]: Seeking an apprenticeship from September 2026 as a Network/Security Administrator or DevOps/DevSecOps.
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: Sep 2026
+            - generic [ref=e57]: Available From
+          - generic [ref=e58]:
+            - generic [ref=e59]: Full Stack
+            - generic [ref=e60]: + DevSecOps
+          - generic [ref=e61]:
+            - generic [ref=e62]: Algeria
+            - generic [ref=e63]: Open to Remote
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - generic [ref=e67]: "02"
+          - heading "Experience" [level=2] [ref=e68]
+        - generic [ref=e71]:
+          - generic [ref=e74]:
+            - generic [ref=e75]:
+              - generic [ref=e76]:
+                - heading "DevSecOps" [level=3] [ref=e77]
+                - paragraph [ref=e78]: Docflow · Remote · Montreal, Canada
+              - generic [ref=e79]:
+                - generic [ref=e80]: March 2025 — Present
+                - generic [ref=e81]: Current
+            - list [ref=e83]:
+              - listitem [ref=e84]:
+                - generic [ref=e85]: ▸
+                - text: Built and maintained scalable web applications using Vue 3 and Firebase (Firestore, Auth, Cloud Functions)
+              - listitem [ref=e86]:
+                - generic [ref=e87]: ▸
+                - text: Developed backend logic and APIs with Firebase Functions and handled real-time data syncing with Firestore
+              - listitem [ref=e88]:
+                - generic [ref=e89]: ▸
+                - text: Designed responsive UIs and component-based architecture for seamless user experience
+              - listitem [ref=e90]:
+                - generic [ref=e91]: ▸
+                - text: Implemented CI/CD pipelines using GitHub Actions with Firebase Hosting for automated deployments
+              - listitem [ref=e92]:
+                - generic [ref=e93]: ▸
+                - text: Collaborated with remote teams in an Agile/Scrum environment to deliver iterative product updates
+              - listitem [ref=e94]:
+                - generic [ref=e95]: ▸
+                - text: Ensured application security, performance, and scalability to support business growth
+          - generic [ref=e98]:
+            - generic [ref=e99]:
+              - generic [ref=e100]:
+                - heading "IT Production, DevOps & Software Apprentice" [level=3] [ref=e101]
+                - paragraph [ref=e102]: Natixis, BPCE Group · Algiers, Algeria
+              - generic [ref=e104]: March 2023 — October 2025
+            - list [ref=e105]:
+              - listitem [ref=e106]:
+                - generic [ref=e107]: ▸
+                - text: Assisted in maintaining and deploying production applications in a Linux-based environment
+              - listitem [ref=e108]:
+                - generic [ref=e109]: ▸
+                - text: Built automation scripts and internal tools to streamline routine IT and support tasks
+              - listitem [ref=e110]:
+                - generic [ref=e111]: ▸
+                - text: Worked with Docker to containerize and manage application environments
+              - listitem [ref=e112]:
+                - generic [ref=e113]: ▸
+                - text: Monitored and supported application performance in production environments
+          - generic [ref=e116]:
+            - generic [ref=e117]:
+              - generic [ref=e118]:
+                - heading "IT Helpdesk Support Specialist — Apprentice" [level=3] [ref=e119]
+                - paragraph [ref=e120]: Natixis, BPCE Group · Algiers, Algeria
+              - generic [ref=e122]: April 2022 — March 2023
+            - list [ref=e123]:
+              - listitem [ref=e124]:
+                - generic [ref=e125]: ▸
+                - text: Provided first-line IT support for internal employees, troubleshooting hardware and software issues
+              - listitem [ref=e126]:
+                - generic [ref=e127]: ▸
+                - text: Managed service requests and incidents via ticketing system, ensuring timely resolution
+              - listitem [ref=e128]:
+                - generic [ref=e129]: ▸
+                - text: Collaborated with senior IT staff to escalate complex technical problems
+              - listitem [ref=e130]:
+                - generic [ref=e131]: ▸
+                - text: Supported Windows environments using Active Directory for user account management and SCCM for software deployment and workstation maintenance
+      - generic [ref=e133]:
+        - generic [ref=e134]:
+          - generic [ref=e135]: "03"
+          - heading "Skills" [level=2] [ref=e136]
+        - generic [ref=e137]:
+          - generic [ref=e139]:
+            - generic [ref=e140]:
+              - generic [ref=e141]: 
+              - generic [ref=e142]:
+                - heading "Vue.js" [level=3] [ref=e143]
+                - paragraph [ref=e144]: +3 years — my strongest framework
+            - generic [ref=e145]:
+              - generic [ref=e146]: 
+              - generic [ref=e147]:
+                - heading "Nuxt.js" [level=3] [ref=e148]
+                - paragraph [ref=e149]: +2 years on dashboards & platforms
+            - generic [ref=e150]:
+              - generic [ref=e151]: 
+              - generic [ref=e152]:
+                - heading "React" [level=3] [ref=e153]
+                - paragraph [ref=e154]: +1 year on multiple mobile apps
+            - generic [ref=e155]:
+              - generic [ref=e156]: 
+              - generic [ref=e157]:
+                - heading "Tailwind CSS" [level=3] [ref=e158]
+                - paragraph [ref=e159]: +2 years — a must in every project
+            - generic [ref=e160]:
+              - generic [ref=e161]: 
+              - generic [ref=e162]:
+                - heading "Python" [level=3] [ref=e163]
+                - paragraph [ref=e164]: +4 years — my first language
+            - generic [ref=e165]:
+              - generic [ref=e166]: 
+              - generic [ref=e167]:
+                - heading "Django" [level=3] [ref=e168]
+                - paragraph [ref=e169]: +1 year on personal projects
+            - generic [ref=e170]:
+              - generic [ref=e171]: 
+              - generic [ref=e172]:
+                - heading "Flask" [level=3] [ref=e173]
+                - paragraph [ref=e174]: +3 years building web apps
+            - generic [ref=e175]:
+              - generic [ref=e176]: 
+              - generic [ref=e177]:
+                - heading "Express.js" [level=3] [ref=e178]
+                - paragraph [ref=e179]: +1 year on real-world projects
+            - generic [ref=e180]:
+              - generic [ref=e181]: 
+              - generic [ref=e182]:
+                - heading "Firebase" [level=3] [ref=e183]
+                - paragraph [ref=e184]: +1 year on real-world projects
+            - generic [ref=e185]:
+              - generic [ref=e186]: 
+              - generic [ref=e187]:
+                - heading "Docker" [level=3] [ref=e188]
+                - paragraph [ref=e189]: +2 years with containerization
+            - generic [ref=e190]:
+              - generic [ref=e191]: 
+              - generic [ref=e192]:
+                - heading "Linux" [level=3] [ref=e193]
+                - paragraph [ref=e194]: Systems & command line proficiency
+            - generic [ref=e195]:
+              - generic [ref=e196]: 
+              - generic [ref=e197]:
+                - heading "Laravel" [level=3] [ref=e198]
+                - paragraph [ref=e199]: Personal projects & APIs
+          - generic [ref=e200]:
+            - generic [ref=e201]:
+              - generic [ref=e202]: 
+              - generic [ref=e203]:
+                - heading [level=3] [ref=e204]: Vue.js
+                - paragraph [ref=e205]: +3 years — my strongest framework
+            - generic [ref=e206]:
+              - generic [ref=e207]: 
+              - generic [ref=e208]:
+                - heading [level=3] [ref=e209]: Nuxt.js
+                - paragraph [ref=e210]: +2 years on dashboards & platforms
+            - generic [ref=e211]:
+              - generic [ref=e212]: 
+              - generic [ref=e213]:
+                - heading [level=3] [ref=e214]: React
+                - paragraph [ref=e215]: +1 year on multiple mobile apps
+            - generic [ref=e216]:
+              - generic [ref=e217]: 
+              - generic [ref=e218]:
+                - heading [level=3] [ref=e219]: Tailwind CSS
+                - paragraph [ref=e220]: +2 years — a must in every project
+            - generic [ref=e221]:
+              - generic [ref=e222]: 
+              - generic [ref=e223]:
+                - heading [level=3] [ref=e224]: Python
+                - paragraph [ref=e225]: +4 years — my first language
+            - generic [ref=e226]:
+              - generic [ref=e227]: 
+              - generic [ref=e228]:
+                - heading [level=3] [ref=e229]: Django
+                - paragraph [ref=e230]: +1 year on personal projects
+            - generic [ref=e231]:
+              - generic [ref=e232]: 
+              - generic [ref=e233]:
+                - heading [level=3] [ref=e234]: Flask
+                - paragraph [ref=e235]: +3 years building web apps
+            - generic [ref=e236]:
+              - generic [ref=e237]: 
+              - generic [ref=e238]:
+                - heading [level=3] [ref=e239]: Express.js
+                - paragraph [ref=e240]: +1 year on real-world projects
+            - generic [ref=e241]:
+              - generic [ref=e242]: 
+              - generic [ref=e243]:
+                - heading [level=3] [ref=e244]: Firebase
+                - paragraph [ref=e245]: +1 year on real-world projects
+            - generic [ref=e246]:
+              - generic [ref=e247]: 
+              - generic [ref=e248]:
+                - heading [level=3] [ref=e249]: Docker
+                - paragraph [ref=e250]: +2 years with containerization
+            - generic [ref=e251]:
+              - generic [ref=e252]: 
+              - generic [ref=e253]:
+                - heading [level=3] [ref=e254]: Linux
+                - paragraph [ref=e255]: Systems & command line proficiency
+            - generic [ref=e256]:
+              - generic [ref=e257]: 
+              - generic [ref=e258]:
+                - heading [level=3] [ref=e259]: Laravel
+                - paragraph [ref=e260]: Personal projects & APIs
+      - generic [ref=e262]:
+        - generic [ref=e263]:
+          - generic [ref=e264]: "04"
+          - heading "My Work" [level=2] [ref=e265]
+        - paragraph [ref=e266]: A selection of projects I've built
+        - generic [ref=e267]:
+          - link "FindEat View Case Study Web Application FindEat Admin Dashboard 2024 Admin dashboard for FindEat (Canada) — enabling admins to manage clients, restaurants, and certifications. Nuxt.js Vue 3 Tailwind CSS Firebase View Case Study" [ref=e268] [cursor=pointer]:
+            - /url: /work/findeat
+            - generic [ref=e269]:
+              - img "FindEat" [ref=e270]
+              - generic [ref=e272]:
+                - text: View Case Study
+                - img [ref=e273]
+              - generic [ref=e276]: Web Application
+            - generic [ref=e277]:
+              - generic [ref=e278]:
+                - generic [ref=e279]:
+                  - heading "FindEat" [level=3] [ref=e280]
+                  - paragraph [ref=e281]: Admin Dashboard
+                - generic [ref=e282]: "2024"
+              - paragraph [ref=e283]: Admin dashboard for FindEat (Canada) — enabling admins to manage clients, restaurants, and certifications.
+              - generic [ref=e284]:
+                - generic [ref=e285]: Nuxt.js
+                - generic [ref=e286]: Vue 3
+                - generic [ref=e287]: Tailwind CSS
+                - generic [ref=e288]: Firebase
+              - generic [ref=e289]:
+                - text: View Case Study
+                - img [ref=e290]
+          - link "Mafal Dental View Case Study Landing Page Mafal Dental Clinic Landing Page 2024 Landing page for Mafal Dental clinic — built to increase online visibility and drive patient appointments. Nuxt.js Vue 3 Tailwind CSS SEO View Case Study" [ref=e292] [cursor=pointer]:
+            - /url: /work/mafal
+            - generic [ref=e293]:
+              - img "Mafal Dental" [ref=e294]
+              - generic [ref=e296]:
+                - text: View Case Study
+                - img [ref=e297]
+              - generic [ref=e300]: Landing Page
+            - generic [ref=e301]:
+              - generic [ref=e302]:
+                - generic [ref=e303]:
+                  - heading "Mafal Dental" [level=3] [ref=e304]
+                  - paragraph [ref=e305]: Clinic Landing Page
+                - generic [ref=e306]: "2024"
+              - paragraph [ref=e307]: Landing page for Mafal Dental clinic — built to increase online visibility and drive patient appointments.
+              - generic [ref=e308]:
+                - generic [ref=e309]: Nuxt.js
+                - generic [ref=e310]: Vue 3
+                - generic [ref=e311]: Tailwind CSS
+                - generic [ref=e312]: SEO
+              - generic [ref=e313]:
+                - text: View Case Study
+                - img [ref=e314]
+          - link "UniAssist View Case Study Full Stack Platform UniAssist E-Learning Platform 2023 – 2024 Full-stack e-learning platform helping Algerian students succeed — courses, videos, exercises, and XP rewards. Nuxt.js Django REST React Native PostgreSQL View Case Study" [ref=e316] [cursor=pointer]:
+            - /url: /work/uniassist
+            - generic [ref=e317]:
+              - img "UniAssist" [ref=e318]
+              - generic [ref=e320]:
+                - text: View Case Study
+                - img [ref=e321]
+              - generic [ref=e324]: Full Stack Platform
+            - generic [ref=e325]:
+              - generic [ref=e326]:
+                - generic [ref=e327]:
+                  - heading "UniAssist" [level=3] [ref=e328]
+                  - paragraph [ref=e329]: E-Learning Platform
+                - generic [ref=e330]: 2023 – 2024
+              - paragraph [ref=e331]: Full-stack e-learning platform helping Algerian students succeed — courses, videos, exercises, and XP rewards.
+              - generic [ref=e332]:
+                - generic [ref=e333]: Nuxt.js
+                - generic [ref=e334]: Django REST
+                - generic [ref=e335]: React Native
+                - generic [ref=e336]: PostgreSQL
+              - generic [ref=e337]:
+                - text: View Case Study
+                - img [ref=e338]
+          - link "Swurvin View Case Study Mobile Application Swurvin Roadside Assistance App 2024 Mobile app connecting clients with tow truck drivers — live tracking, Stripe payments, and driver subscriptions. React Native Node.js PostgreSQL Stripe View Case Study" [ref=e340] [cursor=pointer]:
+            - /url: /work/swurvin
+            - generic [ref=e341]:
+              - img "Swurvin" [ref=e342]
+              - generic [ref=e344]:
+                - text: View Case Study
+                - img [ref=e345]
+              - generic [ref=e348]: Mobile Application
+            - generic [ref=e349]:
+              - generic [ref=e350]:
+                - generic [ref=e351]:
+                  - heading "Swurvin" [level=3] [ref=e352]
+                  - paragraph [ref=e353]: Roadside Assistance App
+                - generic [ref=e354]: "2024"
+              - paragraph [ref=e355]: Mobile app connecting clients with tow truck drivers — live tracking, Stripe payments, and driver subscriptions.
+              - generic [ref=e356]:
+                - generic [ref=e357]: React Native
+                - generic [ref=e358]: Node.js
+                - generic [ref=e359]: PostgreSQL
+                - generic [ref=e360]: Stripe
+              - generic [ref=e361]:
+                - text: View Case Study
+                - img [ref=e362]
+      - generic [ref=e365]:
+        - generic [ref=e366]:
+          - generic [ref=e367]: "05"
+          - heading "Academic Background" [level=2] [ref=e368]
+        - generic [ref=e369]:
+          - generic [ref=e371]:
+            - generic [ref=e372]:
+              - img [ref=e374]
+              - generic [ref=e377]:
+                - heading "Master 1 — Computer Systems Security (SSI)" [level=3] [ref=e378]
+                - paragraph [ref=e379]: USTHB — Algiers, Algeria
+            - generic [ref=e380]:
+              - generic [ref=e381]: Sep 2024 — Jun 2025
+              - generic [ref=e382]: Current
+          - generic [ref=e384]:
+            - generic [ref=e385]:
+              - generic [ref=e386]:
+                - img [ref=e388]
+                - generic [ref=e391]:
+                  - heading "Bachelor's Degree — Academic Computer Science (ACAD)" [level=3] [ref=e392]
+                  - paragraph [ref=e393]: USTHB — Algiers, Algeria
+              - generic [ref=e395]: Sep 2021 — Jun 2024
+            - generic [ref=e396]:
+              - generic [ref=e397]:
+                - img [ref=e398]
+                - text: Top 10% of the class
+              - generic [ref=e404]: "Grade: 13.07/20"
+          - generic [ref=e405]:
+            - generic [ref=e406]:
+              - generic [ref=e407]:
+                - img [ref=e409]
+                - generic [ref=e412]:
+                  - heading "Baccalauréat — Experimental Sciences" [level=3] [ref=e413]
+                  - paragraph [ref=e414]: Algiers, Algeria
+              - generic [ref=e416]: "2021"
+            - generic [ref=e418]: "Grade: 15.83/20"
+          - generic [ref=e419]:
+            - generic [ref=e420]:
+              - generic [ref=e421]:
+                - img [ref=e423]
+                - generic [ref=e426]:
+                  - heading "Baccalauréat — Experimental Sciences" [level=3] [ref=e427]
+                  - paragraph [ref=e428]: Algiers, Algeria
+              - generic [ref=e430]: "2020"
+            - generic [ref=e432]: "Grade: 14.76/20"
+    - contentinfo [ref=e433]:
+      - generic [ref=e434]:
+        - generic [ref=e435]:
+          - generic [ref=e436]: Get in touch
+          - heading "Let's work together" [level=2] [ref=e437]
+          - paragraph [ref=e438]: Ready to bring your ideas to reality?
+        - link "belhanafiabdelmadjid@gmail.com" [ref=e439] [cursor=pointer]:
+          - /url: mailto:belhanafiabdelmadjid@gmail.com
+          - img [ref=e440]
+          - text: belhanafiabdelmadjid@gmail.com
+        - generic [ref=e443]:
+          - link "GitHub" [ref=e444] [cursor=pointer]:
+            - /url: https://github.com/BelhanafiAbdelmadjid
+            - img [ref=e445]
+          - link "LinkedIn" [ref=e447] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/abdelmadjid-belhanafi-429112262/
+            - img [ref=e448]
+          - link "Instagram" [ref=e451] [cursor=pointer]:
+            - /url: https://www.instagram.com/jidsu_dev/
+            - img [ref=e452]
+        - generic [ref=e456]:
+          - generic [ref=e457]: DEVELOPED BY ABDELMADJID BELHANAFI
+          - generic [ref=e458]: "2026"
+  - generic [ref=e461]:
+    - generic "Toggle devtools panel" [ref=e462] [cursor=pointer]:
+      - img [ref=e463]
+    - generic "Toggle Component Inspector" [ref=e468] [cursor=pointer]:
+      - img [ref=e469]
