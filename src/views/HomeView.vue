@@ -132,9 +132,6 @@
     <!-- ─── SYSTEMS RUNNING IN PRODUCTION ──────────────────────── -->
     <ProductionSystems />
 
-    <!-- ─── UNDER THE HOOD (architecture + failure story) ──────── -->
-    <UnderTheHood />
-
     <!-- ─── AI AGENTS PITCH ────────────────────────────────────── -->
     <AgentsPitch />
 
@@ -158,7 +155,6 @@ import WhoFor from '@/components/WhoFor.vue'
 import ThesisSection from '@/components/Thesis.vue'
 import ExperienceStats from '@/components/ExperienceStats.vue'
 import ProductionSystems from '@/components/ProductionSystems.vue'
-import UnderTheHood from '@/components/UnderTheHood.vue'
 import AgentsPitch from '@/components/AgentsPitch.vue'
 import HowIWork from '@/components/HowIWork.vue'
 import FaqSection from '@/components/Faq.vue'

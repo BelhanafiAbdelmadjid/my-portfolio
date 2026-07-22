@@ -51,7 +51,7 @@
             "eyebrow": "Parcours",
             "items": {
                 "years": { "value": "5+", "label": "Ans à construire du logiciel" },
-                "platforms": { "value": "2", "label": "Plateformes IA en production" },
+                "platforms": { "value": "5+", "label": "Plateformes IA en production" },
                 "products": { "value": "10+", "label": "Produits livrés de bout en bout" },
                 "uptime": { "value": "24/7", "label": "Pipelines autonomes en marche" }
             }

@@ -51,7 +51,7 @@
             "eyebrow": "Track record",
             "items": {
                 "years": { "value": "5+", "label": "Years building software" },
-                "platforms": { "value": "2", "label": "AI platforms in production" },
+                "platforms": { "value": "5+", "label": "AI platforms in production" },
                 "products": { "value": "10+", "label": "Products shipped end-to-end" },
                 "uptime": { "value": "24/7", "label": "Autonomous pipelines running" }
             }
