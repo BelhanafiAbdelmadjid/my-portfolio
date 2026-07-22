@@ -10,19 +10,19 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/work/:id',
-      name: 'project',
-      component: () => import('../views/ProjectView.vue'),
+      path: '/agents',
+      name: 'agents',
+      component: () => import('../views/AgentsView.vue'),
+    },
+    {
+      path: '/demo',
+      name: 'demo',
+      component: () => import('../views/DemoView.vue'),
     },
     {
       path: '/agent/:id',
       name: 'agent',
       component: () => import('../views/AgentView.vue'),
-    },
-    {
-      path: '/education',
-      name: 'education',
-      component: () => import('../views/EducationView.vue'),
     },
   ],
   scrollBehavior(to, _from, savedPosition) {

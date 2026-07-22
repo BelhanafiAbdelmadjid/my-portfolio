@@ -37,13 +37,16 @@
         </div>
       </div>
     </div>
+    <p class="text-white/25 font-mono text-[9px] mt-2 text-center">{{ t('agents.illustrative') }}</p>
   </div>
 </template>
 
 <script lang="ts" setup>
 import { ref, watch, onMounted, onBeforeUnmount } from 'vue'
+import { useI18n } from 'vue-i18n'
 import type { Agent } from '@/data/agents'
 
+const { t } = useI18n()
 const props = defineProps<{ agent: Agent }>()
 
 interface BootLine {
@@ -56,7 +59,7 @@ interface BootLine {
 const agentBootLines: Record<string, BootLine[]> = {
   'usage-agent': [
     { icon: '$', text: `npx ts-node run-usage-agent.ts`, isCommand: true },
-    { icon: '▶', text: 'Initializing Usage Agent...' },
+    { icon: '▶', text: 'Initializing Product Copilot...' },
     { icon: '✓', text: 'Model loaded (GPT-4.1)' },
     { icon: '✓', text: 'Chroma DB connected' },
     { icon: '✓', text: '5 search tools registered' },
@@ -64,7 +67,7 @@ const agentBootLines: Record<string, BootLine[]> = {
   ],
   'spec-agent': [
     { icon: '$', text: `npx ts-node run-spec-agent.ts`, isCommand: true },
-    { icon: '▶', text: 'Initializing Spec Agent...' },
+    { icon: '▶', text: 'Initializing Spec Architect...' },
     { icon: '✓', text: 'Model loaded (GPT-4.1)' },
     { icon: '✓', text: 'Template engine loaded' },
     { icon: '✓', text: 'RAG pipeline ready' },
@@ -72,7 +75,7 @@ const agentBootLines: Record<string, BootLine[]> = {
   ],
   'sql-agent': [
     { icon: '$', text: `npx ts-node run-sql-agent.ts`, isCommand: true },
-    { icon: '▶', text: 'Initializing SQL Agent...' },
+    { icon: '▶', text: 'Initializing Data Analyst...' },
     { icon: '✓', text: 'Model loaded (GPT-4.1)' },
     { icon: '✓', text: 'SQLite adapter connected' },
     { icon: '✓', text: 'Schema introspected (12 tables)' },
@@ -80,7 +83,7 @@ const agentBootLines: Record<string, BootLine[]> = {
   ],
   'orchestrator-agent': [
     { icon: '$', text: `npx ts-node run-orchestrator-agent.ts`, isCommand: true },
-    { icon: '▶', text: 'Initializing Orchestrator...' },
+    { icon: '▶', text: 'Initializing AI Concierge...' },
     { icon: '✓', text: 'Model loaded (GPT-4.1)' },
     { icon: '✓', text: 'sql_agent initialized' },
     { icon: '✓', text: 'usage_agent initialized' },
@@ -88,7 +91,7 @@ const agentBootLines: Record<string, BootLine[]> = {
   ],
   'brick-generator': [
     { icon: '$', text: `npx ts-node run-brick-generator.ts`, isCommand: true },
-    { icon: '▶', text: 'Initializing Brick Generator...' },
+    { icon: '▶', text: 'Initializing Feature Builder...' },
     { icon: '✓', text: 'Model loaded (GPT-4.1)' },
     { icon: '✓', text: 'NestJS generator loaded' },
     { icon: '✓', text: 'Nuxt scaffolder ready' },

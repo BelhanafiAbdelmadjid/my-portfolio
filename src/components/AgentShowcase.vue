@@ -1,23 +1,6 @@
 <template>
-  <section id="agents" class="py-28 px-6 bg-panel">
+  <div>
     <div class="max-w-7xl mx-auto">
-      <div class="section-divider">
-        <span class="section-eyebrow">05</span>
-        <h2 class="section-heading">{{ t('agents.title') }}</h2>
-      </div>
-      <p class="text-t2 text-base mb-12 -mt-8">{{ t('agents.subtitle') }}</p>
-
-      <!-- Context badge -->
-      <div class="flex items-center gap-3 mb-10 p-4 rounded-xl border border-edge bg-card">
-        <div class="w-8 h-8 rounded-lg bg-accent/15 flex items-center justify-center flex-shrink-0">
-          <span class="text-sm">🧱</span>
-        </div>
-        <div>
-          <p class="text-t1 text-sm font-outfit font-medium">@brickcode/lib-ai</p>
-          <p class="text-t3 text-xs font-mono">Internal TypeScript/LangChain library · OpenAI GPT-4.1 · Chroma DB · NestJS · Nuxt</p>
-        </div>
-      </div>
-
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <RouterLink
           v-for="(agent, i) in agents"
@@ -114,7 +97,7 @@
         </RouterLink>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script lang="ts" setup>

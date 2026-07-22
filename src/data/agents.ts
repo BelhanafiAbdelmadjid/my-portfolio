@@ -51,11 +51,11 @@ export const agents: Agent[] = [
         ],
       },
       {
-        query: '"What does a brick do?"',
+        query: '"What does a module do?"',
         steps: [
           { accent: '→', type: 'dim', content: 'Searching knowledge base...' },
           { accent: '✓', type: 'dim', content: 'Found 3 relevant docs' },
-          { accent: '↳', type: 'text', content: 'A brick is a reusable NestJS + Nuxt module generated from your domain specs.' },
+          { accent: '↳', type: 'text', content: 'A module is a reusable NestJS + Nuxt feature generated from your domain specs.' },
         ],
       },
     ],
@@ -127,7 +127,7 @@ export const agents: Agent[] = [
         ],
       },
       {
-        query: '"Which bricks were generated today?"',
+        query: '"Which modules were generated today?"',
         steps: [
           { accent: '→', type: 'dim', content: 'Writing date-filtered SQL...' },
           { accent: '✓', type: 'dim', content: '3 results found' },
@@ -195,7 +195,7 @@ export const agents: Agent[] = [
         ],
       },
       {
-        query: '"Build a Task CRUD brick"',
+        query: '"Build a Task CRUD module"',
         steps: [
           { accent: '→', type: 'dim', content: 'Analyzing domain entities...' },
           { accent: '✓', type: 'dim', content: 'Backend + frontend generated' },

@@ -10,7 +10,7 @@
           {{ t('agents.backToPortfolio') }}
         </RouterLink>
         <div class="flex items-center gap-2">
-          <span class="font-mono text-[10px] px-2 py-0.5 rounded border text-t3 border-edge">@brickcode/lib-ai</span>
+          <span class="font-mono text-[10px] px-2 py-0.5 rounded border text-t3 border-edge">AI agent library</span>
           <span class="font-mono text-xs" :style="{ color: agent?.accentColor }">{{ agent?.year }}</span>
         </div>
       </div>
@@ -119,7 +119,7 @@
             <div class="card-base rounded-xl p-6 space-y-4">
               <div>
                 <span class="section-eyebrow text-[10px]">Project</span>
-                <p class="text-t1 font-outfit font-medium mt-1 text-sm">@brickcode/lib-ai</p>
+                <p class="text-t1 font-outfit font-medium mt-1 text-sm">In-app AI agent library</p>
               </div>
               <div class="h-px bg-edge"></div>
               <div>

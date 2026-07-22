@@ -34,6 +34,20 @@
           <p class="text-t2 text-lg mt-3 font-outfit">{{ $t('contact.description') }}</p>
         </div>
 
+        <!-- Book a call (Calendly) -->
+        <a
+          :href="CALENDLY_URL"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-accent text-base px-8 py-3.5"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+            <line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" />
+          </svg>
+          {{ $t('contact.bookCall') }}
+        </a>
+
         <!-- Email -->
         <a
           href="mailto:belhanafiabdelmadjid@gmail.com"
@@ -92,36 +106,41 @@
             </svg>
           </a>
 
-          <a
-            href="https://www.instagram.com/jidsu_dev/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-icon"
-            aria-label="Instagram"
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="1.5"/>
-              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
-              <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
-            </svg>
-          </a>
         </div>
 
         <!-- Bottom -->
         <div class="w-full pt-8 border-t border-edge flex flex-col sm:flex-row items-center justify-between gap-2">
-          <span class="font-mono text-t3 text-xs">DEVELOPED BY ABDELMADJID BELHANAFI</span>
+          <span class="font-mono text-t3 text-xs">DEVELOPED BY MADJID</span>
           <span class="font-mono text-t3 text-xs">{{ new Date().getFullYear() }}</span>
         </div>
       </div>
     </footer>
+
+    <!-- Spacer so the mobile sticky Book-a-call bar never overlaps the footer -->
+    <div class="h-16 flex-shrink-0 md:hidden" aria-hidden="true"></div>
   </div>
 </template>
 
 <script lang="ts">
 import NavigationBar from '../components/NavBar.vue'
+import { CALENDLY_URL } from '@/data/site'
 
 export default {
   components: { NavigationBar },
+  data() {
+    return { CALENDLY_URL }
+  },
+  watch: {
+    $route(to) {
+      // Reset the real scroll container (#layout) to top on navigation.
+      // Skip when a hash target is set — the nav scrolls to that section itself.
+      if (!to.hash) {
+        this.$nextTick(() => {
+          document.getElementById('layout')?.scrollTo({ top: 0 })
+        })
+      }
+    },
+  },
 }
 </script>
 

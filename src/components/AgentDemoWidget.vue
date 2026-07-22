@@ -52,13 +52,20 @@
       </div>
       <p v-if="activeSteps.length === 0" class="text-t3 italic">Select a query above...</p>
     </div>
+
+    <!-- Illustrative disclaimer -->
+    <div class="px-4 py-2 border-t border-edge">
+      <span class="font-mono text-[9px] text-t3">{{ t('agents.illustrative') }}</span>
+    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
 import { ref, watch, onBeforeUnmount } from 'vue'
+import { useI18n } from 'vue-i18n'
 import type { Agent, AgentSample } from '@/data/agents'
 
+const { t } = useI18n()
 const props = defineProps<{ agent: Agent }>()
 
 const activeIndex = ref<number | null>(null)

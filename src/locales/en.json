@@ -1,22 +1,282 @@
 {
     "navbar": {
         "AboutMe": "About",
+        "Approach": "Approach",
         "Skills": "Skills",
         "Experience": "Experience",
         "Academic": "Education",
         "Projects": "Work",
+        "Results": "Results",
+        "Work": "Systems",
+        "Demo": "Live demo",
+        "Packages": "Packages",
         "Agents": "AI Agents",
+        "Contact": "Contact",
         "Resume": "Resume"
     },
-    "introduction": "DevOps & AI Solution Engineer · Freelancer · Paris, France",
+    "introduction": "AI Automation & DevOps Engineer · Paris, France",
+    "home": {
+        "hero": {
+            "role": "AI Automation & DevOps Engineer",
+            "lead": "Engineering · Product · Operations",
+            "line1": "I bring AI into",
+            "line2": "how your business runs.",
+            "sub": "From the code you ship to the manual work your team does every day. If it's repetitive, I can probably automate it.",
+            "ctaPrimary": "Book a call",
+            "ctaSecondary": "See how it works"
+        },
+        "trustedBy": "Built in production at",
+        "whatIDo": {
+            "eyebrow": "What I do",
+            "heading": "AI and automation, wherever the busywork is",
+            "subtitle": "I come from DevOps, so I start where delivery hurts. But the same thing applies anywhere your team does repetitive work by hand.",
+            "pillars": {
+                "delivery": { "title": "Engineering & delivery", "desc": "Autonomous pipelines, AI code review, CI/CD and deployments that run themselves. This is my deepest work." },
+                "product": { "title": "AI inside your product", "desc": "Assistants, agents and AI features your users actually talk to, grounded in your own data." },
+                "ops": { "title": "Operations & workflows", "desc": "The manual, repetitive work across your tools: internal tooling, data pulls, reports, onboarding, integrations. If a human does it the same way every time, it can be automated." }
+            }
+        },
+        "thesis": {
+            "eyebrow": "Approach",
+            "headline1": "I put AI on the work ",
+            "headline2": "your team shouldn't have to touch.",
+            "body": "Every team has work that doesn't really need a person: boilerplate and routine code reviews for engineers, but also data entry, reports, moving the same information between tools, chasing status. I build AI that quietly handles the repetitive parts, so your people spend their time where judgment actually matters.",
+            "pillars": {
+                "faster": { "value": "Faster", "label": "time to ship" },
+                "quality": { "value": "Higher", "label": "quality bar" },
+                "cost": { "value": "Lower", "label": "delivery cost" }
+            }
+        },
+        "stats": {
+            "eyebrow": "Track record",
+            "items": {
+                "years": { "value": "5+", "label": "Years building software" },
+                "platforms": { "value": "2", "label": "AI platforms in production" },
+                "products": { "value": "10+", "label": "Products shipped end-to-end" },
+                "uptime": { "value": "24/7", "label": "Autonomous pipelines running" }
+            }
+        },
+        "production": {
+            "eyebrow": "Flagship · engineering & delivery",
+            "heading": "Systems that run themselves",
+            "subtitle": "The kind of automation I set up so delivery keeps moving without someone pushing it.",
+            "stackLabel": "Built with",
+            "cta": "See what it can save you",
+            "powers": {
+                "delivery": { "title": "Autonomous delivery", "desc": "Tickets and specs turn into reviewed pull requests on their own, several at a time, with nobody driving them." },
+                "review": { "title": "AI review on every change", "desc": "Every push gets checked for bugs and security holes in seconds, so nothing sits waiting for someone to get to it." },
+                "deploy": { "title": "Zero-touch deployments", "desc": "Builds, previews and releases just happen. Nobody babysits the pipeline anymore." },
+                "gates": { "title": "AI quality gates", "desc": "Nothing merges until it has been checked against what the ticket actually asked for." },
+                "watch": { "title": "Production that watches itself", "desc": "Something watches real traffic around the clock and catches regressions before your users do." },
+                "throughput": { "title": "More shipped, less overhead", "desc": "Your team gets to spend its time on the work that matters instead of the busywork around it." }
+            }
+        },
+        "agentsPitch": {
+            "eyebrow": "AI Agents",
+            "heading": "Want AI agents inside your own product?",
+            "body": "It's not only pipelines. I also build AI agents that live inside the product itself: answering users, digging through data, generating features. If there's repetitive work your team keeps doing by hand, I can probably automate it in your product too.",
+            "cta": "Explore the agents I've built"
+        },
+        "demo": {
+            "eyebrow": "See it live",
+            "heading": "This actually runs. Try it.",
+            "subtitle": "Both of these run right here in your browser, so go ahead and change things. It's a small taste of what I build for a team.",
+            "review": {
+                "title": "Live code review",
+                "hint": "These are real checks running in your browser. Edit the code and watch it scan again.",
+                "sampleLabel": "Sample",
+                "cleanTitle": "No issues found",
+                "cleanDesc": "Looks clean. Nothing to flag.",
+                "found": "flagged in",
+                "everyPush": "and it runs on every push in your CI",
+                "manualNote": "A manual review averages ~20 min",
+                "faster": "faster",
+                "line": "Line",
+                "sev": { "high": "High", "medium": "Medium", "low": "Low" },
+                "samples": {
+                    "payments": "Payments service",
+                    "api": "API handler",
+                    "clean": "Clean example"
+                },
+                "findings": {
+                    "sqlInjection": "SQL injection risk: user input is concatenated straight into the query. Use parameterized queries.",
+                    "looseEquality": "Loose equality (==). Use === so type coercion doesn't bite you.",
+                    "hardcodedSecret": "Hardcoded secret. Move it to an environment variable.",
+                    "xss": "innerHTML assignment, possible XSS. Sanitize the input or use textContent.",
+                    "varUsage": "var here. Use const or let for block scoping.",
+                    "consoleLog": "Debug console.log left in the code.",
+                    "anyType": "any defeats type safety here. Give it a real type."
+                }
+            },
+            "roi": {
+                "title": "What it saves your team",
+                "hint": "Set the sliders to match your team. The numbers update as you go.",
+                "engineers": "Engineers",
+                "prs": "Pull requests / week",
+                "reviewTime": "Avg review + fix",
+                "hourlyCost": "Loaded cost / hour",
+                "min": "min",
+                "hoursSaved": "Hours saved / week",
+                "reviewCut": "Review time cut",
+                "perYear": "reclaimed / year",
+                "note": "Assumes autonomous review + quality gates reclaim ~70% of PR-review time."
+            }
+        },
+        "results": {
+            "eyebrow": "Results",
+            "heading": "What it's done in production",
+            "subtitle": "Real engagements, real before-and-after. In plain terms: your team ships faster, spends less time reviewing, and catches more before it reaches customers.",
+            "beforeLabel": "Before",
+            "afterLabel": "After",
+            "method": "Measured on the team's own repos, before vs after the automation went live.",
+            "refOnRequest": "reference on request",
+            "cases": {
+                "docflow": {
+                    "context": "Document-workflow SaaS · Series B",
+                    "problem": "Every feature sat for days waiting on someone to build it, review it, and ship it.",
+                    "built": "I built an agent system that takes a ticket to a reviewed pull request on its own, several at a time.",
+                    "m1before": "PR review", "m1after": "4h → 9 min",
+                    "m2before": "Shipped unattended", "m2after": "60+ / week",
+                    "m3before": "Lead time", "m3after": "−68%",
+                    "quote": "It felt like adding three senior engineers overnight.",
+                    "author": "VP Engineering"
+                },
+                "brickcode": {
+                    "context": "Multi-tenant SaaS platform",
+                    "problem": "Reviews and deployments were a constant manual bottleneck the whole team felt.",
+                    "built": "I built a multi-agent pipeline that plans, writes, reviews and ships code, with an AI review on every pull request.",
+                    "m1before": "Every PR reviewed", "m1after": "in < 60s",
+                    "m2before": "Manual deploys", "m2after": "→ 0",
+                    "m3before": "Caught before prod", "m3after": "+40%",
+                    "quote": "Our review queue basically disappeared.",
+                    "author": "Lead Engineer"
+                }
+            }
+        },
+        "howIWork": {
+            "eyebrow": "How I work",
+            "heading": "Autonomy you stay in control of",
+            "subtitle": "Automation shouldn't mean losing the wheel. Here's how I keep it safe and yours.",
+            "points": {
+                "approval": { "title": "You approve what ships", "desc": "Agents propose the work. A human approves every merge and every deploy. Nothing goes out on its own unless you decide it should." },
+                "reversible": { "title": "Reversible by design", "desc": "Every change is reversible, with a one-switch pause on the whole automation. If something looks wrong, you stop it instantly." },
+                "yours": { "title": "You own everything", "desc": "It runs in your environment, self-hosted. I document it, hand it over, and your team runs it without me. No lock-in." },
+                "secure": { "title": "Your code stays yours", "desc": "Nothing leaves your infrastructure. Happy to sign an NDA or DPA before we start, and to work inside your security requirements." }
+            },
+            "soloTitle": "Working with me",
+            "soloDesc": "You work directly with me, not a rotating team. I'm based in Paris and available across EU/US hours. I write everything down as I go and hand it over, so the day the engagement ends, nothing breaks."
+        },
+        "bio": {
+            "eyebrow": "Who's behind this",
+            "heading": "Hi, I'm Madjid.",
+            "body": "I'm an AI Delivery Engineer based in Paris. For the last few years I've built autonomous delivery systems — the agents, pipelines and review bots that let a team ship without doing everything by hand. I work directly with founders and engineering leaders, usually solo, and I hand everything over so your team owns it. Open to project work, retainers, an occasional fractional or advisory seat — or a full-time lead role for the right team."
+        },
+        "underHood": {
+            "eyebrow": "Under the hood",
+            "heading": "How the pipeline actually works",
+            "subtitle": "The short version of what I build — and, just as important, how it behaves when something goes wrong.",
+            "steps": {
+                "1": { "t": "Plan", "d": "An agent turns a ticket or spec into a concrete, reviewable plan." },
+                "2": { "t": "Build", "d": "It implements the change in small, isolated commits on its own branch." },
+                "3": { "t": "Review", "d": "A separate agent reviews the diff for bugs, security and your conventions." },
+                "4": { "t": "Gate", "d": "A PR only opens once tests pass and the change matches what the ticket asked." },
+                "5": { "t": "Ship", "d": "A human approves. Deploy and preview then happen automatically." },
+                "6": { "t": "Watch", "d": "Production is monitored, and anything off triggers a rollback." }
+            },
+            "failureTitle": "When it goes wrong",
+            "failureBody": "It does sometimes, and that's the part I design for. Flaky tests get retried and quarantined, not merged around. A failed build blocks the PR, never the pipeline. Review false-positives are cheap to dismiss and get fed back so the agent stops repeating them. And because every change is a small, reversible commit behind a human approval, a bad one costs you a single revert, not an outage. On one platform a bad autonomous change slipped a regression into staging — the watch caught it, rolled it back on its own, and it never reached a user.",
+            "githubCta": "See my code on GitHub"
+        },
+        "whoFor": {
+            "eyebrow": "Who this is for",
+            "heading": "Where this fits, and where it doesn't",
+            "forTitle": "A good fit if you're",
+            "notTitle": "Probably not if you're",
+            "enterprise": "Larger or regulated org? I don't do SOC 2 or enterprise procurement — but I do advise internal AI-delivery teams and run contained single-team pilots under NDA. Worth a conversation.",
+            "for": {
+                "1": "A team of 3 to ~100 engineers that ships too slowly",
+                "2": "A founder or eng leader who wants delivery automated, not outsourced",
+                "3": "On modern tooling (Git, CI, containers) — SaaS, fintech, e-commerce, marketplaces",
+                "4": "Happy to keep a human approving what ships"
+            },
+            "not": {
+                "1": "A large enterprise that needs a vendor with SOC 2, procurement and an MSA — I'm a solo operator",
+                "2": "Looking to hand over control entirely, with no human in the loop",
+                "3": "In a domain where I'd need formal regulatory certification before touching your code"
+            }
+        },
+        "faq": {
+            "eyebrow": "Questions",
+            "heading": "The things buyers usually ask",
+            "items": {
+                "1": { "q": "Is it just you? What if you're unavailable?", "a": "Yes, you work directly with me, no rotating team. I keep a short bench of trusted engineers I can pull in for capacity, I document everything as I go (runbooks included), and I hand it all over so your team can run it without me. Nothing depends on me being around." },
+                "2": { "q": "Can I talk to a past client?", "a": "Yes. I'll connect you with a reference on our call. I keep client names off a public page out of respect, not because they aren't real." },
+                "3": { "q": "Do you work in regulated or compliance-heavy environments?", "a": "It's built for it. Everything runs self-hosted in your environment, and the agents work on your code in CI, not your production data. Nothing has to leave your infrastructure — I can run on self-hosted or local models so no code or logs go to a third party. Every agent action is logged for audit, access is least-privilege with rotated secrets, and I'll sign an NDA, DPA or BAA and work to your security rules. If you need a vendor with formal SOC 2 or HITRUST certification, I'm honestly not your fit." },
+                "4": { "q": "Will it work with our stack?", "a": "If you're on Git with some form of CI and containers, yes. I meet your setup where it is instead of forcing a new one." },
+                "5": { "q": "How were those numbers measured?", "a": "On the team's own repos, comparing the weeks before and after the automation went live. I'll walk you through the exact baseline on a call — I'd rather show you the method than ask you to trust a headline." },
+                "6": { "q": "Can you deliver under my agency's brand?", "a": "Yes. I subcontract white-label for agencies, work in front of your clients as part of your team, and upskill your engineers so you can carry it forward." },
+                "7": { "q": "I'm a small, budget-tight team. Is this for me?", "a": "Very likely yes — small teams feel the pain most. If you're not sure, start with a free 20-minute diagnostic, no pitch. And the €5k Audit ships one working automation, so you see real value before committing to anything bigger." },
+                "8": { "q": "Are you open to a fractional or full-time role?", "a": "Yes. Alongside project work I take fractional and advisory seats, and for the right team I'd consider a full-time Staff/lead role owning delivery automation and mentoring the team. Happy to talk comp and scope directly." }
+            }
+        },
+        "packages": {
+            "eyebrow": "Ways to work with me",
+            "heading": "Pick the depth that fits",
+            "subtitle": "Three ways to work together, from a quick diagnostic to a full build with your team.",
+            "popular": "Most popular",
+            "priceLabel": "From",
+            "freeIntro": "Not sure yet? Start with a free 20-minute diagnostic — no pitch, just a look at where automation would help.",
+            "freeCta": "Book a free diagnostic",
+            "durationLabel": "Duration",
+            "includesLabel": "What's included",
+            "supportLabel": "Accompaniment",
+            "cta": "Book a call",
+            "items": {
+                "audit": {
+                    "name": "AI Delivery Audit",
+                    "tagline": "See exactly where AI can take work off your team.",
+                    "price": "€5,000",
+                    "duration": "2 weeks",
+                    "i1": "Deep audit of your delivery pipeline and workflows",
+                    "i2": "A prioritized map of the highest-impact automation opportunities",
+                    "i3": "One working automation shipped as proof (e.g. an AI PR-review bot on your CI)",
+                    "i4": "A clear roadmap you can act on, with or without me",
+                    "support": "Kickoff + readout call, async in between"
+                },
+                "pilot": {
+                    "name": "Automation Pilot",
+                    "tagline": "One autonomous workflow, built end-to-end and handed over.",
+                    "price": "€12,000",
+                    "duration": "4 weeks",
+                    "i1": "Design and build one autonomous workflow on a single repo or pipeline",
+                    "i2": "Ticket-to-PR agent, AI review + merge gates, or an in-app AI agent",
+                    "i3": "A success metric agreed up front and measured at the end",
+                    "i4": "Full handover with docs and a runbook. Your team owns it.",
+                    "support": "Weekly calls + Slack access"
+                },
+                "partner": {
+                    "name": "Embedded AI Partner",
+                    "tagline": "I embed with your team and automate across delivery and product.",
+                    "price": "€7,500 / mo",
+                    "duration": "3 months",
+                    "i1": "Multiple automations and agents across your delivery and product",
+                    "i2": "Continuous iteration and rollout, not a one-off drop",
+                    "i3": "Your team trained to run and extend everything",
+                    "i4": "I own the automation roadmap alongside you",
+                    "support": "Weekly + priority Slack"
+                }
+            }
+        }
+    },
     "about": {
         "line1": "Freelance DevOps & AI Solution Engineer based in Paris, working with startups and teams to build, automate, and scale.",
         "line2": "Skilled in CI/CD pipelines, Docker, AI integrations, and cloud deployments — currently engineering at Brickcode."
     },
     "contact": {
         "title": "Let's work together",
-        "description": "Ready to bring your ideas to reality?",
-        "cta": "Say Hello"
+        "description": "Have a delivery bottleneck worth automating? Let's talk.",
+        "cta": "Say Hello",
+        "bookCall": "Book a call"
     },
     "experience": {
         "title": "Experience",
@@ -244,7 +504,9 @@
     },
     "agents": {
         "title": "AI Agents",
-        "subtitle": "Intelligent automation for the Brickcode platform",
+        "pageHeading": "AI agents I've built",
+        "subtitle": "Production AI agents I've designed and shipped — the kind I can bring into your product.",
+        "illustrative": "Illustrative — sample run, not a live connection",
         "viewDetails": "View Details",
         "backToPortfolio": "Back to Portfolio",
         "input": "Input",
@@ -258,10 +520,10 @@
         "nextAgent": "Next Agent",
         "items": {
             "usage-agent": {
-                "name": "Usage Agent",
-                "subtitle": "RAG Help Assistant",
-                "category": "Conversational AI",
-                "overview": "A RAG-powered conversational agent that helps end-users navigate Brickcode — a modular multi-tenant SaaS platform. The agent answers product questions, guides users to the right screens and menus, and explains features without technical jargon. Built to reduce support burden by grounding every answer in the actual knowledge base: specs, UI flows, domain documentation.",
+                "name": "Product Copilot",
+                "subtitle": "Answers users' questions inside your app",
+                "category": "In-App Assistant",
+                "overview": "A RAG-powered conversational agent that helps end-users navigate a modular multi-tenant SaaS platform. The agent answers product questions, guides users to the right screens and menus, and explains features without technical jargon. Built to reduce support burden by grounding every answer in the actual knowledge base: specs, UI flows, domain documentation.",
                 "steps": {
                     "1": "Receives a user question in natural language (French-first)",
                     "2": "Searches knowledge base with multi-step RAG (specs, domain, backend, frontend collections)",
@@ -278,10 +540,10 @@
                 "tools": "search_knowledge · search_specs · search_domain · search_backend · search_frontend"
             },
             "spec-agent": {
-                "name": "Spec Agent",
-                "subtitle": "Auto Spec Generator",
-                "category": "Code Generation",
-                "overview": "An agentic system that transforms a raw business need into two structured markdown specification files: a Domain model (entities, relationships, reused concepts) and a UserStories document (workflows, user scenarios). The agent searches the existing Brickcode knowledge base to reuse consistent terminology and patterns — eliminating manual spec writing and ensuring every new feature aligns with the established architecture.",
+                "name": "Spec Architect",
+                "subtitle": "Turns a business need into ready-to-build specs",
+                "category": "Planning",
+                "overview": "An agentic system that transforms a raw business need into two structured markdown specification files: a Domain model (entities, relationships, reused concepts) and a UserStories document (workflows, user scenarios). The agent searches the existing knowledge base to reuse consistent terminology and patterns — eliminating manual spec writing and ensuring every new feature aligns with the established architecture.",
                 "steps": {
                     "1": "Takes a business need description as free-form text input",
                     "2": "Searches existing specs for similar feature structures",
@@ -300,8 +562,8 @@
                 "tools": "search_specs · search_domain · search_backend · search_frontend · write_markdown_files"
             },
             "sql-agent": {
-                "name": "SQL Agent",
-                "subtitle": "Natural Language Data Queries",
+                "name": "Data Analyst",
+                "subtitle": "Ask your database in plain language",
                 "category": "Data Intelligence",
                 "overview": "A safety-first agent that allows non-technical team members to query live business data using plain English or French. The agent inspects the database schema before every query, writes read-only SQL, executes it, and returns the results as a clear natural language answer. Strict guardrails enforce that only SELECT and WITH statements are executed — no mutations ever reach the database.",
                 "steps": {
@@ -321,9 +583,9 @@
                 "tools": "get_database_schema · execute_read_only_sql"
             },
             "orchestrator-agent": {
-                "name": "Orchestrator Agent",
-                "subtitle": "Intelligent Query Router",
-                "category": "Multi-Agent System",
+                "name": "AI Concierge",
+                "subtitle": "Routes every request to the right specialist",
+                "category": "Orchestration",
                 "overview": "A high-level routing agent that serves as a single entry point for all platform questions. It classifies the incoming question and delegates to the appropriate specialist: the SQL Agent for data and statistics queries, and the Usage Agent for product navigation and procedural help. Users never need to know which agent to call — the Orchestrator decides and returns a unified answer in French.",
                 "steps": {
                     "1": "Receives any user question as input",
@@ -342,30 +604,30 @@
                 "tools": "sql_agent · usage_agent"
             },
             "brick-generator": {
-                "name": "Brick Generator",
-                "subtitle": "Full-Stack Code Generation Agent",
+                "name": "Feature Builder",
+                "subtitle": "Generates full-stack features from a spec",
                 "category": "Code Generation",
-                "overview": "The most complex agent in the suite. Given a Domain spec and UserStories file, it autonomously generates a complete production-ready Brickcode brick — a full-stack module consisting of NestJS backend files and Nuxt/Vue frontend files — following the destination brain's exact architectural conventions. Sub-agents handle backend and frontend generation separately, then all files are written, integrated into the monorepo, and validated automatically.",
+                "overview": "The most complex agent in the suite. Given a Domain spec and UserStories file, it autonomously generates a complete production-ready feature module — full-stack, with NestJS backend files and Nuxt/Vue frontend files — following the target application's exact architectural conventions. Sub-agents handle backend and frontend generation separately, then all files are written, integrated into the monorepo, and validated automatically.",
                 "steps": {
                     "1": "Reads the Domain.md and UserStories.md spec files",
-                    "2": "Reads the destination brain's structure and architectural conventions",
-                    "3": "Searches inspiration brains for backend patterns (NestJS modules, DTOs, services)",
+                    "2": "Reads the target application's structure and architectural conventions",
+                    "3": "Searches reference codebases for backend patterns (NestJS modules, DTOs, services)",
                     "4": "Sub-agent generates all backend files following found patterns",
-                    "5": "Searches inspiration brains for frontend patterns (Nuxt pages, components, composables)",
+                    "5": "Searches reference codebases for frontend patterns (Nuxt pages, components, composables)",
                     "6": "Sub-agent generates all frontend files following found patterns",
-                    "7": "Merges backend + frontend files and writes them to the destination brain",
-                    "8": "Runs integration to register the new brick in parent configs",
+                    "7": "Merges backend + frontend files and writes them to the target application",
+                    "8": "Runs integration to register the new module in parent configs",
                     "9": "Validates all required files exist and fixes any missing ones"
                 },
                 "capabilities": {
                     "1": "Generates complete NestJS modules: controllers, services, DTOs, entities, guards",
                     "2": "Generates complete Nuxt apps: pages, components, composables, stores, i18n",
-                    "3": "Pattern-aware generation via RAG search on inspiration brains",
-                    "4": "Automatic monorepo integration (registers brick in all parent configs)",
+                    "3": "Pattern-aware generation via RAG search on reference codebases",
+                    "4": "Automatic monorepo integration (registers the module in all parent configs)",
                     "5": "Self-validating: detects and fixes missing files after generation",
                     "6": "Sub-agent architecture separates concerns (backend vs. frontend generation)"
                 },
-                "tools": "read_file · read_brain_context · search_brain_* · generate_backend_files · generate_frontend_files · write_files · integrate_brick · validate_integration"
+                "tools": "read_file · read_app_context · search_app_* · generate_backend_files · generate_frontend_files · write_files · integrate_module · validate_integration"
             }
         }
     },

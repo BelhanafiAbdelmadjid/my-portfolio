@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# SPA fallback: let vue-router handle client-side routes (/agents, /demo, /agent/:id)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
