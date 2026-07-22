@@ -215,7 +215,7 @@
                 "4": { "q": "Will it work with our stack?", "a": "If you're on Git with some form of CI and containers, yes. I meet your setup where it is instead of forcing a new one." },
                 "5": { "q": "How were those numbers measured?", "a": "On the team's own repos, comparing the weeks before and after the automation went live. I'll walk you through the exact baseline on a call — I'd rather show you the method than ask you to trust a headline." },
                 "6": { "q": "Can you deliver under my agency's brand?", "a": "Yes. I subcontract white-label for agencies, work in front of your clients as part of your team, and upskill your engineers so you can carry it forward." },
-                "7": { "q": "I'm a small, budget-tight team. Is this for me?", "a": "Very likely yes — small teams feel the pain most. If you're not sure, start with a free 20-minute diagnostic, no pitch. And the €5k Audit ships one working automation, so you see real value before committing to anything bigger." },
+                "7": { "q": "I'm a small, budget-tight team. Is this for me?", "a": "Very likely yes — small teams feel the pain most. If you're not sure, start with a free 20-minute diagnostic, no pitch. And the Audit ships one working automation, so you see real value before committing to anything bigger." },
                 "8": { "q": "Are you open to a fractional or full-time role?", "a": "Yes. Alongside project work I take fractional and advisory seats, and for the right team I'd consider a full-time Staff/lead role owning delivery automation and mentoring the team. Happy to talk comp and scope directly." }
             }
         },

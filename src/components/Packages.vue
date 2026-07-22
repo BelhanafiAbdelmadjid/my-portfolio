@@ -40,12 +40,6 @@
             {{ t(`home.packages.items.${pkg.key}.tagline`) }}
           </p>
 
-          <!-- Price -->
-          <div class="mt-4 flex items-baseline gap-1.5">
-            <span class="text-t3 text-[11px] font-mono uppercase tracking-wide">{{ t('home.packages.priceLabel') }}</span>
-            <span class="font-syne font-bold text-2xl" :style="{ color: pkg.highlight ? '#38bdf8' : '#e8f0fe' }">{{ t(`home.packages.items.${pkg.key}.price`) }}</span>
-          </div>
-
           <!-- Duration -->
           <div class="flex items-center gap-2 mt-5 pb-5 border-b border-edge">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" :style="{ color: pkg.highlight ? '#38bdf8' : '#8b9dc3' }">
