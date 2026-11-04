@@ -1,83 +1,71 @@
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+import Panel from 'primevue/panel'
+import Tag from 'primevue/tag'
+import Accordion from 'primevue/accordion'
+import AccordionPanel from 'primevue/accordionpanel'
+import AccordionHeader from 'primevue/accordionheader'
+import AccordionContent from 'primevue/accordioncontent'
+import Timeline from 'primevue/timeline'
+import ProjectsMenu from '@/components/projects/ProjectsMenu.vue'
+
+const { t } = useI18n()
+const missions = ['brickcode', 'docflow']
+const previous = ['natixisDevOps', 'natixisHelpDesk']
+</script>
+
 <template>
-  <section id="experience" class="py-28 px-6">
-    <div class="max-w-3xl mx-auto">
-      <div class="section-divider">
-        <span class="section-eyebrow">02</span>
-        <h2 class="section-heading">{{ $t('experience.title') }}</h2>
+  <section id="experience" class="section portfolio-dark" aria-labelledby="experience-title">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">{{ t('portfolio.work.label') }}</p>
+        <h2 id="experience-title">{{ t('portfolio.work.title') }}</h2>
+        <p class="section-intro">{{ t('portfolio.work.body') }}</p>
       </div>
-
-      <!-- Timeline line -->
-      <div class="relative">
-        <div
-          class="absolute left-[5px] top-0 bottom-0 w-px bg-gradient-to-b from-accent/50 via-edge to-transparent"
-        ></div>
-
-        <div class="space-y-6">
-          <Experience
-            v-for="(experience, index) in experiences"
-            :key="index"
-            :experience="experience"
-          />
-        </div>
+      <div class="missions-grid">
+        <Panel v-for="mission in missions" :key="mission" class="mission-panel">
+          <template #header>
+            <div class="mission-heading">
+              <h3>{{ t(`portfolio.work.missions.${mission}.company`) }}</h3>
+              <Tag :value="t('portfolio.work.current')" severity="secondary" />
+            </div>
+          </template>
+          <p class="mission-role">{{ t(`portfolio.work.missions.${mission}.role`) }}</p>
+          <p class="mission-date">{{ t(`portfolio.work.missions.${mission}.date`) }}</p>
+          <p class="mission-description">{{ t(`portfolio.work.missions.${mission}.body`) }}</p>
+          <ul class="mission-list">
+            <li v-for="point in ['one', 'two', 'three']" :key="point">
+              {{ t(`portfolio.work.missions.${mission}.points.${point}`) }}
+            </li>
+          </ul>
+        </Panel>
+      </div>
+      <Accordion class="previous-experience">
+        <AccordionPanel value="previous">
+          <AccordionHeader>{{ t('portfolio.work.previous') }}</AccordionHeader>
+          <AccordionContent>
+            <Timeline :value="previous" class="career-timeline">
+              <template #content="{ item }">
+                <h3>{{ t(`experience.myexperience.${item}.titel`) }}</h3>
+                <p class="mission-date">
+                  {{ t(`experience.myexperience.${item}.place`) }}<br />{{
+                    t(`experience.myexperience.${item}.date`)
+                  }}
+                </p>
+                <ul class="mission-list">
+                  <li v-for="point in 4" :key="point">
+                    {{ t(`experience.myexperience.${item}.competences.${point}`) }}
+                  </li>
+                </ul>
+              </template>
+            </Timeline>
+          </AccordionContent>
+        </AccordionPanel>
+      </Accordion>
+      <div class="project-link">
+        <p>{{ t('portfolio.work.projectsBody') }}</p>
+        <ProjectsMenu />
       </div>
     </div>
   </section>
 </template>
-
-<script lang="ts" setup>
-import { ref } from 'vue'
-import Experience from './Experience.vue'
-
-const experiences = ref([
-  {
-    title: 'experience.myexperience.brickcode.titel',
-    place: 'experience.myexperience.brickcode.place',
-    date: 'experience.myexperience.brickcode.date',
-    competences: [
-      'experience.myexperience.brickcode.competences.1',
-      'experience.myexperience.brickcode.competences.2',
-      'experience.myexperience.brickcode.competences.3',
-      'experience.myexperience.brickcode.competences.4',
-    ],
-    current: true,
-  },
-  {
-    title: 'experience.myexperience.docflowca.titel',
-    place: 'experience.myexperience.docflowca.place',
-    date: 'experience.myexperience.docflowca.date',
-    competences: [
-      'experience.myexperience.docflowca.competences.1',
-      'experience.myexperience.docflowca.competences.2',
-      'experience.myexperience.docflowca.competences.3',
-      'experience.myexperience.docflowca.competences.4',
-      'experience.myexperience.docflowca.competences.5',
-      'experience.myexperience.docflowca.competences.6',
-    ],
-    current: true,
-  },
-  {
-    title: 'experience.myexperience.natixisDevOps.titel',
-    place: 'experience.myexperience.natixisDevOps.place',
-    date: 'experience.myexperience.natixisDevOps.date',
-    competences: [
-      'experience.myexperience.natixisDevOps.competences.1',
-      'experience.myexperience.natixisDevOps.competences.2',
-      'experience.myexperience.natixisDevOps.competences.3',
-      'experience.myexperience.natixisDevOps.competences.4',
-    ],
-    current: false,
-  },
-  {
-    title: 'experience.myexperience.natixisHelpDesk.titel',
-    place: 'experience.myexperience.natixisHelpDesk.place',
-    date: 'experience.myexperience.natixisHelpDesk.date',
-    competences: [
-      'experience.myexperience.natixisHelpDesk.competences.1',
-      'experience.myexperience.natixisHelpDesk.competences.2',
-      'experience.myexperience.natixisHelpDesk.competences.3',
-      'experience.myexperience.natixisHelpDesk.competences.4',
-    ],
-    current: false,
-  },
-])
-</script>

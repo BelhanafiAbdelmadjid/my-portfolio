@@ -14,7 +14,7 @@
         "Contact": "Contact",
         "Resume": "Resume"
     },
-    "introduction": "AI Automation & DevOps Engineer · Paris, France",
+    "introduction": "AI Solutions Architect & DevOps",
     "home": {
         "hero": {
             "role": "AI Automation & DevOps Engineer",
@@ -269,8 +269,8 @@
         }
     },
     "about": {
-        "line1": "Freelance DevOps & AI Solution Engineer based in Paris, working with startups and teams to build, automate, and scale.",
-        "line2": "Skilled in CI/CD pipelines, Docker, AI integrations, and cloud deployments — currently engineering at Brickcode."
+        "line1": "I’m a freelance AI Solutions Architect & DevOps engineer based in Paris.",
+        "line2": "The Forward Deployed Engineer approach fits how I work: stay close to the team, understand their business, build with them and see the work through to deployment."
     },
     "contact": {
         "title": "Let's work together",
@@ -282,7 +282,7 @@
         "title": "Experience",
         "myexperience": {
             "brickcode": {
-                "titel": "DevOps & AI Solution Engineer",
+                "titel": "AI Solutions Architect & DevOps",
                 "place": "Brickcode · Paris, France",
                 "date": "December 2025 — Present",
                 "competences": {
@@ -293,7 +293,7 @@
                 }
             },
             "docflowca": {
-                "titel": "DevOps",
+                "titel": "AI Solutions Architect & DevOps",
                 "place": "Docflow · Remote · Montreal, Canada",
                 "date": "March 2025 — Present",
                 "competences": {
@@ -428,79 +428,7 @@
         "yearLabel": "Year",
         "stackLabel": "Tech Stack",
         "prevProject": "Previous Project",
-        "nextProject": "Next Project",
-        "mywork": {
-            "findEat": {
-                "description": "Admin dashboard for FindEat (Canada) — enabling admins to manage clients, restaurants, and certifications."
-            },
-            "mafal": {
-                "description": "Landing page for Mafal Dental clinic — built to increase online visibility and drive patient appointments."
-            },
-            "uniAssist": {
-                "description": "Full-stack e-learning platform helping Algerian students succeed — courses, videos, exercises, and XP rewards."
-            },
-            "swurvin": {
-                "description": "Mobile app connecting clients with tow truck drivers — live tracking, Stripe payments, and driver subscriptions."
-            }
-        }
-    },
-    "projects": {
-        "findeat": {
-            "name": "FindEat",
-            "subtitle": "Admin Dashboard",
-            "category": "Web Application",
-            "role": "Full Stack Developer",
-            "overview": "Developed the comprehensive admin dashboard for FindEat, a Canadian food discovery and certification platform. The dashboard empowers admins to manage the entire platform ecosystem — from client onboarding to restaurant certifications — through an intuitive, real-time interface built with Nuxt.js and Firebase.",
-            "features": {
-                "1": "Client and restaurant management with full CRUD operations",
-                "2": "Certification lifecycle tracking and approval workflows",
-                "3": "Real-time data synchronization via Firebase Firestore",
-                "4": "Role-based access control for admin and sub-admin users",
-                "5": "Responsive design optimized for desktop operations"
-            }
-        },
-        "mafal": {
-            "name": "Mafal Dental",
-            "subtitle": "Clinic Landing Page",
-            "category": "Landing Page",
-            "role": "Frontend Developer",
-            "overview": "Designed and built a modern, conversion-focused landing page for Mafal Dental, a dental clinic looking to establish a strong online presence. The page showcases services, the team, and patient testimonials — optimized for SEO and performance to drive organic traffic and patient bookings.",
-            "features": {
-                "1": "Clean, professional design tailored to the medical industry",
-                "2": "SEO-optimized structure and metadata for organic visibility",
-                "3": "Responsive across all devices from mobile to desktop",
-                "4": "Service showcase with smooth scroll animations",
-                "5": "Contact form and appointment booking section"
-            }
-        },
-        "uniassist": {
-            "name": "UniAssist",
-            "subtitle": "E-Learning Platform",
-            "category": "Full Stack Platform",
-            "role": "Full Stack Developer",
-            "overview": "Built UniAssist from the ground up to help Algerian university students succeed academically. The platform provides structured courses, video lessons, exercises, a comments system, and a gamified XP rewards system to keep students engaged. The backend is a Django REST API, the web app is Nuxt.js, and the mobile app is React Native.",
-            "features": {
-                "1": "Structured course library with video lessons and exercises",
-                "2": "Gamified XP and achievement system to boost engagement",
-                "3": "Comment threads and community discussions per lesson",
-                "4": "Cross-platform: web (Nuxt.js) and mobile (React Native)",
-                "5": "RESTful API built with Django and PostgreSQL"
-            }
-        },
-        "swurvin": {
-            "name": "Swurvin",
-            "subtitle": "Roadside Assistance App",
-            "category": "Mobile Application",
-            "role": "Full Stack Developer",
-            "overview": "Built Swurvin, a React Native mobile application that connects drivers in distress with nearby tow truck operators. The platform features real-time GPS tracking, in-app payments via Stripe, push notifications for accident alerts, and a subscription model for professional drivers.",
-            "features": {
-                "1": "Real-time GPS tracking for both drivers and operators",
-                "2": "In-app Stripe payments with secure transaction handling",
-                "3": "Push notifications for accident and emergency alerts",
-                "4": "Driver subscription tiers with feature gating",
-                "5": "Node.js REST API with PostgreSQL database"
-            }
-        }
+        "nextProject": "Next Project"
     },
     "agents": {
         "title": "AI Agents",
@@ -638,5 +566,225 @@
         "location": "Location",
         "skills": "Skills",
         "rank": "Ranking"
+    },
+    "portfolio": {
+        "pageTitle": "Madjid — AI Solutions Architect & DevOps",
+        "pageDescription": "AI Solutions Architect and DevOps engineer based in Paris. I design, integrate and deploy AI assistants, business automations and the applications that make them work.",
+        "language": "Site language",
+        "skip": "Skip to content",
+        "nav": {
+            "label": "Main navigation",
+            "home": "Madjid Belhanafi, home",
+            "solutions": "What I offer",
+            "work": "My work",
+            "about": "About me",
+            "approach": "My approach",
+            "contact": "Contact"
+        },
+        "hero": {
+            "title": "I design and deploy AI that works for your business.",
+            "role": "AI Solutions Architect & DevOps",
+            "body": "I start with the way you work to build AI assistants, automate tasks and connect your tools. From the first idea to a system your team actually uses.",
+            "cta": "Let’s talk about your business",
+            "work": "Explore my work",
+            "location": "Based in Paris, working remotely too"
+        },
+        "solutions": {
+            "label": "What I offer",
+            "title": "Less repetitive work. More time for your business.",
+            "body": "A document to process, information to find, tools that don’t talk to each other: we start with a specific problem in your day-to-day work.",
+            "items": {
+                "operations": {
+                    "title": "Automate your operations",
+                    "body": "Move information between your tools, prepare documents and trigger the right actions. Your team stays in charge of decisions."
+                },
+                "knowledge": {
+                    "title": "Make your knowledge accessible",
+                    "body": "Build an assistant that finds a procedure, answers questions using your documents or helps people use your product."
+                },
+                "integration": {
+                    "title": "Take an idea into everyday use",
+                    "body": "Design the application and connections it needs, integrate them into your environment, then deploy and maintain the system."
+                }
+            }
+        },
+        "work": {
+            "label": "What I do",
+            "title": "Real work, from code to production.",
+            "body": "At Brickcode and Docflow, I work on the applications, internal tools and infrastructure that help teams move forward.",
+            "current": "Ongoing",
+            "previous": "Previously, at Natixis",
+            "projectsBody": "I’ve also built web and mobile applications as a freelancer.",
+            "projects": "See my other projects",
+            "missions": {
+                "brickcode": {
+                    "company": "Brickcode",
+                    "role": "AI Solutions Architect & DevOps",
+                    "date": "Since December 2025 · Paris",
+                    "body": "Build a reusable AI foundation and take care of the platform’s deployment pipeline.",
+                    "points": {
+                        "one": "Development and maintenance of the internal AI library.",
+                        "two": "CI/CD with GitHub Actions and service orchestration with Docker Compose.",
+                        "three": "Code reviews to keep integrations across the library consistent."
+                    }
+                },
+                "docflow": {
+                    "company": "Docflow",
+                    "role": "AI Solutions Architect & DevOps",
+                    "date": "Since March 2025 · Montréal, remote",
+                    "body": "Design applications and automate their release to production, working with a remote team.",
+                    "points": {
+                        "one": "Vue 3 applications and backend services using Firebase and Cloud Functions.",
+                        "two": "Real-time data, authentication and API integrations.",
+                        "three": "Automated deployments with GitHub Actions and Firebase Hosting."
+                    }
+                }
+            }
+        },
+        "about": {
+            "label": "Who I am",
+            "title": "Hey, I’m Madjid.",
+            "intro": "I’m a freelance AI Solutions Architect & DevOps engineer based in Paris.",
+            "body": "My background spans IT support, production operations, application development and AI solutions. It taught me to care about how people use a tool and what it takes to keep it running every day.",
+            "fde": "The Forward Deployed Engineer approach fits how I work: stay close to the team, understand their business, build with them and see the work through to deployment.",
+            "education": "Explore my education"
+        },
+        "approach": {
+            "label": "My approach",
+            "title": "Understand the work before choosing the technology.",
+            "body": "I start with your tools, constraints and the people who will use the solution. Together, we choose an initial use case specific enough to check whether it helps.",
+            "principle": "A good system is one your team can use, understand and develop further.",
+            "step": "Step {number}",
+            "steps": {
+                "understand": {
+                    "title": "See how you work",
+                    "body": "Talk to the team, follow a real process and identify what takes time or causes errors."
+                },
+                "choose": {
+                    "title": "Define a useful first outcome",
+                    "body": "Agree on the scope, required data and a success measure: time saved, reliability or ease of use."
+                },
+                "build": {
+                    "title": "Build and deploy",
+                    "body": "Connect the solution to your tools, test it on real cases and include the right human checks."
+                },
+                "handover": {
+                    "title": "Follow up and hand over",
+                    "body": "Observe how it’s used, make adjustments and document the system so your team can take ownership."
+                }
+            }
+        },
+        "engineering": {
+            "title": "From the business need to production.",
+            "body": "I connect the parts of the system so the solution works in your environment.",
+            "examples": "A few examples of agents I’ve developed.",
+            "cta": "Explore the AI agents",
+            "items": {
+                "agents": {
+                    "title": "AI agents & assistants",
+                    "body": "Business assistants, document search and agents that use your tools to carry out a defined task."
+                },
+                "automation": {
+                    "title": "Business automation",
+                    "body": "Data flows, event-driven actions and connections between the services you already use."
+                },
+                "applications": {
+                    "title": "Applications & APIs",
+                    "body": "Web interfaces, backend services and APIs that make the solution usable by your team and customers."
+                },
+                "data": {
+                    "title": "Data & knowledge",
+                    "body": "Data modelling, document search and controlled access to the information people need."
+                },
+                "infrastructure": {
+                    "title": "Deployment & infrastructure",
+                    "body": "Containerised environments, continuous integration and repeatable production releases."
+                },
+                "quality": {
+                    "title": "Quality & operations",
+                    "body": "Tests, code reviews, access management and application monitoring after deployment."
+                }
+            }
+        },
+        "contact": {
+            "label": "What about your business?",
+            "title": "Let’s see where I can help.",
+            "body": "Show me what takes up your time, the tools you use and what you’d like to improve. We’ll look at where automation or an AI solution could make a difference.",
+            "cta": "Book a 30-minute call",
+            "note": "A process, a task or an idea is enough to start.",
+            "emailLabel": "Prefer to write?",
+            "location": "Paris, France · Remote"
+        },
+        "projects": {
+            "title": "A few web and mobile projects.",
+            "body": "Interfaces and applications built for specific uses, before and alongside my AI and DevOps work.",
+            "back": "Back to projects",
+            "view": "Explore the project"
+        },
+        "agents": {
+            "title": "Agents built for a specific task.",
+            "body": "Document search, questions about data, writing specifications or generating code: a selection of agents from my AI library.",
+            "back": "Back to agents",
+            "details": "See how it works",
+            "tools": "Technologies used",
+            "notFound": "This agent could not be found."
+        },
+        "education": {
+            "title": "My education.",
+            "body": "From computer science to systems engineering, including security.",
+            "current": "In progress"
+        },
+        "notFound": {
+            "title": "This page could not be found.",
+            "back": "Back to the portfolio"
+        }
+    },
+    "showcase": {
+        "nav": "Projects",
+        "menuLabel": "See my projects",
+        "menuMore": "See more",
+        "projectCount": "{count} projects to explore",
+        "listLabel": "Selected work",
+        "listTitle": "My projects.",
+        "listDescription": "Business software, platforms and mobile apps: each case explains the need, shows the interface and describes my contribution.",
+        "gallery": "Application screenshots",
+        "enlarge": "Enlarge screenshot",
+        "role": "My role",
+        "platforms": "Platforms",
+        "collaboration": "Collaboration",
+        "withLyes": "With Lyes Hamidi",
+        "context": "The need behind the project",
+        "contributions": "What I built",
+        "stack": "Technologies used",
+        "demoCaption": "Screenshots with demonstration data.",
+        "archiveCaption": "Visual from the original project.",
+        "filterLabel": "Filter projects by type",
+        "search": "Search for a project or technology",
+        "resultCount": "{count} projects shown",
+        "singleResult": "1 project shown",
+        "searchPlaceholder": "Search projects",
+        "previousImage": "Previous screenshot",
+        "nextImage": "Next screenshot",
+        "closeImage": "Close screenshot",
+        "zoomIn": "Zoom in",
+        "zoomOut": "Zoom out",
+        "rotateRight": "Rotate right",
+        "rotateLeft": "Rotate left",
+        "open": "Explore project",
+        "empty": "No projects match.",
+        "emptyDescription": "Try another search or show all projects.",
+        "reset": "Show all projects",
+        "projectNavigation": "Other projects",
+        "filters": {
+            "all": "All",
+            "platform": "Platforms",
+            "mobile": "Mobile",
+            "web": "Web"
+        },
+        "kinds": {
+            "platform": "Business platform",
+            "mobile": "Mobile application",
+            "web": "Web application"
+        }
     }
 }

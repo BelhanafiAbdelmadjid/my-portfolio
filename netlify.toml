@@ -3,9 +3,9 @@
   publish = "dist"
 
 [build.environment]
-  NODE_VERSION = "20"
+  NODE_VERSION = "22"
 
-# SPA fallback: let vue-router handle client-side routes (/agents, /demo, /agent/:id)
+# SPA fallback: let vue-router handle client-side routes (/projects, /projects/:id, /agents).
 [[redirects]]
   from = "/*"
   to = "/index.html"

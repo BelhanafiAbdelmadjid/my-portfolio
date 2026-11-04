@@ -1,20 +1,33 @@
+<script setup lang="ts">
+import { RouterLink } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+import Button from 'primevue/button'
+import { GraduationCap } from 'lucide-vue-next'
+
+const { t } = useI18n()
+</script>
+
 <template>
-  <section id="bio" class="py-24 px-6">
-    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-start gap-8">
-      <div class="relative w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0" style="box-shadow: 0 0 0 1px #1e2d47">
-        <img src="@/assets/images/Me.jpg" alt="Madjid" class="w-full h-full object-cover" />
-      </div>
+  <section id="about" class="section surface-light" aria-labelledby="about-title">
+    <div class="container about-grid">
       <div>
-        <span class="section-eyebrow block mb-3">{{ t('home.bio.eyebrow') }}</span>
-        <h2 class="font-syne font-bold text-2xl md:text-3xl text-t1 mb-4">{{ t('home.bio.heading') }}</h2>
-        <p class="text-t2 text-base leading-loose">{{ t('home.bio.body') }}</p>
+        <p class="section-label">{{ t('portfolio.about.label') }}</p>
+        <h2 id="about-title">{{ t('portfolio.about.title') }}</h2>
+        <p class="about-signature">Belhanafi Abdelmadjid</p>
+      </div>
+      <div class="about-copy">
+        <p class="about-lead">{{ t('portfolio.about.intro') }}</p>
+        <p>{{ t('portfolio.about.body') }}</p>
+        <p>{{ t('portfolio.about.fde') }}</p>
+        <Button
+          :as="RouterLink"
+          to="/education"
+          variant="link"
+          :label="t('portfolio.about.education')"
+        >
+          <template #icon><GraduationCap :size="19" aria-hidden="true" /></template>
+        </Button>
       </div>
     </div>
   </section>
 </template>
-
-<script lang="ts" setup>
-import { useI18n } from 'vue-i18n'
-defineOptions({ name: 'BioSection' })
-const { t } = useI18n()
-</script>

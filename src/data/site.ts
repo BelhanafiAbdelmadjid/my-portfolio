@@ -1,6 +1,7 @@
-// Central place for external links. Swap CALENDLY_URL for the real booking link.
-export const CALENDLY_URL = 'https://calendly.com/belhanafiabdelmadjid'
+export const CALENDLY_URL = 'https://calendly.com/belhanafiabdelmadjid/30min'
 export const GITHUB_URL = 'https://github.com/BelhanafiAbdelmadjid'
+export const LINKEDIN_URL = 'https://www.linkedin.com/in/abdelmadjid-belhanafi-429112262/'
+export const EMAIL = 'belhanafiabdelmadjid@gmail.com'
 
 export interface ClientLink {
   name: string

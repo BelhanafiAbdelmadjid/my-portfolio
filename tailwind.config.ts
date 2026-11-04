@@ -4,29 +4,29 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        syne: ['Syne', 'sans-serif'],
-        outfit: ['Outfit', 'sans-serif'],
+        syne: ['Montserrat', 'sans-serif'],
+        outfit: ['Montserrat', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
         montserrat: ['Montserrat', 'sans-serif'],
       },
       colors: {
-        canvas: '#080c14',
-        panel: '#0f1623',
-        card: '#131d2e',
-        layer: '#1a2540',
-        edge: '#1e2d47',
-        shine: '#2a3f6e',
-        t1: '#e8f0fe',
-        t2: '#8b9dc3',
-        t3: '#4a5c7e',
+        canvas: '#333333',
+        panel: '#202419',
+        card: '#2b3023',
+        layer: '#3e4533',
+        edge: '#625c57',
+        shine: '#b1aaa5',
+        t1: '#e8e1d9',
+        t2: '#c3bcb6',
+        t3: '#b1aaa5',
         accent: {
-          DEFAULT: '#38bdf8',
-          dim: '#0ea5e9',
-          glow: 'rgba(56,189,248,0.15)',
+          DEFAULT: '#e8e1d9',
+          dim: '#d6cfc8',
+          glow: 'rgba(232,225,217,0.15)',
         },
         warm: {
-          DEFAULT: '#fbbf24',
-          dim: '#d97706',
+          DEFAULT: '#d9b75f',
+          dim: '#7f5539',
         },
         // Keep originals for any missed references
         primary: {
@@ -52,10 +52,10 @@ export default {
         },
       },
       animation: {
-        'float': 'float 8s ease-in-out infinite',
+        float: 'float 8s ease-in-out infinite',
         'float-reverse': 'float 10s ease-in-out infinite reverse',
         'pulse-ring': 'pulseRing 3s ease-in-out infinite',
-        'blink': 'blink 1s step-end infinite',
+        blink: 'blink 1s step-end infinite',
         'fade-up': 'fadeUp 0.7s ease-out both',
         'fade-in': 'fadeIn 0.5s ease-out both',
         'slide-in-left': 'slideInLeft 0.6s ease-out both',
@@ -97,7 +97,7 @@ export default {
       backgroundSize: {
         'dot-grid': '32px 32px',
       },
-    }
+    },
   },
   plugins: [],
 }

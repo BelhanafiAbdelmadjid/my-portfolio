@@ -1,21 +1,23 @@
-<template>
-  <button
-    class="flex items-center gap-1.5 font-mono text-xs text-t2 border border-edge rounded-md px-2.5 py-1.5
-           hover:border-accent hover:text-accent transition-all duration-200"
-    aria-label="Toggle Language"
-    @click="toggleLanguage"
-  >
-    <Globe :size="12" />
-    {{ locale.toUpperCase() }}
-  </button>
-</template>
-
-<script lang="ts" setup>
-import { Globe } from 'lucide-vue-next'
+<script setup lang="ts">
+import SelectButton from 'primevue/selectbutton'
 import { useI18n } from 'vue-i18n'
 
-const { locale } = useI18n()
-const toggleLanguage = () => {
-  locale.value = locale.value === 'en' ? 'fr' : 'en'
-}
+const { locale, t } = useI18n()
+const languages = [
+  { label: 'FR', value: 'fr' },
+  { label: 'EN', value: 'en' },
+]
 </script>
+
+<template>
+  <SelectButton
+    v-model="locale"
+    :options="languages"
+    option-label="label"
+    option-value="value"
+    :allow-empty="false"
+    :aria-label="t('portfolio.language')"
+    size="small"
+    class="language-picker"
+  />
+</template>
