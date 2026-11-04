@@ -186,10 +186,13 @@ li {
   height: 112px;
   margin-bottom: 22px;
   background: #484442;
+  overflow: hidden;
 }
 .hero-portrait img {
   object-fit: cover;
-  object-position: center 42%;
+  object-position: center 35%;
+  transform: scale(2.4);
+  transform-origin: center 33%;
 }
 .hero-name {
   font-size: 1rem;

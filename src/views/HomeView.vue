@@ -8,7 +8,7 @@ import Experience from '@/components/experience/index.vue'
 import Bio from '@/components/Bio.vue'
 import HowIWork from '@/components/HowIWork.vue'
 import ProductionSystems from '@/components/ProductionSystems.vue'
-import portrait from '@/assets/images/Me.jpg'
+import portrait from '@/assets/images/portrait.webp'
 import { CALENDLY_URL } from '@/data/site'
 
 const { t } = useI18n()
