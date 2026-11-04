@@ -24,8 +24,7 @@ function navigationLink(label: string, destination: string) {
       )
         return
       originalEvent.preventDefault()
-      // Laisser le menu restaurer son focus avant de rejoindre la section.
-      requestAnimationFrame(() => router.push(destination))
+      void router.push(destination)
     },
   }
 }

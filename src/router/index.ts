@@ -50,21 +50,26 @@ const router = createRouter({
       component: () => import('../views/NotFoundView.vue'),
     },
   ],
-  async scrollBehavior(to, _from, savedPosition) {
+  async scrollBehavior(to, from, savedPosition) {
     await nextTick()
-    await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()))
-    if (savedPosition) return savedPosition
+    // Attendre que le menu ait fermé et restauré son focus avant de défiler.
+    await new Promise<void>((resolve) => setTimeout(resolve, 0))
+    if (savedPosition) return { ...savedPosition, behavior: 'instant' }
+    const behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      ? 'instant'
+      : 'smooth'
     if (to.hash) {
       const target = document.getElementById(to.hash.slice(1))
       if (target) {
         const headerHeight = document.querySelector('header')?.getBoundingClientRect().height ?? 80
         return {
-          top: target.getBoundingClientRect().top + window.scrollY - headerHeight - 16,
-          behavior: 'instant',
+          el: target,
+          top: headerHeight + 16,
+          behavior,
         }
       }
     }
-    return { top: 0 }
+    return { top: 0, left: 0, behavior: to.path === from.path ? behavior : 'instant' }
   },
 })
 

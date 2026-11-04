@@ -22,12 +22,8 @@
   --warm: #d9b75f;
 }
 
-html {
-  scroll-padding-top: 100px;
-}
-section,
-footer {
-  scroll-margin-top: 88px;
+#main-content {
+  scroll-margin-top: 96px;
 }
 ::selection {
   background: #d9b75f;

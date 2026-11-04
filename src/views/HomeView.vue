@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import { RouterLink } from 'vue-router'
 import Button from 'primevue/button'
 import Avatar from 'primevue/avatar'
 import { ArrowDown, CalendarDays, MapPin } from 'lucide-vue-next'
@@ -38,7 +39,12 @@ const { t } = useI18n()
           >
             <template #icon><CalendarDays :size="18" aria-hidden="true" /></template>
           </Button>
-          <Button as="a" href="#experience" variant="outlined" :label="t('portfolio.hero.work')">
+          <Button
+            :as="RouterLink"
+            to="/#experience"
+            variant="outlined"
+            :label="t('portfolio.hero.work')"
+          >
             <template #icon><ArrowDown :size="17" aria-hidden="true" /></template>
           </Button>
         </div>
