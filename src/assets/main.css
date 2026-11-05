@@ -692,9 +692,6 @@ li {
     min-height: 70px;
     gap: 14px;
   }
-  .brand-surname {
-    display: none;
-  }
   .brand.p-button {
     font-size: 0.85rem;
     gap: 8px;

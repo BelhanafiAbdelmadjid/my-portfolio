@@ -56,7 +56,6 @@ const items = computed(() => [
             :aria-label="t('portfolio.nav.home')"
           >
             <Avatar label="BA" shape="circle" />
-            <span>Madjid<span class="brand-surname"> Belhanafi</span></span>
           </Button>
         </template>
         <template #end><LanguageConfig /></template>
